@@ -39,19 +39,15 @@ pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-
   net (sw smps.sw ind.p[1])
   net (vout.vdd ind.p[2])
 
-  ;bypass-cap-strap(smps.bst, smps.sw, 22.0e-9)
   add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 "tolerance" => 0.1]) ; these values should be whatever the manufacturer suggests for this
-  
   bypass-cap-strap(smps.vin, smps.gnd, 22.0e-6)
   bypass-cap-strap(ind.p[1], smps.gnd, 22.0e-6)
-
   ;if output-voltage < 3.3:
   ;  cap-strap(ind.p[1], gnd, 22.0e-6)
 
   inst output-voltage-divider : voltage-divider(source-voltage   = output-voltage, 
                                                 divider-output   = 0.8 +/- (15 %) 
                                                 current          = 5.0e-4 )
-
   net (output-voltage-divider.in ind.p[2])
   net (output-voltage-divider.out smps.fb)
   net (output-voltage-divider.lo smps.gnd)
@@ -66,8 +62,8 @@ pcb-module my-design :
   inst smps : ETA1471FT2G-psu()
   net (vin smps.vin) ; bundle connection
   net (vout smps.vout) ; bundle connection
-  net GND (vin.gnd vout.gnd)
-  net VIN (vin.vdd)
+  net GND (vin.gnd vout.gnd) ; let's tie our grounds together
+  net VIN (vin.vdd) ; create named nets for documentation purposes
   net VOUT (vout.vdd)
   ; add a ground plane
   geom(GND) :
