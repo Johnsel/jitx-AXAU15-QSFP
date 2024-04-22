@@ -43,7 +43,7 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 499Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"description":	"RES SMD 4.99K OHM 1% 1/16W 0402",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -65,12 +65,12 @@
 							"column":	4
 						}
 					}],
-				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
-				"manufacturer":	"Meritek",
-				"mpn":	"CR204990F",
+				"datasheet":	"http://www.calchipelectronics.com/pdf/rm_series.pdf",
+				"manufacturer":	"CAL-CHIP ELECTRONICS, INC.",
+				"mpn":	"RM04F4991CT",
 				"vendor":	"DigiKey",
-				"sku":	"CR204990F",
-				"price":	0.00137,
+				"sku":	"RM04F4991CT",
+				"price":	0.00132,
 				"preferred":	false,
 				"query_properties":	{
 					"min-rated-temperature.max":	25,
@@ -81,7 +81,7 @@
 					"_sellers":	["DigiKey", "Mouser"],
 					"_stock":	100,
 					"_exist":	["tcr"],
-					"resistance":	499,
+					"resistance":	4990,
 					"min-stock":	500,
 					"_sort":	["area"],
 					"category":	"resistor"
@@ -119,6 +119,7 @@
 					"min-rated-temperature.max":	25,
 					"max-rated-temperature.min":	0,
 					"mounting":	"smd",
+					"tolerance":	0.1,
 					"capacitance":	2.2e-08,
 					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
 					"_sellers":	["DigiKey", "Mouser"],
@@ -128,54 +129,6 @@
 					"min-stock":	500,
 					"_sort":	["area"],
 					"category":	"capacitor"
-				}
-			}, {
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"RES SMD 160 OHM 1% 1/5W 0402",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"ref":	{
-									"name":	"smps"
-								},
-								"field":	{
-									"name":	"output-voltage-divider"
-								}
-							},
-							"field":	{
-								"name":	"r-lo"
-							}
-						},
-						"ref":	"R3",
-						"fileinfo":	{
-							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
-							"line":	33,
-							"column":	4
-						}
-					}],
-				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf",
-				"manufacturer":	"Panasonic Electronic Components",
-				"mpn":	"ERJ-PA2F1600X",
-				"vendor":	"DigiKey",
-				"sku":	"ERJ-PA2F1600X",
-				"price":	0.02335,
-				"preferred":	false,
-				"query_properties":	{
-					"min-rated-temperature.max":	25,
-					"max-rated-temperature.min":	0,
-					"mounting":	"smd",
-					"tolerance":	0.01,
-					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
-					"_sellers":	["DigiKey", "Mouser"],
-					"_stock":	100,
-					"_exist":	["tcr"],
-					"resistance":	160,
-					"min-stock":	500,
-					"_sort":	["area"],
-					"category":	"resistor"
 				}
 			}, {
 				"status":	{
@@ -195,7 +148,7 @@
 						"ref":	"L1",
 						"fileinfo":	{
 							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
-							"line":	24,
+							"line":	40,
 							"column":	2
 						}
 					}],
@@ -218,6 +171,54 @@
 					"_sort":	["area"],
 					"tolerance":	0.05,
 					"category":	"inductor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 1.6K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
+							"line":	33,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
+				"manufacturer":	"Meritek",
+				"mpn":	"CR201601F",
+				"vendor":	"DigiKey",
+				"sku":	"CR201601F",
+				"price":	0.00137,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"tolerance":	0.01,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"_exist":	["tcr"],
+					"resistance":	1600,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
 				}
 			}, {
 				"status":	{
@@ -295,7 +296,7 @@
 						"ref":	"U1",
 						"fileinfo":	{
 							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
-							"line":	22,
+							"line":	38,
 							"column":	2
 						}
 					}],
@@ -324,7 +325,7 @@
 			"value":	7
 		}, {
 			"name":	"Cost",
-			"value":	"$0.22"
+			"value":	"$0.19"
 		}],
 	"is_update":	false,
 	"old_bom":	{
@@ -333,7 +334,7 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 499Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"description":	"RES SMD 4.99K OHM 1% 1/16W 0402",
 				"insts":	[{
 						"inst":	{
 							"ref":	{
@@ -355,12 +356,12 @@
 							"column":	4
 						}
 					}],
-				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
-				"manufacturer":	"Meritek",
-				"mpn":	"CR204990F",
+				"datasheet":	"http://www.calchipelectronics.com/pdf/rm_series.pdf",
+				"manufacturer":	"CAL-CHIP ELECTRONICS, INC.",
+				"mpn":	"RM04F4991CT",
 				"vendor":	"DigiKey",
-				"sku":	"CR204990F",
-				"price":	0.00137,
+				"sku":	"RM04F4991CT",
+				"price":	0.00132,
 				"preferred":	false,
 				"query_properties":	{
 					"min-rated-temperature.max":	25,
@@ -371,7 +372,7 @@
 					"_sellers":	["DigiKey", "Mouser"],
 					"_stock":	100,
 					"_exist":	["tcr"],
-					"resistance":	499,
+					"resistance":	4990,
 					"min-stock":	500,
 					"_sort":	["area"],
 					"category":	"resistor"
@@ -409,6 +410,7 @@
 					"min-rated-temperature.max":	25,
 					"max-rated-temperature.min":	0,
 					"mounting":	"smd",
+					"tolerance":	0.1,
 					"capacitance":	2.2e-08,
 					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
 					"_sellers":	["DigiKey", "Mouser"],
@@ -418,54 +420,6 @@
 					"min-stock":	500,
 					"_sort":	["area"],
 					"category":	"capacitor"
-				}
-			}, {
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"RES SMD 160 OHM 1% 1/5W 0402",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"ref":	{
-									"name":	"smps"
-								},
-								"field":	{
-									"name":	"output-voltage-divider"
-								}
-							},
-							"field":	{
-								"name":	"r-lo"
-							}
-						},
-						"ref":	"R3",
-						"fileinfo":	{
-							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
-							"line":	33,
-							"column":	4
-						}
-					}],
-				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf",
-				"manufacturer":	"Panasonic Electronic Components",
-				"mpn":	"ERJ-PA2F1600X",
-				"vendor":	"DigiKey",
-				"sku":	"ERJ-PA2F1600X",
-				"price":	0.02335,
-				"preferred":	false,
-				"query_properties":	{
-					"min-rated-temperature.max":	25,
-					"max-rated-temperature.min":	0,
-					"mounting":	"smd",
-					"tolerance":	0.01,
-					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
-					"_sellers":	["DigiKey", "Mouser"],
-					"_stock":	100,
-					"_exist":	["tcr"],
-					"resistance":	160,
-					"min-stock":	500,
-					"_sort":	["area"],
-					"category":	"resistor"
 				}
 			}, {
 				"status":	{
@@ -485,7 +439,7 @@
 						"ref":	"L1",
 						"fileinfo":	{
 							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
-							"line":	24,
+							"line":	35,
 							"column":	2
 						}
 					}],
@@ -508,6 +462,54 @@
 					"_sort":	["area"],
 					"tolerance":	0.05,
 					"category":	"inductor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 1.6K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
+							"line":	33,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
+				"manufacturer":	"Meritek",
+				"mpn":	"CR201601F",
+				"vendor":	"DigiKey",
+				"sku":	"CR201601F",
+				"price":	0.00137,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"tolerance":	0.01,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"_exist":	["tcr"],
+					"resistance":	1600,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
 				}
 			}, {
 				"status":	{
@@ -585,7 +587,7 @@
 						"ref":	"U1",
 						"fileinfo":	{
 							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
-							"line":	22,
+							"line":	33,
 							"column":	2
 						}
 					}],

@@ -6,11 +6,23 @@ defpackage main :
   import jitx/commands
   import ocdb/utils/generic-components
   import helpers
+  import ocdb/utils/bundles
   import ocdb/utils/symbols
   import ocdb/modules/passive-circuits
+  import ocdb/utils/design-vars
+
+MIN-CAP-VOLTAGE = 10.0
 
 ; Define the shape/size of the board
 val board-shape = RoundedRectangle(30.0, 18.5, 0.25)
+
+
+defn add-boost-cap (pin1:JITXObject pin2:JITXObject params:Tuple<KeyValue>) :
+  inside pcb-module:
+    val cap = cap-strap(pin1 pin2 params)
+    short-trace(cap.p[1] pin1)
+    short-trace(cap.p[2] pin2)
+    cap
 
 
 pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-voltage:Toleranced = 3.30 +/- (10 %) ):
@@ -21,30 +33,32 @@ pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-
 
   inst smps : ETA1471FT2G/components/UNKNOWN/ETA1471/ETA1471
 
-  inst ind : smd-inductor(4.7e-6, 0.05)
+  inst ind : smd-inductor(4.7e-6, 0.05) ; this needs to be whatever the manufacturer suggests for this
 
-  net (vin smps.vin smps.en)
+  net (vin smps.power.vin smps.en)
   net (sw smps.sw ind.p[1])
   net (vout ind.p[2])
-  
+  net (gnd smps.gnd)
 
-  cap-strap(smps.sw, smps.bst, 22.0e-9)
+  ;bypass-cap-strap(smps.bst, smps.sw, 22.0e-9)
+  add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 "tolerance" => 0.1]) ; these values should be whatever the manufacturer suggests for this
   
-  cap-strap(smps.vin, gnd, 22.0e-6)
-  cap-strap(ind.p[1], gnd, 22.0e-6)
+  bypass-cap-strap(smps.vin, smps.gnd, 22.0e-6)
+  bypass-cap-strap(ind.p[1], smps.gnd, 22.0e-6)
 
   ;if output-voltage < 3.3:
   ;  cap-strap(ind.p[1], gnd, 22.0e-6)
 
   inst output-voltage-divider : voltage-divider(source-voltage   = output-voltage, 
                                                 divider-output   = 0.8 +/- (15 %) 
-                                                current          = 5.0e-3 )
+                                                current          = 5.0e-4 )
 
 
 
   net (output-voltage-divider.in ind.p[2])
   net (output-voltage-divider.out smps.fb)
-  net (output-voltage-divider.lo gnd)
+  net (output-voltage-divider.lo smps.gnd)
+
 
 
 ; Module to run as a design
