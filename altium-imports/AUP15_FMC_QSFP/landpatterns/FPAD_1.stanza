@@ -1,0 +1,60 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/FPAD_1 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(4.99999, 4.99999, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(1.500)
+
+public pcb-landpattern FPAD_1 :
+  pad p[0] : oval-th-pad at loc(0.0, 0.0) on Top
+  pad p[1] : oval-th-pad at loc(0.005, -39.632) on Top
+  pad p[2] : oval-th-pad at loc(49.632, -0.008) on Top
+  pad p[3] : oval-th-pad at loc(49.637, -39.629) on Top
+
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(-2.500, 2.500)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(2.500, -2.500)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-2.500, 2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-2.495, -42.132), Point(-2.495, -37.132)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-2.495, -42.132), Point(2.505, -42.132)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-2.495, -37.132), Point(2.505, -37.132)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(2.500, -2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(2.505, -42.132), Point(2.505, -37.132)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(47.131, -2.508), Point(47.131, 2.493)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(47.131, -2.508), Point(52.132, -2.508)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(47.131, 2.493), Point(52.132, 2.493)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(47.137, -42.129), Point(47.137, -37.129)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(47.137, -42.129), Point(52.137, -42.129)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(47.137, -37.129), Point(52.137, -37.129)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(52.132, -2.508), Point(52.132, 2.493)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(52.137, -42.129), Point(52.137, -37.129)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(-2.500, 2.500)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(2.500, -2.500)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.500, 2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.495, -42.132), Point(-2.495, -37.132)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.495, -42.132), Point(2.505, -42.132)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.495, -37.132), Point(2.505, -37.132)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(2.500, -2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(2.505, -42.132), Point(2.505, -37.132)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(47.131, -2.508), Point(47.131, 2.493)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(47.131, -2.508), Point(52.132, -2.508)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(47.131, 2.493), Point(52.132, 2.493)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(47.137, -42.129), Point(47.137, -37.129)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(47.137, -42.129), Point(52.137, -42.129)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(47.137, -37.129), Point(52.137, -37.129)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(52.132, -2.508), Point(52.132, 2.493)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(52.137, -42.129), Point(52.137, -37.129)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(0.0, -0.051), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(0.005, -39.682), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(49.632, -0.058), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-0.254, 0.0), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-0.249, -39.632), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(49.378, -0.008), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(49.383, -39.629), "Arial", StrokeFont, false, false)
+

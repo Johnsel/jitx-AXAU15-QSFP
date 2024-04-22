@@ -1,0 +1,4 @@
+package AUP15_FMC_QSFP defined-in "AUP15_FMC_QSFP.stanza"
+
+packages AUP15_FMC_QSFP/* defined-in "."
+

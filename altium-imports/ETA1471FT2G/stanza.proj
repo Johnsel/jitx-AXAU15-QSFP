@@ -1,0 +1,4 @@
+package ETA1471FT2G defined-in "ETA1471FT2G.stanza"
+
+packages ETA1471FT2G/* defined-in "."
+

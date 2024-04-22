@@ -1,0 +1,114 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/MH_250H125 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(6.35, 6.35, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(1.587)
+
+public pcb-landpattern MH_250H125 :
+  pad p[1] : oval-th-pad at loc(0.0, 0.0) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(2.552, 0.0)
+    Point(2.503, 0.498)
+    Point(2.358, 0.977)
+    Point(2.122, 1.418)
+    Point(1.805, 1.805)
+    Point(1.418, 2.122)
+    Point(0.977, 2.358)
+    Point(0.498, 2.503)
+    Point(0.0, 2.552)
+    Point(-0.498, 2.503)
+    Point(-0.977, 2.358)
+    Point(-1.271, 2.201)
+    Point(-1.271, 2.201)
+    Point(-1.418, 2.122)
+    Point(-1.805, 1.805)
+    Point(-2.122, 1.418)
+    Point(-2.358, 0.977)
+    Point(-2.503, 0.498)
+    Point(-2.552, 0.0)
+    Point(-2.503, -0.498)
+    Point(-2.358, -0.977)
+    Point(-2.122, -1.418)
+    Point(-1.805, -1.805)
+    Point(-1.418, -2.122)
+    Point(-1.271, -2.201)
+    Point(-1.271, -2.201)
+    Point(-0.977, -2.358)
+    Point(-0.498, -2.503)
+    Point(0.0, -2.552)
+    Point(0.498, -2.503)
+    Point(0.977, -2.358)
+    Point(1.418, -2.122)
+    Point(1.805, -1.805)
+    Point(2.122, -1.418)
+    Point(2.358, -0.977)
+    Point(2.503, -0.498)
+    Point(2.552, 0.0)])
+  layer(CustomLayer("Pcb-Mechanical18", Top)) = Polygon([
+    Point(3.762, 0.0)
+    Point(3.716, 0.588)
+    Point(3.578, 1.162)
+    Point(3.352, 1.708)
+    Point(3.043, 2.211)
+    Point(2.660, 2.660)
+    Point(2.211, 3.043)
+    Point(1.708, 3.352)
+    Point(1.162, 3.578)
+    Point(0.588, 3.716)
+    Point(0.0, 3.762)
+    Point(-0.588, 3.716)
+    Point(-1.162, 3.578)
+    Point(-1.708, 3.352)
+    Point(-1.876, 3.249)
+    Point(-1.876, 3.249)
+    Point(-2.211, 3.043)
+    Point(-2.660, 2.660)
+    Point(-3.043, 2.211)
+    Point(-3.352, 1.708)
+    Point(-3.578, 1.162)
+    Point(-3.716, 0.588)
+    Point(-3.762, 0.0)
+    Point(-3.716, -0.588)
+    Point(-3.578, -1.162)
+    Point(-3.352, -1.708)
+    Point(-3.043, -2.211)
+    Point(-2.660, -2.660)
+    Point(-2.211, -3.043)
+    Point(-1.876, -3.249)
+    Point(-1.876, -3.249)
+    Point(-1.708, -3.352)
+    Point(-1.162, -3.578)
+    Point(-0.588, -3.716)
+    Point(0.0, -3.762)
+    Point(0.588, -3.716)
+    Point(1.162, -3.578)
+    Point(1.708, -3.352)
+    Point(2.211, -3.043)
+    Point(2.660, -2.660)
+    Point(3.043, -2.211)
+    Point(3.352, -1.708)
+    Point(3.578, -1.162)
+    Point(3.716, -0.588)
+    Point(3.762, 0.0)])
+  layer(CustomLayer("Top Assembly", Top)) = Polyline(0.025, [
+    Arc(0.0, 0.0, 3.750, 0.0, 360.000)])
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.508, SW, loc(-0.406, 0.0), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical19", Top)) = Text("PADSTACKS:C250H125Z165", 1.27, SW, loc(-12.700, 10.160), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical19", Top)) = Text("SYM NAME:MH_250H125", 1.27, SW, loc(-12.700, 12.700), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/MH_250H125_e2DF9ED1B.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

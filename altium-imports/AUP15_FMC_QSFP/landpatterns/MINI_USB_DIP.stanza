@@ -1,0 +1,63 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/MINI_USB_DIP :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad-1 :
+  type = TH
+  shape = Capsule(1.1999, 1.1999, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.350)
+
+pcb-pad oval-th-pad-2 :
+  type = TH
+  shape = Capsule(2.40005, 1.29997, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Capsule(2.40005, 1.29997, loc(0.0, 0.0))
+
+public pcb-landpattern MINI_USB_DIP :
+  pad p[1] : oval-th-pad-1 at loc(-1.600, 4.350, 270.000) on Top
+  pad p[2] : oval-th-pad-1 at loc(-0.800, 3.150, 270.000) on Top
+  pad p[3] : oval-th-pad-1 at loc(0.0, 4.350, 270.000) on Top
+  pad p[4] : oval-th-pad-1 at loc(0.800, 3.150, 270.000) on Top
+  pad p[5] : oval-th-pad-1 at loc(1.600, 4.350, 270.000) on Top
+  pad p[6] : oval-th-pad-2 at loc(-3.700, 3.450, 270.000) on Top
+  pad p[7] : oval-th-pad-2 at loc(3.700, 3.450, 270.000) on Top
+  pad p[8] : oval-th-pad-2 at loc(-3.700, -1.300, 270.000) on Top
+  pad p[9] : oval-th-pad-2 at loc(3.700, -1.300, 270.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-4.050, 4.850)
+    Point(-4.050, -4.850)
+    Point(4.050, -4.850)
+    Point(4.050, 4.850)])
+  layer(CustomLayer("Top Assembly", Top)) = Polygon([
+    Point(-4.050, 4.850)
+    Point(-4.050, -4.850)
+    Point(4.050, -4.850)
+    Point(4.050, 4.850)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.100, [Point(-4.100, -4.850), Point(-4.100, 4.950)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.100, [Point(-4.100, -4.850), Point(4.100, -4.850)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.100, [Point(-4.100, 4.950), Point(4.100, 4.950)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.100, [Point(4.100, -4.850), Point(4.100, 4.950)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(-0.965, 5.253), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-1.600, 4.604), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(-0.800, 3.404), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(0.0, 4.604), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(0.800, 3.404), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("5", 0.635, SW, loc(1.600, 4.604), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("6", 0.635, SW, loc(-3.700, 3.704), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("7", 0.635, SW, loc(3.700, 3.704), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("8", 0.635, SW, loc(-3.700, -1.046), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("9", 0.635, SW, loc(3.700, -1.046), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/MINI_USB_DIP_e8E59046E.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

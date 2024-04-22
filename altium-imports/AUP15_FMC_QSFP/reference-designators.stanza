@@ -1,0 +1,16 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/reference-designators :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public defn add-main-reference-designators () -> False :
+  inside pcb-module :
+    reference-designator(self.FPAD_1) = "FPAD_1"
+    reference-designator(self.J1) = "J1"
+    reference-designator(self.J2) = "J2"
+    reference-designator(self.J3) = "J3"
+    reference-designator(self.J4) = "J4"
+

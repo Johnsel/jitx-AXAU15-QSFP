@@ -1,0 +1,48 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/MARK :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-smd-pad :
+  type = SMD
+  shape = Capsule(1.0, 1.0, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Capsule(1.0, 1.0, loc(0.0, 0.0))
+
+public pcb-landpattern MARK :
+  pad p[1] : oval-smd-pad at loc(0.0, 0.0, 270.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(0.0, -0.518)
+    Point(0.198, -0.479)
+    Point(0.367, -0.367)
+    Point(0.479, -0.198)
+    Point(0.518, 0.0)
+    Point(0.479, 0.198)
+    Point(0.441, 0.255)
+    Point(0.441, 0.255)
+    Point(0.367, 0.367)
+    Point(0.198, 0.479)
+    Point(0.0, 0.518)
+    Point(-0.198, 0.479)
+    Point(-0.367, 0.367)
+    Point(-0.441, 0.255)
+    Point(-0.441, 0.255)
+    Point(-0.479, 0.198)
+    Point(-0.518, 0.0)
+    Point(-0.479, -0.198)
+    Point(-0.367, -0.367)
+    Point(-0.198, -0.479)
+    Point(0.0, -0.518)])
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(0.0, 0.254), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/MARK_e7469539C.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

@@ -1,0 +1,19 @@
+Import messages are saved in 'c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\ETA1471FT2G/log.txt'
+[Info] 24:39.9 - Connected to Altium
+[Info] 24:40.0 - Project opened: OPENPRJ
+[Info] 24:40.0 - The Altium-to-JITX export is starting
+[Info] 24:40.0 - INFO: Processing the current project at C:\Users\jamms\OneDrive\Documenten\KiCad\8.0\easyeda-imports\ETA1471FT2G\Imported ETA1471FT2G\ETA1471FT2G.PrjPcb
+[Info] 24:40.0 - INFO: ADXServer: Extracting ETA1471FT2G.PrjPcb
+[Info] 24:40.1 - INFO: ADXServer: Extracting ETA1471FT2G.SchLib
+[Info] 24:40.3 - INFO: ADXServer: Extracting ETA1471FT2G.PcbDoc
+[Info] 24:40.3 - INFO: ALT2JSON c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\ETA1471FT2G: INFO: Some non-Dielectric V7_Layers are used in this design.
+[Info] 24:40.4 - INFO: ADXServer: Extracting easyeda2kicad.SchLib
+[Info] 24:40.5 - The Altium-to-JITX export finished successfully
+[Info] 24:43.2 - 
+[Info] 24:43.2 - JSON directory: c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\ETA1471FT2G\JSON
+[Info] 24:43.2 - Locating Altium files ...
+[Info] 24:43.2 - Parsing 4 Altium files ...
+[Info] 24:43.2 - Processing input from files ...
+[Info] 24:43.2 - Generating JITX code ...
+[Info] 24:43.2 - CAD Import finishes successfully. 
+	The project files are saved to 'c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\ETA1471FT2G'.

@@ -1,0 +1,609 @@
+{
+	"proj-name":	"jitx-design",
+	"headers":	[{
+			"field":	"status",
+			"name":	"Status",
+			"width":	10
+		}, {
+			"field":	"description",
+			"name":	"Description",
+			"width":	10
+		}, {
+			"field":	"insts",
+			"name":	"References",
+			"width":	10
+		}, {
+			"field":	"datasheet",
+			"name":	"Datasheet",
+			"width":	10
+		}, {
+			"field":	"manufacturer",
+			"name":	"Manufacturer",
+			"width":	10
+		}, {
+			"field":	"mpn",
+			"name":	"Part Number",
+			"width":	10
+		}, {
+			"field":	"_quantity",
+			"name":	"Quantity",
+			"width":	8
+		}, {
+			"field":	"price",
+			"name":	"Price",
+			"width":	8
+		}, {
+			"field":	"_preferred",
+			"name":	"Preferred",
+			"width":	8
+		}],
+	"new_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 499Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
+							"line":	32,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
+				"manufacturer":	"Meritek",
+				"mpn":	"CR204990F",
+				"vendor":	"DigiKey",
+				"sku":	"CR204990F",
+				"price":	0.00137,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"tolerance":	0.01,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"_exist":	["tcr"],
+					"resistance":	499,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"25V 22nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\utils\\generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2309051410_Taiyo-Yuden-TMK105BJ223KV-F_C2176263.pdf",
+				"manufacturer":	"Taiyo Yuden",
+				"mpn":	"TMK105BJ223KV-F",
+				"vendor":	"DigiKey",
+				"sku":	"TMK105BJ223KV-F",
+				"price":	0.00339,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	2.2e-08,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 160 OHM 1% 1/5W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
+							"line":	33,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf",
+				"manufacturer":	"Panasonic Electronic Components",
+				"mpn":	"ERJ-PA2F1600X",
+				"vendor":	"DigiKey",
+				"sku":	"ERJ-PA2F1600X",
+				"price":	0.02335,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"tolerance":	0.01,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"_exist":	["tcr"],
+					"resistance":	160,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"FIXED IND 4.7UH 420MA 2.1OHM SMD",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"ind"
+							}
+						},
+						"ref":	"L1",
+						"fileinfo":	{
+							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
+							"line":	24,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.chilisin.com/upload/media/product/rf/file/BWLS_Series.pdf",
+				"manufacturer":	"Chilisin Electronics",
+				"mpn":	"BWLS001611094R7J00",
+				"vendor":	"DigiKey",
+				"sku":	"BWLS001611094R7J00",
+				"price":	0.08966,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"inductance":	4.7e-06,
+					"_stock":	100,
+					"mounting":	"smd",
+					"min-stock":	500,
+					"_sort":	["area"],
+					"tolerance":	0.05,
+					"category":	"inductor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 22uF X5R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\utils\\generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\utils\\generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://page.venkel.com/hubfs/Resources/Datasheets/C-Series.pdf",
+				"manufacturer":	"Venkel",
+				"mpn":	"C0603X5R100-226MNE",
+				"vendor":	"DigiKey",
+				"sku":	"C0603X5R100-226MNE",
+				"price":	0.04875,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	2.2e-05,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"smps"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
+							"line":	22,
+							"column":	2
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	},
+	"metrics":	[{
+			"name":	"Line Items",
+			"value":	6
+		}, {
+			"name":	"Components",
+			"value":	7
+		}, {
+			"name":	"Cost",
+			"value":	"$0.22"
+		}],
+	"is_update":	false,
+	"old_bom":	{
+		"rows":	[{
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"62.5mW Thick Film Resistors ±100ppm/℃ ±1% 499Ω 0402  Chip Resistor - Surface Mount ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
+							"line":	32,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
+				"manufacturer":	"Meritek",
+				"mpn":	"CR204990F",
+				"vendor":	"DigiKey",
+				"sku":	"CR204990F",
+				"price":	0.00137,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"tolerance":	0.01,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"_exist":	["tcr"],
+					"resistance":	499,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"25V 22nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C1",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\utils\\generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://datasheet.lcsc.com/lcsc/2309051410_Taiyo-Yuden-TMK105BJ223KV-F_C2176263.pdf",
+				"manufacturer":	"Taiyo Yuden",
+				"mpn":	"TMK105BJ223KV-F",
+				"vendor":	"DigiKey",
+				"sku":	"TMK105BJ223KV-F",
+				"price":	0.00339,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	2.2e-08,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"RES SMD 160 OHM 1% 1/5W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-lo"
+							}
+						},
+						"ref":	"R3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\modules\\passive-circuits.stanza",
+							"line":	33,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://industrial.panasonic.com/cdbs/www-data/pdf/RDO0000/AOA0000C331.pdf",
+				"manufacturer":	"Panasonic Electronic Components",
+				"mpn":	"ERJ-PA2F1600X",
+				"vendor":	"DigiKey",
+				"sku":	"ERJ-PA2F1600X",
+				"price":	0.02335,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"tolerance":	0.01,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"_exist":	["tcr"],
+					"resistance":	160,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"resistor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"FIXED IND 4.7UH 420MA 2.1OHM SMD",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"ind"
+							}
+						},
+						"ref":	"L1",
+						"fileinfo":	{
+							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
+							"line":	24,
+							"column":	2
+						}
+					}],
+				"datasheet":	"https://www.chilisin.com/upload/media/product/rf/file/BWLS_Series.pdf",
+				"manufacturer":	"Chilisin Electronics",
+				"mpn":	"BWLS001611094R7J00",
+				"vendor":	"DigiKey",
+				"sku":	"BWLS001611094R7J00",
+				"price":	0.08966,
+				"preferred":	false,
+				"query_properties":	{
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"inductance":	4.7e-06,
+					"_stock":	100,
+					"mounting":	"smd",
+					"min-stock":	500,
+					"_sort":	["area"],
+					"tolerance":	0.05,
+					"category":	"inductor"
+				}
+			}, {
+				"status":	{
+					"code":	1,
+					"name":	"Auto Selected"
+				},
+				"description":	"10V 22uF X5R ±20% 0603  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C3",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\utils\\generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}, {
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"cap"
+							}
+						},
+						"ref":	"C2",
+						"fileinfo":	{
+							"filename":	"C:\\Users\\jamms\\.jitx\\3.2.0\\slm\\ocdb\\utils\\generic-components.stanza",
+							"line":	743,
+							"column":	4
+						}
+					}],
+				"datasheet":	"https://page.venkel.com/hubfs/Resources/Datasheets/C-Series.pdf",
+				"manufacturer":	"Venkel",
+				"mpn":	"C0603X5R100-226MNE",
+				"vendor":	"DigiKey",
+				"sku":	"C0603X5R100-226MNE",
+				"price":	0.04875,
+				"preferred":	false,
+				"query_properties":	{
+					"min-rated-temperature.max":	25,
+					"max-rated-temperature.min":	0,
+					"mounting":	"smd",
+					"capacitance":	2.2e-05,
+					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
+					"_sellers":	["DigiKey", "Mouser"],
+					"_stock":	100,
+					"type":	"ceramic",
+					"min-rated-voltage":	10,
+					"min-stock":	500,
+					"_sort":	["area"],
+					"category":	"capacitor"
+				}
+			}, {
+				"status":	{
+					"code":	3,
+					"name":	"No Information"
+				},
+				"description":	null,
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"smps"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"c:\\\\\\\\Users\\\\\\\\jamms\\\\\\\\OneDrive\\\\\\\\Documenten\\\\\\\\- JITX\\\\\\\\FMC_QSFP\\\\\\\\main.stanza",
+							"line":	22,
+							"column":	2
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	null,
+				"mpn":	null,
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}],
+		"entries":	[{
+			}, {
+			}, {
+			}, {
+			}, {
+			}, {
+			}]
+	}
+}

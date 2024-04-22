@@ -1,0 +1,43 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/R0603 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(0.800, 0.800)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(0.800, 0.800)
+
+public pcb-landpattern R0603 :
+  pad p[1] : rect-smd-pad at loc(-0.787, 0.0) on Top
+  pad p[2] : rect-smd-pad at loc(0.787, 0.0) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-1.397, 0.635)
+    Point(-1.397, -0.635)
+    Point(1.397, -0.635)
+    Point(1.397, 0.635)])
+  layer(CustomLayer("Top Assembly", Top)) = Polygon([
+    Point(-1.397, -0.635)
+    Point(-1.397, 0.635)
+    Point(1.397, 0.635)
+    Point(1.397, -0.635)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.397, -0.635), Point(-1.397, 0.635)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.397, -0.635), Point(1.397, -0.635)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.397, 0.635), Point(1.397, 0.635)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(1.397, -0.635), Point(1.397, 0.635)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(-0.838, 0.991), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-1.041, 0.0), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(0.533, 0.0), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/R0603_e8CD446CD.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

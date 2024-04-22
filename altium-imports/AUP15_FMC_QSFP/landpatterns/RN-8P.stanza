@@ -1,0 +1,44 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/RN-8P :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(1.000, 0.400)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(1.000, 0.400)
+
+public pcb-landpattern RN-8P :
+  pad p[1] : rect-smd-pad at loc(-0.929, 1.200) on Top
+  pad p[2] : rect-smd-pad at loc(-0.929, 0.400) on Top
+  pad p[3] : rect-smd-pad at loc(-0.929, -0.400) on Top
+  pad p[4] : rect-smd-pad at loc(-0.929, -1.200) on Top
+  pad p[5] : rect-smd-pad at loc(0.929, -1.200) on Top
+  pad p[6] : rect-smd-pad at loc(0.929, -0.400) on Top
+  pad p[7] : rect-smd-pad at loc(0.929, 0.400) on Top
+  pad p[8] : rect-smd-pad at loc(0.929, 1.200) on Top
+
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-1.429, -1.400), Point(-1.429, 1.400)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-1.429, -1.400), Point(1.429, -1.400)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-1.429, 1.400), Point(1.429, 1.400)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(1.429, -1.400), Point(1.429, 1.400)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.429, -1.400), Point(-1.429, 1.400)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.429, -1.400), Point(1.429, -1.400)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.429, 1.400), Point(1.429, 1.400)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(1.429, -1.400), Point(1.429, 1.400)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.254, [
+    Arc(-1.844, 1.175, 0.130, 0.0, 360.000)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(-0.091, -0.044), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-1.183, 1.200), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(-1.183, 0.400), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(-1.183, -0.400), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(-1.183, -1.200), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("5", 0.635, SW, loc(0.675, -1.200), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("6", 0.635, SW, loc(0.675, -0.400), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("7", 0.635, SW, loc(0.675, 0.400), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("8", 0.635, SW, loc(0.675, 1.200), "Arial", StrokeFont, false, false)
+

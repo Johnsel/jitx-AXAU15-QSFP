@@ -1,0 +1,50 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/H2X1 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(1.72999, 1.72999, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.445)
+
+pcb-pad rect-th-pad :
+  type = TH
+  shape = Rectangle(1.730, 1.730)
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.445)
+
+public pcb-landpattern H2X1 :
+  pad p[1] : rect-th-pad at loc(-1.270, 0.0, 180.000) on Top
+  pad p[2] : oval-th-pad at loc(1.270, 0.0, 180.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-2.540, -1.270)
+    Point(-2.540, 1.270)
+    Point(2.540, 1.270)
+    Point(2.540, -1.270)])
+  layer(CustomLayer("Top Assembly", Top)) = Polygon([
+    Point(-2.540, -1.270)
+    Point(-2.540, 1.270)
+    Point(2.540, 1.270)
+    Point(2.540, -1.270)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.540, -1.270), Point(-2.540, 1.270)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.540, -1.270), Point(2.540, -1.270)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.540, 1.270), Point(2.540, 1.270)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(0.0, -1.270), Point(0.0, 1.270)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(2.540, -1.270), Point(2.540, 1.270)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.64008, SW, loc(1.270, 0.0), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.64008, SW, loc(-1.014, 0.0), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.64008, SW, loc(1.526, 0.0), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/H2X1_e8BB1BFE5.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

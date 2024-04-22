@@ -1,0 +1,103 @@
+{
+  "ExportInfo": {
+    "ExtensionVersion": "1.0.45.0",
+    "CompatibleExtensionVersion": "0.14.0.7"
+  },
+  "User": "jamms",
+  "Machine": "JOHN-PC",
+  "DateTime": "240421-2129",
+  "Version": "4.0.30319.42000",
+  "FileType": "PRJPCB",
+  "FileName": "AUP15_FMC_QSFP.PrjPcb",
+  "UnitsOfMeasure": "MM",
+  "ProjectDocuments": [
+    "C:\\Users\\jamms\\Downloads\\aup15\\Imported AUP15_2023_8_9 _fixed.brd.PrjPcb\\AUP15_2023_8_9 _fixed.brd.PcbLib",
+    "C:\\Users\\Public\\Documents\\Altium\\Import_XCAU15\\Schlib1.SchLib",
+    "C:\\Users\\Public\\Documents\\Altium\\AUP15_FMC_QSFP\\PCB1.PcbDoc",
+    "C:\\Users\\Public\\Documents\\Altium\\AUP15_FMC_QSFP\\Sheet1.SchDoc",
+    "C:\\Users\\Public\\Documents\\Altium\\AUP15_FMC_QSFP\\ActiveBOM.VirtualBOM"
+  ],
+  "Parameters": [],
+  "NetList": [],
+  "ProjectInfo": {
+    "SheetInstances": [
+      {
+        "DocumentID": "KWCXQGUJ",
+        "FileName": "Sheet1.SchDoc",
+        "FullPath": "C:\\Users\\Public\\Documents\\Altium\\AUP15_FMC_QSFP\\Sheet1.SchDoc",
+        "LogicalDocumentID": "KWCXQGUJ",
+        "PhysicalInstanceName": "Sheet1",
+        "PhysicalInstancePath": "Sheet1",
+        "ParentsLogicalID": null,
+        "Components": [
+          {
+            "UniqueID": "\\EPPFJJLM",
+            "LogicalDesignator": "FPAD_1",
+            "PhysicalDesignator": "FPAD_1",
+            "Subparts": [
+              {
+                "UniqueId": "\\EPPFJJLM",
+                "UniqueIdName": "EPPFJJLM",
+                "FullLogicalDesignator": "FPAD_1",
+                "FullPhysicalDesignator": "FPAD_1"
+              }
+            ]
+          },
+          {
+            "UniqueID": "\\ABFGIIYT",
+            "LogicalDesignator": "J1",
+            "PhysicalDesignator": "J1",
+            "Subparts": [
+              {
+                "UniqueId": "\\ABFGIIYT",
+                "UniqueIdName": "ABFGIIYT",
+                "FullLogicalDesignator": "J1",
+                "FullPhysicalDesignator": "J1"
+              }
+            ]
+          },
+          {
+            "UniqueID": "\\FLSVRXID",
+            "LogicalDesignator": "J2",
+            "PhysicalDesignator": "J2",
+            "Subparts": [
+              {
+                "UniqueId": "\\FLSVRXID",
+                "UniqueIdName": "FLSVRXID",
+                "FullLogicalDesignator": "J2",
+                "FullPhysicalDesignator": "J2"
+              }
+            ]
+          },
+          {
+            "UniqueID": "\\YMPDPSWM",
+            "LogicalDesignator": "J3",
+            "PhysicalDesignator": "J3",
+            "Subparts": [
+              {
+                "UniqueId": "\\YMPDPSWM",
+                "UniqueIdName": "YMPDPSWM",
+                "FullLogicalDesignator": "J3",
+                "FullPhysicalDesignator": "J3"
+              }
+            ]
+          },
+          {
+            "UniqueID": "\\SMGJYTJZ",
+            "LogicalDesignator": "J4",
+            "PhysicalDesignator": "J4",
+            "Subparts": [
+              {
+                "UniqueId": "\\SMGJYTJZ",
+                "UniqueIdName": "SMGJYTJZ",
+                "FullLogicalDesignator": "J4",
+                "FullPhysicalDesignator": "J4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "Variants": []
+}

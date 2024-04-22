@@ -1,0 +1,6 @@
+include? ".slm/stanza.proj"
+pkg-cache: ".slm/pkg-cache"
+package main defined-in "main.stanza"
+package helpers defined-in "helpers.stanza"
+include "altium-imports/AUP15_FMC_QSFP/stanza.proj"
+include "altium-imports/ETA1471FT2G/stanza.proj"

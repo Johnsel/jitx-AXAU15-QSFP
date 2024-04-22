@@ -1,0 +1,231 @@
+{
+  "ExportInfo": {
+    "ExtensionVersion": "1.0.45.0",
+    "CompatibleExtensionVersion": "0.14.0.7"
+  },
+  "User": "jamms",
+  "Machine": "JOHN-PC",
+  "DateTime": "240421-2324",
+  "Version": "4.0.30319.42000",
+  "FileType": "SCHLIB",
+  "FileName": "easyeda2kicad.SchLib",
+  "UnitsOfMeasure": "MM",
+  "SCHLIBComponents": [
+    {
+      "Name": "ETA1471FT2G",
+      "DesignItemID": "ETA1471FT2G",
+      "Designator": "*",
+      "Description": "Part *",
+      "Comment": "*",
+      "Kind": 0,
+      "IsMultiPart": false,
+      "MaxParts": 1,
+      "Parameters": [
+        {
+          "Name": "Footprint",
+          "Text": "easyeda2kicad:SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL",
+          "IsHidden": true,
+          "AutoPosition": true
+        },
+        {
+          "Name": "LCSC Part",
+          "Text": "C22362739",
+          "IsHidden": true,
+          "AutoPosition": true
+        },
+        {
+          "Name": "Comment",
+          "Text": "*",
+          "IsHidden": false,
+          "AutoPosition": true
+        },
+        {
+          "Name": "Value",
+          "Text": "ETA1471FT2G",
+          "IsHidden": false,
+          "AutoPosition": true
+        },
+        {
+          "Name": "Supplier",
+          "Text": null,
+          "IsHidden": false,
+          "AutoPosition": true
+        }
+      ],
+      "Models": [
+        {
+          "Name": "SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL",
+          "Type": "PCBLIB",
+          "IsCurrent": true,
+          "MapAsString": "(4:4),(5:5),(6:6),(3:3),(1:1),(2:2)"
+        }
+      ],
+      "Parts": [
+        {
+          "PartID": 1,
+          "Texts": [],
+          "Lines": [],
+          "PolyLines": [],
+          "Arcs": [
+            {
+              "ObjectIdText": "eArc",
+              "Location": {
+                "LocX": -5.08,
+                "LocY": 3.81
+              },
+              "ColorBGR": 132,
+              "LineWidth": 1,
+              "Radius": 0.381,
+              "SecondaryRadius": 0.381,
+              "StartAngle": 0.0,
+              "StopAngle": 360.0,
+              "AreaColorBGR": 0,
+              "IsSolid": false,
+              "Transparent": false
+            }
+          ],
+          "Pins": [
+            {
+              "Location": {
+                "LocX": 6.35,
+                "LocY": -2.54
+              },
+              "Name": "FB",
+              "IsHidden": false,
+              "NameVisable": true,
+              "NamePointSize": 8,
+              "NameFontName": "Yu Gothic UI Light",
+              "NameFontSize": 8,
+              "Designator": "4",
+              "DesignatorVisable": true,
+              "DesignatorPointSize": 8,
+              "DesignatorFontName": "Yu Gothic UI Light",
+              "DesignatorFontSize": 8,
+              "Rotation": 0,
+              "Electrical": 4,
+              "PinLength": 2.54
+            },
+            {
+              "Location": {
+                "LocX": 6.35,
+                "LocY": 0.0
+              },
+              "Name": "EN",
+              "IsHidden": false,
+              "NameVisable": true,
+              "NamePointSize": 8,
+              "NameFontName": "Yu Gothic UI Light",
+              "NameFontSize": 8,
+              "Designator": "5",
+              "DesignatorVisable": true,
+              "DesignatorPointSize": 8,
+              "DesignatorFontName": "Yu Gothic UI Light",
+              "DesignatorFontSize": 8,
+              "Rotation": 0,
+              "Electrical": 4,
+              "PinLength": 2.54
+            },
+            {
+              "Location": {
+                "LocX": 6.35,
+                "LocY": 2.54
+              },
+              "Name": "BST",
+              "IsHidden": false,
+              "NameVisable": true,
+              "NamePointSize": 8,
+              "NameFontName": "Yu Gothic UI Light",
+              "NameFontSize": 8,
+              "Designator": "6",
+              "DesignatorVisable": true,
+              "DesignatorPointSize": 8,
+              "DesignatorFontName": "Yu Gothic UI Light",
+              "DesignatorFontSize": 8,
+              "Rotation": 0,
+              "Electrical": 4,
+              "PinLength": 2.54
+            },
+            {
+              "Location": {
+                "LocX": -6.35,
+                "LocY": -2.54
+              },
+              "Name": "VIN",
+              "IsHidden": false,
+              "NameVisable": true,
+              "NamePointSize": 8,
+              "NameFontName": "Yu Gothic UI Light",
+              "NameFontSize": 8,
+              "Designator": "3",
+              "DesignatorVisable": true,
+              "DesignatorPointSize": 8,
+              "DesignatorFontName": "Yu Gothic UI Light",
+              "DesignatorFontSize": 8,
+              "Rotation": 2,
+              "Electrical": 4,
+              "PinLength": 2.54
+            },
+            {
+              "Location": {
+                "LocX": -6.35,
+                "LocY": 2.54
+              },
+              "Name": "GND",
+              "IsHidden": false,
+              "NameVisable": true,
+              "NamePointSize": 8,
+              "NameFontName": "Yu Gothic UI Light",
+              "NameFontSize": 8,
+              "Designator": "1",
+              "DesignatorVisable": true,
+              "DesignatorPointSize": 8,
+              "DesignatorFontName": "Yu Gothic UI Light",
+              "DesignatorFontSize": 8,
+              "Rotation": 2,
+              "Electrical": 4,
+              "PinLength": 2.54
+            },
+            {
+              "Location": {
+                "LocX": -6.35,
+                "LocY": 0.0
+              },
+              "Name": "SW",
+              "IsHidden": false,
+              "NameVisable": true,
+              "NamePointSize": 8,
+              "NameFontName": "Yu Gothic UI Light",
+              "NameFontSize": 8,
+              "Designator": "2",
+              "DesignatorVisable": true,
+              "DesignatorPointSize": 8,
+              "DesignatorFontName": "Yu Gothic UI Light",
+              "DesignatorFontSize": 8,
+              "Rotation": 2,
+              "Electrical": 4,
+              "PinLength": 2.54
+            }
+          ],
+          "Polygons": [],
+          "Rectangles": [
+            {
+              "ObjectIdText": "eRectangle",
+              "ColorBGR": 132,
+              "AreaColorBGR": 12779519,
+              "Location": {
+                "LocX": -6.35,
+                "LocY": -5.08
+              },
+              "CornerLocation": {
+                "LocX": 6.35,
+                "LocY": 5.08
+              },
+              "CornerXRadius": 0.0,
+              "CornerYRadius": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

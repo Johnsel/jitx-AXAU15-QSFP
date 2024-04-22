@@ -1,0 +1,38 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/LVS303010 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(3.023, 1.016)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(3.023, 1.016)
+
+public pcb-landpattern LVS303010 :
+  pad p[1] : rect-smd-pad at loc(0.0, -1.500, 180.000) on Top
+  pad p[2] : rect-smd-pad at loc(0.0, 1.500, 180.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-1.511, -1.508)
+    Point(1.511, -1.508)
+    Point(1.511, 1.508)
+    Point(-1.511, 1.508)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.511, -1.508), Point(-1.511, 1.508)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.511, -1.508), Point(1.511, -1.508)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.511, 1.508), Point(1.511, 1.508)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(1.511, -1.508), Point(1.511, 1.508)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(-0.051, 0.016), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(0.254, -1.500), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(0.254, 1.500), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/LVS303010_e8FCBEEFF.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

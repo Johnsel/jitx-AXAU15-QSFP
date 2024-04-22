@@ -1,0 +1,84 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/components/UNKNOWN/FPAD_1 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/box-symbol
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(4.99999, 4.99999, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(1.500)
+
+public pcb-landpattern FPAD_1-1 :
+  pad p[0] : oval-th-pad at loc(-49.637, 39.629) on Top
+  pad p[1] : oval-th-pad at loc(-49.632, -0.003) on Top
+  pad p[2] : oval-th-pad at loc(-0.005, 39.621) on Top
+  pad p[3] : oval-th-pad at loc(0.0, 0.0) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-52.137, 37.129), Point(-52.137, 42.129)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-52.137, 37.129), Point(-47.137, 37.129)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-52.137, 42.129), Point(-47.137, 42.129)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-52.132, -2.503), Point(-52.132, 2.498)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-52.132, -2.503), Point(-47.131, -2.503)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-52.132, 2.498), Point(-47.131, 2.498)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-47.137, 37.129), Point(-47.137, 42.129)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-47.131, -2.503), Point(-47.131, 2.498)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-2.505, 37.121), Point(-2.505, 42.122)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-2.505, 37.121), Point(2.495, 37.121)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-2.505, 42.122), Point(2.495, 42.122)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(-2.500, 2.500)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(2.500, -2.500)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(-2.500, 2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(2.495, 37.121), Point(2.495, 42.122)])
+  layer(CustomLayer("Top 3D Body", Top)) = Line(0.025, [Point(2.500, -2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-52.137, 37.129), Point(-52.137, 42.129)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-52.137, 37.129), Point(-47.137, 37.129)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-52.137, 42.129), Point(-47.137, 42.129)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-52.132, -2.503), Point(-52.132, 2.498)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-52.132, -2.503), Point(-47.131, -2.503)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-52.132, 2.498), Point(-47.131, 2.498)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-47.137, 37.129), Point(-47.137, 42.129)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-47.131, -2.503), Point(-47.131, 2.498)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-2.505, 37.121), Point(-2.505, 42.122)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-2.505, 37.121), Point(2.495, 37.121)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-2.505, 42.122), Point(2.495, 42.122)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(-2.500, 2.500)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-2.500, -2.500), Point(2.500, -2.500)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(-2.500, 2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(2.495, 37.121), Point(2.495, 42.122)])
+  layer(CustomLayer("Top Assembly", Top)) = Line(0.025, [Point(2.500, -2.500), Point(2.500, 2.500)])
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-49.891, 39.629), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-49.886, -0.003), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-0.259, 39.621), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-0.254, 0.0), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text(">REF", 0.635, SW, loc(-49.637, 39.578), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text(">REF", 0.635, SW, loc(-49.632, -0.053), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text(">REF", 0.635, SW, loc(-0.005, 39.571), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text(">REF", 0.635, SW, loc(0.0, -0.051), "Arial", StrokeFont, false, false)
+
+public pcb-symbol FPAD_1 :
+  pin p at Point(7.620, 0.0) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+
+  layer("foreground") = Text(">VALUE", 0.762, C, loc(-0.050, 2.840), "", TrueTypeFont, false, false)
+  layer("foreground") = Text(">REF", 0.762, C, loc(-0.050, 3.902), "", TrueTypeFont, false, false)
+  layer("foreground") = Rectangle(5.080, 5.080, loc(10.160, 0.0))
+
+public pcb-component component :
+  reference-prefix = "FPAD_?"
+  pin-properties :
+    [pin:Ref | pads:Ref ... | side:Dir]
+    [p | p[3] p[2] p[1] p[0] | Left]
+
+  assign-landpattern(FPAD_1-1)
+  assign-symbol(FPAD_1)
+
+  property(self.Value) = "FPAD_1"
+

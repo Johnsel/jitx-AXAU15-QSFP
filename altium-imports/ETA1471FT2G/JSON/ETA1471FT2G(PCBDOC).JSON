@@ -1,0 +1,978 @@
+{
+  "ExportInfo": {
+    "ExtensionVersion": "1.0.45.0",
+    "CompatibleExtensionVersion": "0.14.0.7"
+  },
+  "User": "jamms",
+  "Machine": "JOHN-PC",
+  "DateTime": "240421-2324",
+  "Version": "4.0.30319.42000",
+  "FileType": "PCBDOC",
+  "FileName": "ETA1471FT2G.PcbDoc",
+  "UnitsOfMeasure": null,
+  "PCBDOC_Objects": {
+    "PCBDOC_BoardInfo": {
+      "OriginX": 0.0,
+      "OriginY": 0.0,
+      "WorldOriginX": -5454.60847,
+      "WorldOriginY": -5454.60847
+    },
+    "PCBDOC_LayerStack": {
+      "Physical": [
+        {
+          "PositionInLayerStack": 1,
+          "LayerID": 35,
+          "Name": "F.Paste"
+        },
+        {
+          "PositionInLayerStack": 2,
+          "LayerID": 33,
+          "Name": "F.SilkS"
+        },
+        {
+          "PositionInLayerStack": 3,
+          "LayerID": 37,
+          "Name": "F.Mask"
+        },
+        {
+          "PositionInLayerStack": 4,
+          "LayerID": 1,
+          "Name": "F.Cu"
+        },
+        {
+          "PositionInLayerStack": 5,
+          "LayerID": 147,
+          "Name": "Dielectric 1"
+        },
+        {
+          "PositionInLayerStack": 6,
+          "LayerID": 32,
+          "Name": "B.Cu"
+        },
+        {
+          "PositionInLayerStack": 7,
+          "LayerID": 38,
+          "Name": "B.Mask"
+        },
+        {
+          "PositionInLayerStack": 8,
+          "LayerID": 34,
+          "Name": "B.SilkS"
+        },
+        {
+          "PositionInLayerStack": 9,
+          "LayerID": 36,
+          "Name": "B.Paste"
+        }
+      ],
+      "Electrical": [
+        {
+          "PositionInLayerStack": 4,
+          "LayerID": 1,
+          "Name": "F.Cu",
+          "CopperThickness": 0.03556
+        },
+        {
+          "PositionInLayerStack": 6,
+          "LayerID": 32,
+          "Name": "B.Cu",
+          "CopperThickness": 0.03556
+        }
+      ],
+      "Dielectric": [
+        {
+          "PositionInLayerStack": 3,
+          "LayerID": 37,
+          "Name": "F.Mask",
+          "DielectricConstant": 3.5,
+          "DielectricHeight": 0.01016,
+          "DielectricMaterial": "Solder Resist",
+          "DielectricType": "eSurfaceMaterial"
+        },
+        {
+          "PositionInLayerStack": 5,
+          "LayerID": 147,
+          "Name": "Dielectric 1",
+          "DielectricConstant": 4.8,
+          "DielectricHeight": 0.32004,
+          "DielectricMaterial": "FR-4",
+          "DielectricType": "eNoDielectric"
+        },
+        {
+          "PositionInLayerStack": 7,
+          "LayerID": 38,
+          "Name": "B.Mask",
+          "DielectricConstant": 3.5,
+          "DielectricHeight": 0.01016,
+          "DielectricMaterial": "Solder Resist",
+          "DielectricType": "eSurfaceMaterial"
+        }
+      ],
+      "Signal": [
+        {
+          "PositionInLayerStack": 4,
+          "LayerID": 1,
+          "Name": "F.Cu",
+          "CopperThickness": 0.03556
+        },
+        {
+          "PositionInLayerStack": 6,
+          "LayerID": 32,
+          "Name": "B.Cu",
+          "CopperThickness": 0.03556
+        }
+      ],
+      "Plane": [],
+      "SolderMask": [
+        {
+          "PositionInLayerStack": 3,
+          "LayerID": 37,
+          "Name": "F.Mask"
+        },
+        {
+          "PositionInLayerStack": 7,
+          "LayerID": 38,
+          "Name": "B.Mask"
+        }
+      ],
+      "Overlay": [
+        {
+          "PositionInLayerStack": 2,
+          "LayerID": 33,
+          "Name": "F.SilkS"
+        },
+        {
+          "PositionInLayerStack": 8,
+          "LayerID": 34,
+          "Name": "B.SilkS"
+        }
+      ],
+      "PasteMask": [
+        {
+          "PositionInLayerStack": 1,
+          "LayerID": 35,
+          "Name": "F.Paste"
+        },
+        {
+          "PositionInLayerStack": 9,
+          "LayerID": 36,
+          "Name": "B.Paste"
+        }
+      ],
+      "Mechanical": [
+        {
+          "PositionInLayerStack": 10,
+          "LayerID": 57,
+          "Name": "User.9",
+          "MirrorLayer": 0,
+          "MirrorLayerName": ""
+        },
+        {
+          "PositionInLayerStack": 11,
+          "LayerID": 66,
+          "Name": "F.Fab",
+          "MirrorLayer": 0,
+          "MirrorLayerName": ""
+        },
+        {
+          "PositionInLayerStack": 12,
+          "LayerID": 131,
+          "Name": "Cmts.User",
+          "MirrorLayer": 0,
+          "MirrorLayerName": ""
+        },
+        {
+          "PositionInLayerStack": 13,
+          "LayerID": 74,
+          "Name": "Multi-Layer",
+          "MirrorLayer": 0,
+          "MirrorLayerName": ""
+        }
+      ],
+      "LayerEnumerations": [
+        "0|eV6_NoLayer",
+        "1|eV6_TopLayer",
+        "2|eV6_MidLayer1",
+        "3|eV6_MidLayer2",
+        "4|eV6_MidLayer3",
+        "5|eV6_MidLayer4",
+        "6|eV6_MidLayer5",
+        "7|eV6_MidLayer6",
+        "8|eV6_MidLayer7",
+        "9|eV6_MidLayer8",
+        "10|eV6_MidLayer9",
+        "11|eV6_MidLayer10",
+        "12|eV6_MidLayer11",
+        "13|eV6_MidLayer12",
+        "14|eV6_MidLayer13",
+        "15|eV6_MidLayer14",
+        "16|eV6_MidLayer15",
+        "17|eV6_MidLayer16",
+        "18|eV6_MidLayer17",
+        "19|eV6_MidLayer18",
+        "20|eV6_MidLayer19",
+        "21|eV6_MidLayer20",
+        "22|eV6_MidLayer21",
+        "23|eV6_MidLayer22",
+        "24|eV6_MidLayer23",
+        "25|eV6_MidLayer24",
+        "26|eV6_MidLayer25",
+        "27|eV6_MidLayer26",
+        "28|eV6_MidLayer27",
+        "29|eV6_MidLayer28",
+        "30|eV6_MidLayer29",
+        "31|eV6_MidLayer30",
+        "32|eV6_BottomLayer",
+        "33|eV6_TopOverlay",
+        "34|eV6_BottomOverlay",
+        "35|eV6_TopPaste",
+        "36|eV6_BottomPaste",
+        "37|eV6_TopSolder",
+        "38|eV6_BottomSolder",
+        "39|eV6_InternalPlane1",
+        "40|eV6_InternalPlane2",
+        "41|eV6_InternalPlane3",
+        "42|eV6_InternalPlane4",
+        "43|eV6_InternalPlane5",
+        "44|eV6_InternalPlane6",
+        "45|eV6_InternalPlane7",
+        "46|eV6_InternalPlane8",
+        "47|eV6_InternalPlane9",
+        "48|eV6_InternalPlane10",
+        "49|eV6_InternalPlane11",
+        "50|eV6_InternalPlane12",
+        "51|eV6_InternalPlane13",
+        "52|eV6_InternalPlane14",
+        "53|eV6_InternalPlane15",
+        "54|eV6_InternalPlane16",
+        "55|eV6_DrillGuide",
+        "56|eV6_KeepOutLayer",
+        "57|eV6_Mechanical1",
+        "58|eV6_Mechanical2",
+        "59|eV6_Mechanical3",
+        "60|eV6_Mechanical4",
+        "61|eV6_Mechanical5",
+        "62|eV6_Mechanical6",
+        "63|eV6_Mechanical7",
+        "64|eV6_Mechanical8",
+        "65|eV6_Mechanical9",
+        "66|eV6_Mechanical10",
+        "67|eV6_Mechanical11",
+        "68|eV6_Mechanical12",
+        "69|eV6_Mechanical13",
+        "70|eV6_Mechanical14",
+        "71|eV6_Mechanical15",
+        "72|eV6_Mechanical16",
+        "73|eV6_DrillDrawing",
+        "74|eV6_MultiLayer",
+        "75|eV6_ConnectLayer",
+        "76|eV6_BackGroundLayer",
+        "77|eV6_DRCErrorLayer",
+        "78|eV6_HighlightLayer",
+        "79|eV6_GridColor1",
+        "80|eV6_GridColor10",
+        "81|eV6_PadHoleLayer",
+        "82|eV6_ViaHoleLayer",
+        "83|eV7_TopPadMasterPlot",
+        "84|eV7_BottomPadMasterPlot",
+        "85|eV7_MidLayer31",
+        "86|eV7_MidLayer32",
+        "87|eV7_MidLayer33",
+        "88|eV7_MidLayer34",
+        "89|eV7_MidLayer35",
+        "90|eV7_MidLayer36",
+        "91|eV7_MidLayer37",
+        "92|eV7_MidLayer38",
+        "93|eV7_MidLayer39",
+        "94|eV7_MidLayer40",
+        "95|eV7_MidLayer41",
+        "96|eV7_MidLayer42",
+        "97|eV7_MidLayer43",
+        "98|eV7_MidLayer44",
+        "99|eV7_MidLayer45",
+        "100|eV7_MidLayer46",
+        "101|eV7_MidLayer47",
+        "102|eV7_MidLayer48",
+        "103|eV7_MidLayer49",
+        "104|eV7_MidLayer50",
+        "105|eV7_MidLayer51",
+        "106|eV7_MidLayer52",
+        "107|eV7_MidLayer53",
+        "108|eV7_MidLayer54",
+        "109|eV7_MidLayer55",
+        "110|eV7_MidLayer56",
+        "111|eV7_MidLayer57",
+        "112|eV7_MidLayer58",
+        "113|eV7_MidLayer59",
+        "114|eV7_MidLayer60",
+        "115|eV7_InternalPlane17",
+        "116|eV7_InternalPlane18",
+        "117|eV7_InternalPlane19",
+        "118|eV7_InternalPlane20",
+        "119|eV7_InternalPlane21",
+        "120|eV7_InternalPlane22",
+        "121|eV7_InternalPlane23",
+        "122|eV7_InternalPlane24",
+        "123|eV7_InternalPlane25",
+        "124|eV7_InternalPlane26",
+        "125|eV7_InternalPlane27",
+        "126|eV7_InternalPlane28",
+        "127|eV7_InternalPlane29",
+        "128|eV7_InternalPlane30",
+        "129|eV7_InternalPlane31",
+        "130|eV7_InternalPlane32",
+        "131|eV7_Mechanical17",
+        "132|eV7_Mechanical18",
+        "133|eV7_Mechanical19",
+        "134|eV7_Mechanical20",
+        "135|eV7_Mechanical21",
+        "136|eV7_Mechanical22",
+        "137|eV7_Mechanical23",
+        "138|eV7_Mechanical24",
+        "139|eV7_Mechanical25",
+        "140|eV7_Mechanical26",
+        "141|eV7_Mechanical27",
+        "142|eV7_Mechanical28",
+        "143|eV7_Mechanical29",
+        "144|eV7_Mechanical30",
+        "145|eV7_Mechanical31",
+        "146|eV7_Mechanical32",
+        "147|eV_Dielectric1",
+        "148|eV_Dielectric2",
+        "149|eV_Dielectric3",
+        "150|eV_Dielectric4",
+        "151|eV_Dielectric5",
+        "152|eV_Dielectric6",
+        "153|eV_Dielectric7",
+        "154|eV_Dielectric8",
+        "155|eV_Dielectric9",
+        "156|eV_Dielectric10",
+        "157|eV_Dielectric11",
+        "158|eV_Dielectric12",
+        "159|eV_Dielectric13",
+        "160|eV_Dielectric14",
+        "161|eV_Dielectric15",
+        "162|eV_Dielectric16"
+      ]
+    },
+    "PCBDOC_BoardOutline": {
+      "edges": [
+        {
+          "v0": {
+            "LocX": 25.4,
+            "LocY": 25.4
+          },
+          "v1": {
+            "LocX": 177.8,
+            "LocY": 25.4
+          },
+          "type": "Straight"
+        },
+        {
+          "v0": {
+            "LocX": 177.8,
+            "LocY": 25.4
+          },
+          "v1": {
+            "LocX": 177.8,
+            "LocY": 127.0
+          },
+          "type": "Straight"
+        },
+        {
+          "v0": {
+            "LocX": 177.8,
+            "LocY": 127.0
+          },
+          "v1": {
+            "LocX": 25.4,
+            "LocY": 127.0
+          },
+          "type": "Straight"
+        },
+        {
+          "v0": {
+            "LocX": 25.4,
+            "LocY": 127.0
+          },
+          "v1": {
+            "LocX": 25.4,
+            "LocY": 25.4
+          },
+          "type": "Straight"
+        }
+      ]
+    },
+    "PCBDOC_Components": [
+      {
+        "ID": "VJSUCFQY",
+        "Name": "Un0",
+        "Designator": null,
+        "DesignatorText": {
+          "Visible": false,
+          "Layer": 33,
+          "Location": {
+            "LocX": 62.0,
+            "LocY": 1.6800000000000002
+          },
+          "Rotation": 0.0,
+          "Size": 1.524,
+          "FontName": "Arial",
+          "TextKind": 0,
+          "IsMirrored": false,
+          "IsInverted": false
+        },
+        "Description": null,
+        "Footprint": "SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL",
+        "FootprintLibrary": "Library",
+        "Height": 0.0,
+        "Layer": 1,
+        "Location": {
+          "LocX": 62.0,
+          "LocY": 1.6800000000000002
+        },
+        "Rotation": 0.0,
+        "SourceUniqueId": "WPRWTLIH",
+        "SourceHierarchicalPath": null,
+        "DesignItemId": "SOT-23-6_L2.9-W1.6-P0.95-LS2.9-BL",
+        "FlippedOnLayer": false,
+        "argParams": null,
+        "FootprintContents": {
+          "PCBLIB_Pads": [
+            {
+              "Designator": "6",
+              "NetName": null,
+              "Location": {
+                "LocX": 61.05,
+                "LocY": 2.83
+              },
+              "Layer": 1,
+              "XSizeTop": 0.53,
+              "YSizeTop": 1.07,
+              "ShapeTop": 2,
+              "Rotation": 0.0,
+              "ThruHole": false,
+              "XSizeBot": 0.0,
+              "YSizeBot": 0.0,
+              "ShapeBot": 0,
+              "HoleSize": 0.0,
+              "HolePlated": false,
+              "HoleType": 0,
+              "SlotLength": 0.0,
+              "CornerRatioTop": 0.0,
+              "CornerRatioBot": 0.0,
+              "SolderMaskExpansion": 0.0,
+              "IsTenting_Top": false,
+              "IsTenting_Bottom": false
+            },
+            {
+              "Designator": "5",
+              "NetName": null,
+              "Location": {
+                "LocX": 62.0,
+                "LocY": 2.83
+              },
+              "Layer": 1,
+              "XSizeTop": 0.53,
+              "YSizeTop": 1.07,
+              "ShapeTop": 2,
+              "Rotation": 0.0,
+              "ThruHole": false,
+              "XSizeBot": 0.0,
+              "YSizeBot": 0.0,
+              "ShapeBot": 0,
+              "HoleSize": 0.0,
+              "HolePlated": false,
+              "HoleType": 0,
+              "SlotLength": 0.0,
+              "CornerRatioTop": 0.0,
+              "CornerRatioBot": 0.0,
+              "SolderMaskExpansion": 0.0,
+              "IsTenting_Top": false,
+              "IsTenting_Bottom": false
+            },
+            {
+              "Designator": "4",
+              "NetName": null,
+              "Location": {
+                "LocX": 62.95,
+                "LocY": 2.83
+              },
+              "Layer": 1,
+              "XSizeTop": 0.53,
+              "YSizeTop": 1.07,
+              "ShapeTop": 2,
+              "Rotation": 0.0,
+              "ThruHole": false,
+              "XSizeBot": 0.0,
+              "YSizeBot": 0.0,
+              "ShapeBot": 0,
+              "HoleSize": 0.0,
+              "HolePlated": false,
+              "HoleType": 0,
+              "SlotLength": 0.0,
+              "CornerRatioTop": 0.0,
+              "CornerRatioBot": 0.0,
+              "SolderMaskExpansion": 0.0,
+              "IsTenting_Top": false,
+              "IsTenting_Bottom": false
+            },
+            {
+              "Designator": "3",
+              "NetName": null,
+              "Location": {
+                "LocX": 62.95,
+                "LocY": 0.53
+              },
+              "Layer": 1,
+              "XSizeTop": 0.53,
+              "YSizeTop": 1.07,
+              "ShapeTop": 2,
+              "Rotation": 0.0,
+              "ThruHole": false,
+              "XSizeBot": 0.0,
+              "YSizeBot": 0.0,
+              "ShapeBot": 0,
+              "HoleSize": 0.0,
+              "HolePlated": false,
+              "HoleType": 0,
+              "SlotLength": 0.0,
+              "CornerRatioTop": 0.0,
+              "CornerRatioBot": 0.0,
+              "SolderMaskExpansion": 0.0,
+              "IsTenting_Top": false,
+              "IsTenting_Bottom": false
+            },
+            {
+              "Designator": "2",
+              "NetName": null,
+              "Location": {
+                "LocX": 62.0,
+                "LocY": 0.53
+              },
+              "Layer": 1,
+              "XSizeTop": 0.53,
+              "YSizeTop": 1.07,
+              "ShapeTop": 2,
+              "Rotation": 0.0,
+              "ThruHole": false,
+              "XSizeBot": 0.0,
+              "YSizeBot": 0.0,
+              "ShapeBot": 0,
+              "HoleSize": 0.0,
+              "HolePlated": false,
+              "HoleType": 0,
+              "SlotLength": 0.0,
+              "CornerRatioTop": 0.0,
+              "CornerRatioBot": 0.0,
+              "SolderMaskExpansion": 0.0,
+              "IsTenting_Top": false,
+              "IsTenting_Bottom": false
+            },
+            {
+              "Designator": "1",
+              "NetName": null,
+              "Location": {
+                "LocX": 61.05,
+                "LocY": 0.53
+              },
+              "Layer": 1,
+              "XSizeTop": 0.53,
+              "YSizeTop": 1.07,
+              "ShapeTop": 2,
+              "Rotation": 0.0,
+              "ThruHole": false,
+              "XSizeBot": 0.0,
+              "YSizeBot": 0.0,
+              "ShapeBot": 0,
+              "HoleSize": 0.0,
+              "HolePlated": false,
+              "HoleType": 0,
+              "SlotLength": 0.0,
+              "CornerRatioTop": 0.0,
+              "CornerRatioBot": 0.0,
+              "SolderMaskExpansion": 0.0,
+              "IsTenting_Top": false,
+              "IsTenting_Bottom": false
+            }
+          ],
+          "PCBLIB_Vias": [],
+          "PCBLIB_Tracks": [
+            {
+              "Layer": 33,
+              "IsKeepout": false,
+              "Width": 0.254,
+              "Begin": {
+                "LocX": 63.53,
+                "LocY": 0.79
+              },
+              "End": {
+                "LocX": 63.53,
+                "LocY": 2.57
+              }
+            },
+            {
+              "Layer": 33,
+              "IsKeepout": false,
+              "Width": 0.254,
+              "Begin": {
+                "LocX": 60.47,
+                "LocY": 0.79
+              },
+              "End": {
+                "LocX": 60.47,
+                "LocY": 2.57
+              }
+            }
+          ],
+          "PCBLIB_Regions": [],
+          "PCBLIB_Fills": [],
+          "PCBLIB_Arcs": [
+            {
+              "Layer": 33,
+              "IsKeepout": false,
+              "Location": {
+                "LocX": 60.33,
+                "LocY": 0.38
+              },
+              "LineWidth": 0.254,
+              "Radius": 0.15,
+              "StartAngle": 0.0,
+              "StopAngle": 360.0
+            },
+            {
+              "Layer": 131,
+              "IsKeepout": false,
+              "Location": {
+                "LocX": 61.08,
+                "LocY": 0.0
+              },
+              "LineWidth": 0.254,
+              "Radius": 0.1,
+              "StartAngle": 0.0,
+              "StopAngle": 360.0
+            },
+            {
+              "Layer": 66,
+              "IsKeepout": false,
+              "Location": {
+                "LocX": 60.55,
+                "LocY": 0.23
+              },
+              "LineWidth": 0.254,
+              "Radius": 0.03,
+              "StartAngle": 0.0,
+              "StopAngle": 360.0
+            }
+          ],
+          "PCBLIB_Texts": [
+            {
+              "Text": "Un0",
+              "FontName": "Gill Sans MT Condensed",
+              "IsHidden": false,
+              "Kind": 1,
+              "Layer": 66,
+              "Location": {
+                "LocX": 61.57147,
+                "LocY": 1.39523
+              },
+              "IsMirrored": false,
+              "IsInverted": false,
+              "Rotation": 0.0,
+              "Height": 1.0
+            }
+          ],
+          "PCBLIB_STPModels": []
+        }
+      }
+    ],
+    "PCBDOC_Pads": [],
+    "PCBDOC_Vias": [],
+    "PCBDOC_Tracks": [],
+    "PCBDOC_Regions": [
+      {
+        "NetName": null,
+        "Layer": 74,
+        "RegionKind": 3,
+        "IsKeepout": false,
+        "CoordList": [
+          {
+            "LocX": 25.4,
+            "LocY": 25.4
+          },
+          {
+            "LocX": 177.8,
+            "LocY": 25.4
+          },
+          {
+            "LocX": 177.8,
+            "LocY": 127.0
+          },
+          {
+            "LocX": 25.4,
+            "LocY": 127.0
+          }
+        ]
+      }
+    ],
+    "PCBDOC_Polygons": [],
+    "PCBDOC_Fills": [],
+    "PCBDOC_Arcs": [],
+    "PCBDOC_Texts": [],
+    "PCBDOC_NetClasses": [
+      {
+        "Name": "All Nets",
+        "PackedNetNames": "SELECTION=FALSE|LAYER=MULTILAYER|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|NAME=All Nets|KIND=0|SUPERCLASS=TRUE|SELECTED=FALSE|SCHAUTOGENERATEDCLUSTER=FALSE|UNIQUEID=UJASAELO"
+      }
+    ],
+    "PCBDOC_Rules": [
+      {
+        "Name": "HoleSize",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Hole Size Constraint [Min = 0.025mm    Max = 2.54mm]|SELECTION=FALSE|LAYER=UNKNOWN|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=HoleSize|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=HoleSize|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=LLUJUHXO|DEFINEDBYLOGICALDOCUMENT=FALSE|ABSOLUTEVALUES=TRUE|MAXLIMIT=100mil|MINLIMIT=1mil|MAXPERCENT=80.000|MINPERCENT=20.000",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "MinClearance": 0.254,
+        "MaxClearance": 0.254,
+        "Name": "Clearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Clearance Constraint [Clearance = 0.254mm]|SELECTION=FALSE|LAYER=UNKNOWN|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=Clearance|NETSCOPE=DifferentNets|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=Clearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=RUXWKNHK|DEFINEDBYLOGICALDOCUMENT=FALSE|GAP=10mil|GENERICCLEARANCE=10mil|IGNOREPADTOPADCLEARANCEINFOOTPRINT=FALSE|OBJECTCLEARANCES= ",
+        "Priority": 1,
+        "Kind": "Clearance"
+      },
+      {
+        "Name": "PolygonConnect",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Polygon Connect Style [Style - Direct Connect]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=PolygonConnect|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=PolygonConnect|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=VYQXIAFI|DEFINEDBYLOGICALDOCUMENT=FALSE|CONNECTSTYLE=Direct|RELIEFCONDUCTORWIDTH=10mil|RELIEFENTRIES=4|POLYGONRELIEFANGLE=90 Angle|AIRGAPWIDTH=10mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Width",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Width Constraint [Pref Width = 0.254mm    Min Width = 0.254mm    Max Width = 0.254mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=Width|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=Width|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=FCHVHIYM|DEFINEDBYLOGICALDOCUMENT=FALSE|MAXLIMIT=10mil|MINLIMIT=10mil|PREFEREDWIDTH=10mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "UnpouredPolygon",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Modified Polygon [Allow modified - No  Allow shelved - No]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=UnpouredPolygon|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=UnpouredPolygon|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=MYRUBPSO|DEFINEDBYLOGICALDOCUMENT=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "NetAntennae",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Net Antennae [Net Antennae Tolerance = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=NetAntennae|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=NetAntennae|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=EVUPDFHH|DEFINEDBYLOGICALDOCUMENT=FALSE|NETANTENNAETOLERANCE=0mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "SilkToBoardRegionClearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Silk To Board Region Clearance [Silk to Board Region Clearance]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=SilkToBoardRegionClearance|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=SilkToBoardRegionClearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=GBRRACFP|DEFINEDBYLOGICALDOCUMENT=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "SilkToSilkClearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Silk To Silk Clearance Constraint [Silk to Silk Clearance = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=SilkToSilkClearance|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=SilkToSilkClearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=GWMPEAXL|DEFINEDBYLOGICALDOCUMENT=FALSE|SILKTOSILKCLEARANCE=0mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "SilkToSolderMaskClearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Silk To Solder Mask Clearance Constraint [Silk To Solder Mask Clearance = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=SilkToSolderMaskClearance|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=IsPad|SCOPE2EXPRESSION=All|NAME=SilkToSolderMaskClearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=MMBTTNEQ|DEFINEDBYLOGICALDOCUMENT=FALSE|MINSILKSCREENTOMASKGAP=0mil|CLEARANCETOEXPOSEDCOPPER=TRUE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "MinimumSolderMaskSliver",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Minimum Solder Mask Sliver Constraint [Minimum Solder Mask Sliver = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=MinimumSolderMaskSliver|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=MinimumSolderMaskSliver|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=RINKNFTD|DEFINEDBYLOGICALDOCUMENT=FALSE|MINSOLDERMASKWIDTH=0mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "HoleToHoleClearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Hole To Hole Clearance Constraint [Hole To Hole Clearance = 0.254mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=HoleToHoleClearance|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=HoleToHoleClearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=YGLXRXBM|DEFINEDBYLOGICALDOCUMENT=FALSE|GAP=10mil|ALLOWSTACKEDMICROVIAS=TRUE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "DiffPairsRouting",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Differential Pairs Routing [Pref Gap = 0.254mm    Min Gap  = 0.254mm    Max Gap  = 0.254mmPref Width = 0.381mm    Min Width  = 0.381mm    Max Width  = 0.381mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=DiffPairsRouting|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=DiffPairsRouting|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=EDYCRDJK|DEFINEDBYLOGICALDOCUMENT=FALSE|MAXLIMIT=10mil|MINLIMIT=10mil|MOSTFREQGAP=10mil|TOPLAYER_MINWIDTH=15mil|TOPLAYER_MAXWIDTH=15mil|TOPLAYER_PREFWIDTH=15mil|MIDLAYER1_MINWIDTH=15mil|MIDLAYER1_MAXWIDTH=15mil|MIDLAYER1_PREFWIDTH=15mil|MIDLAYER2_MINWIDTH=15mil|MIDLAYER2_MAXWIDTH=15mil|MIDLAYER2_PREFWIDTH=15mil|MIDLAYER3_MINWIDTH=15mil|MIDLAYER3_MAXWIDTH=15mil|MIDLAYER3_PREFWIDTH=15mil|MIDLAYER4_MINWIDTH=15mil|MIDLAYER4_MAXWIDTH=15mil|MIDLAYER4_PREFWIDTH=15mil|MIDLAYER5_MINWIDTH=15mil|MIDLAYER5_MAXWIDTH=15mil|MIDLAYER5_PREFWIDTH=15mil|MIDLAYER6_MINWIDTH=15mil|MIDLAYER6_MAXWIDTH=15mil|MIDLAYER6_PREFWIDTH=15mil|MIDLAYER7_MINWIDTH=15mil|MIDLAYER7_MAXWIDTH=15mil|MIDLAYER7_PREFWIDTH=15mil|MIDLAYER8_MINWIDTH=15mil|MIDLAYER8_MAXWIDTH=15mil|MIDLAYER8_PREFWIDTH=15mil|MIDLAYER9_MINWIDTH=15mil|MIDLAYER9_MAXWIDTH=15mil|MIDLAYER9_PREFWIDTH=15mil|MIDLAYER10_MINWIDTH=15mil|MIDLAYER10_MAXWIDTH=15mil|MIDLAYER10_PREFWIDTH=15mil|MIDLAYER11_MINWIDTH=15mil|MIDLAYER11_MAXWIDTH=15mil|MIDLAYER11_PREFWIDTH=15mil|MIDLAYER12_MINWIDTH=15mil|MIDLAYER12_MAXWIDTH=15mil|MIDLAYER12_PREFWIDTH=15mil|MIDLAYER13_MINWIDTH=15mil|MIDLAYER13_MAXWIDTH=15mil|MIDLAYER13_PREFWIDTH=15mil|MIDLAYER14_MINWIDTH=15mil|MIDLAYER14_MAXWIDTH=15mil|MIDLAYER14_PREFWIDTH=15mil|MIDLAYER15_MINWIDTH=15mil|MIDLAYER15_MAXWIDTH=15mil|MIDLAYER15_PREFWIDTH=15mil|MIDLAYER16_MINWIDTH=15mil|MIDLAYER16_MAXWIDTH=15mil|MIDLAYER16_PREFWIDTH=15mil|MIDLAYER17_MINWIDTH=15mil|MIDLAYER17_MAXWIDTH=15mil|MIDLAYER17_PREFWIDTH=15mil|MIDLAYER18_MINWIDTH=15mil|MIDLAYER18_MAXWIDTH=15mil|MIDLAYER18_PREFWIDTH=15mil|MIDLAYER19_MINWIDTH=15mil|MIDLAYER19_MAXWIDTH=15mil|MIDLAYER19_PREFWIDTH=15mil|MIDLAYER20_MINWIDTH=15mil|MIDLAYER20_MAXWIDTH=15mil|MIDLAYER20_PREFWIDTH=15mil|MIDLAYER21_MINWIDTH=15mil|MIDLAYER21_MAXWIDTH=15mil|MIDLAYER21_PREFWIDTH=15mil|MIDLAYER22_MINWIDTH=15mil|MIDLAYER22_MAXWIDTH=15mil|MIDLAYER22_PREFWIDTH=15mil|MIDLAYER23_MINWIDTH=15mil|MIDLAYER23_MAXWIDTH=15mil|MIDLAYER23_PREFWIDTH=15mil|MIDLAYER24_MINWIDTH=15mil|MIDLAYER24_MAXWIDTH=15mil|MIDLAYER24_PREFWIDTH=15mil|MIDLAYER25_MINWIDTH=15mil|MIDLAYER25_MAXWIDTH=15mil|MIDLAYER25_PREFWIDTH=15mil|MIDLAYER26_MINWIDTH=15mil|MIDLAYER26_MAXWIDTH=15mil|MIDLAYER26_PREFWIDTH=15mil|MIDLAYER27_MINWIDTH=15mil|MIDLAYER27_MAXWIDTH=15mil|MIDLAYER27_PREFWIDTH=15mil|MIDLAYER28_MINWIDTH=15mil|MIDLAYER28_MAXWIDTH=15mil|MIDLAYER28_PREFWIDTH=15mil|MIDLAYER29_MINWIDTH=15mil|MIDLAYER29_MAXWIDTH=15mil|MIDLAYER29_PREFWIDTH=15mil|MIDLAYER30_MINWIDTH=15mil|MIDLAYER30_MAXWIDTH=15mil|MIDLAYER30_PREFWIDTH=15mil|BOTTOMLAYER_MINWIDTH=15mil|BOTTOMLAYER_MAXWIDTH=15mil|BOTTOMLAYER_PREFWIDTH=15mil|MAXUNCOUPLEDLENGTH=500mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Fanout_BGA",
+        "Comment": "Fanout_BGA (Default Rule)",
+        "PackedRuleSettings": "DESCRIPTION=Fanout Control [Style - Auto    Direction - Alternating In and Out Via Grid = 0.025mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FanoutControl|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=IsBGA|SCOPE2EXPRESSION=All|NAME=Fanout_BGA|ENABLED=TRUE|PRIORITY=1|COMMENT=Fanout_BGA (Default Rule)|UNIQUEID=NYNIOJKH|DEFINEDBYLOGICALDOCUMENT=FALSE|BGADIR=Out|BGAVIAMODE=Centered|FANOUTSTYLE=Auto|FANOUTDIRECTION=Alternating|VIAGRID=1mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Fanout_LCC",
+        "Comment": "Fanout_LCC (Default Rule)",
+        "PackedRuleSettings": "DESCRIPTION=Fanout Control [Style - Auto    Direction - Alternating In and Out Via Grid = 0.025mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FanoutControl|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=IsLCC|SCOPE2EXPRESSION=All|NAME=Fanout_LCC|ENABLED=TRUE|PRIORITY=2|COMMENT=Fanout_LCC (Default Rule)|UNIQUEID=PRRJIMYU|DEFINEDBYLOGICALDOCUMENT=FALSE|BGADIR=Out|BGAVIAMODE=Centered|FANOUTSTYLE=Auto|FANOUTDIRECTION=Alternating|VIAGRID=1mil",
+        "Priority": 2,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Fanout_SOIC",
+        "Comment": "Fanout_SOIC (Default Rule)",
+        "PackedRuleSettings": "DESCRIPTION=Fanout Control [Style - Auto    Direction - Alternating In and Out Via Grid = 0.025mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FanoutControl|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=IsSOIC|SCOPE2EXPRESSION=All|NAME=Fanout_SOIC|ENABLED=TRUE|PRIORITY=3|COMMENT=Fanout_SOIC (Default Rule)|UNIQUEID=MJNMXMAR|DEFINEDBYLOGICALDOCUMENT=FALSE|BGADIR=Out|BGAVIAMODE=Centered|FANOUTSTYLE=Auto|FANOUTDIRECTION=Alternating|VIAGRID=1mil",
+        "Priority": 3,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Fanout_Small",
+        "Comment": "Fanout_Small (Default Rule)",
+        "PackedRuleSettings": "DESCRIPTION=Fanout Control [Style - Auto    Direction - Out Then In Via Grid = 0.025mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FanoutControl|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=(CompPinCount < 5)|SCOPE2EXPRESSION=All|NAME=Fanout_Small|ENABLED=TRUE|PRIORITY=4|COMMENT=Fanout_Small (Default Rule)|UNIQUEID=KFBBJTGI|DEFINEDBYLOGICALDOCUMENT=FALSE|BGADIR=Out|BGAVIAMODE=Centered|FANOUTSTYLE=Auto|FANOUTDIRECTION=OutThenIn|VIAGRID=1mil",
+        "Priority": 4,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Fanout_Default",
+        "Comment": "Fanout_Default (Default Rule)",
+        "PackedRuleSettings": "DESCRIPTION=Fanout Control [Style - Auto    Direction - Alternating In and Out Via Grid = 0.025mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FanoutControl|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=Fanout_Default|ENABLED=TRUE|PRIORITY=5|COMMENT=Fanout_Default (Default Rule)|UNIQUEID=TWFGIDNV|DEFINEDBYLOGICALDOCUMENT=FALSE|BGADIR=Out|BGAVIAMODE=Centered|FANOUTSTYLE=Auto|FANOUTDIRECTION=Alternating|VIAGRID=1mil",
+        "Priority": 5,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "LayerPairs",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Layer Pairs [Layer Pairs - Enforce]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=LayerPairs|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=LayerPairs|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=NDOBQWHL|DEFINEDBYLOGICALDOCUMENT=FALSE|ENFORCE=TRUE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "Height",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Height Constraint [Pref Height = 12.7mm    Min Height = 0mm    Max Height = 25.4mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=Height|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=Height|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=BEDXPJBP|DEFINEDBYLOGICALDOCUMENT=FALSE|MINHEIGHT=0mil|MAXHEIGHT=1000mil|PREFHEIGHT=500mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "ComponentClearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Component Clearance Constraint [Horizontal Clearance = 0.254mm    Vertical Clearance = 0.254mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=ComponentClearance|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=ComponentClearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=EQUTLRDV|DEFINEDBYLOGICALDOCUMENT=FALSE|GAP=10mil|COLLISIONCHECKMODE=3|VERTICALGAP=10mil|SHOWDISTANCES=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "AssemblyTestpoint",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Assembly Testpoint Style [Under Comp - Allow    Sides - Top, Bottom    Pref Size = 1.524mm    Pref Hole Size = 0.813mm    Using Grid = Yes    Grid = 0.025mm    Grid Tolerance = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=AssemblyTestpoint|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=AssemblyTestpoint|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=OSTNMIUI|DEFINEDBYLOGICALDOCUMENT=FALSE|TESTPOINTUNDERCOMPONENT=TRUE|MINSIZE=40mil|MAXSIZE=100mil|PREFEREDSIZE=60mil|MINHOLESIZE=0mil|MAXHOLESIZE=40mil|PREFEREDHOLESIZE=32mil|TESTPOINTGRID=1mil|USEGRID=TRUE|GRIDTOLERANCE=0.01mil|ALLOWSIDETOP=TRUE|ALLOWSIDEBOTTOM=TRUE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "AssemblyTestPointUsage",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Assembly Testpoint Usage [Testpoint - One Required    Multiple - Not Allowed]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=AssemblyTestPointUsage|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=AssemblyTestPointUsage|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=UIXWHHJE|DEFINEDBYLOGICALDOCUMENT=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "FabricationTestpoint",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Fabrication Testpoint Style [Under Comp - Allow    Sides - Top, Bottom    Pref Size = 1.524mm    Pref Hole Size = 0.813mm    Using Grid = Yes    Grid = 0.025mm    Grid Tolerance = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FabricationTestpoint|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=FabricationTestpoint|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=MQRGVUIH|DEFINEDBYLOGICALDOCUMENT=FALSE|SIDE=3|TESTPOINTUNDERCOMPONENT=TRUE|MINSIZE=40mil|MAXSIZE=100mil|PREFEREDSIZE=60mil|MINHOLESIZE=0mil|MAXHOLESIZE=40mil|PREFEREDHOLESIZE=32mil|TESTPOINTGRID=1mil|ALLOWSIDETOP=TRUE|ALLOWSIDEBOTTOM=TRUE|USEGRID=TRUE|GRIDTOLERANCE=0.01mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "FabricationTestPointUsage",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Fabrication Testpoint Usage [Testpoint - One Required    Multiple - Not Allowed]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=FabricationTestPointUsage|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=FabricationTestPointUsage|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=NASQAWHF|DEFINEDBYLOGICALDOCUMENT=FALSE|VALID=0|ALLOWMULTIPLE=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "RoutingTopology",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Routing Topology [Topology - Shortest]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=RoutingTopology|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=RoutingTopology|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=XGHDHFXV|DEFINEDBYLOGICALDOCUMENT=FALSE|TOPOLOGY=Shortest",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "SolderMaskExpansion",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Solder Mask Expansion [Expansion = 0.102mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=SolderMaskExpansion|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=SolderMaskExpansion|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=TAOVYQIP|DEFINEDBYLOGICALDOCUMENT=FALSE|EXPANSION=4mil|ISTENTINGTOP=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "PasteMaskExpansion",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Paste Mask Expansion [Expansion = 0mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=PasteMaskExpansion|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=PasteMaskExpansion|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=LBNLPILG|DEFINEDBYLOGICALDOCUMENT=FALSE|EXPANSION=0mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "RoutingVias",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Routing Via Style [Pref Size = 1.27mm    Pref Hole Size = 0.711mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=RoutingVias|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=RoutingVias|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=NSCFOINA|DEFINEDBYLOGICALDOCUMENT=FALSE|HOLEWIDTH=28mil|WIDTH=50mil|VIASTYLE=Through Hole|MINHOLEWIDTH=28mil|MINWIDTH=50mil|MAXHOLEWIDTH=28mil|MAXWIDTH=50mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "RoutingCorners",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Routing Corners [Style - 45 Degree    Min Setback = 2.54mm    Max Setback = 2.54mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=RoutingCorners|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=RoutingCorners|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=JLOTGUUQ|DEFINEDBYLOGICALDOCUMENT=FALSE|CORNERSTYLE=45-Degree|MINSETBACK=100mil|MAXSETBACK=100mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "RoutingLayers",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Routing Layers [TopLayer - Enabled BottomLayer - Enabled ]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=RoutingLayers|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=RoutingLayers|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=SFGFIUPV|DEFINEDBYLOGICALDOCUMENT=FALSE|TOP LAYER_V5=TRUE|MID LAYER 1_V5=TRUE|MID LAYER 2_V5=TRUE|MID LAYER 3_V5=TRUE|MID LAYER 4_V5=TRUE|MID LAYER 5_V5=TRUE|MID LAYER 6_V5=TRUE|MID LAYER 7_V5=TRUE|MID LAYER 8_V5=TRUE|MID LAYER 9_V5=TRUE|MID LAYER 10_V5=TRUE|MID LAYER 11_V5=TRUE|MID LAYER 12_V5=TRUE|MID LAYER 13_V5=TRUE|MID LAYER 14_V5=TRUE|MID LAYER 15_V5=TRUE|MID LAYER 16_V5=TRUE|MID LAYER 17_V5=TRUE|MID LAYER 18_V5=TRUE|MID LAYER 19_V5=TRUE|MID LAYER 20_V5=TRUE|MID LAYER 21_V5=TRUE|MID LAYER 22_V5=TRUE|MID LAYER 23_V5=TRUE|MID LAYER 24_V5=TRUE|MID LAYER 25_V5=TRUE|MID LAYER 26_V5=TRUE|MID LAYER 27_V5=TRUE|MID LAYER 28_V5=TRUE|MID LAYER 29_V5=TRUE|MID LAYER 30_V5=TRUE|BOTTOM LAYER_V5=TRUE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "RoutingPriority",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Routing Priority [Priority = 0]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=RoutingPriority|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=RoutingPriority|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=BHQAMPWE|DEFINEDBYLOGICALDOCUMENT=FALSE|ROUTINGPRIORITY=0",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "PlaneClearance",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Power Plane Clearance [Clearance = 0.508mm]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=PlaneClearance|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=PlaneClearance|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=TGKUPOEC|DEFINEDBYLOGICALDOCUMENT=FALSE|CLEARANCE=20mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "PlaneConnect",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Power Plane Connect Style [Style - Relief Connect    Expansion = 0.508mm    Width = 0.254mm    Gap = 0.254mm    # Entries = 4]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=PlaneConnect|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=PlaneConnect|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=QYGMFSYL|DEFINEDBYLOGICALDOCUMENT=FALSE|PLANECONNECTSTYLE=Relief|RELIEFEXPANSION=20mil|RELIEFENTRIES=4|RELIEFCONDUCTORWIDTH=10mil|RELIEFAIRGAP=10mil",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "UnRoutedNet",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Un-Routed Net Constraint [(No Attributes)]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=UnRoutedNet|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=UnRoutedNet|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=OPXBLCDX|DEFINEDBYLOGICALDOCUMENT=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      },
+      {
+        "Name": "ShortCircuit",
+        "Comment": null,
+        "PackedRuleSettings": "DESCRIPTION=Short-Circuit Constraint [Short Circuit - Not Allowed]|SELECTION=FALSE|LAYER=TOP|LOCKED=FALSE|POLYGONOUTLINE=FALSE|USERROUTED=TRUE|KEEPOUT=FALSE|UNIONINDEX=0|RULEKIND=ShortCircuit|NETSCOPE=AnyNet|LAYERKIND=SameLayer|SCOPE1EXPRESSION=All|SCOPE2EXPRESSION=All|NAME=ShortCircuit|ENABLED=TRUE|PRIORITY=1|COMMENT= |UNIQUEID=WNGXOOJW|DEFINEDBYLOGICALDOCUMENT=FALSE|ALLOWED=FALSE",
+        "Priority": 1,
+        "Kind": "Unknown"
+      }
+    ]
+  }
+}

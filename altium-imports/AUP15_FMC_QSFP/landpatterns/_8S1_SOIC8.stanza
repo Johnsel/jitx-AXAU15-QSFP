@@ -1,0 +1,61 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/_8S1_SOIC8 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(1.458, 0.518)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(1.458, 0.518)
+
+public pcb-landpattern _8S1_SOIC8 :
+  pad p[1] : rect-smd-pad at loc(1.913, 2.564, 90.000) on Top
+  pad p[2] : rect-smd-pad at loc(0.643, 2.564, 90.000) on Top
+  pad p[3] : rect-smd-pad at loc(-0.627, 2.564, 90.000) on Top
+  pad p[4] : rect-smd-pad at loc(-1.897, 2.564, 90.000) on Top
+  pad p[5] : rect-smd-pad at loc(-1.897, -2.595, 90.000) on Top
+  pad p[6] : rect-smd-pad at loc(-0.627, -2.595, 90.000) on Top
+  pad p[7] : rect-smd-pad at loc(0.643, -2.595, 90.000) on Top
+  pad p[8] : rect-smd-pad at loc(1.913, -2.595, 90.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-2.525, 3.373)
+    Point(-2.525, -3.373)
+    Point(2.525, -3.373)
+    Point(2.525, 3.373)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(-2.608, -1.557), Point(-2.608, 1.615)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(-2.608, -1.557), Point(2.638, -1.557)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(-2.608, 1.615), Point(2.626, 1.615)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(2.309, -0.374), Point(2.504, -0.374)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(2.626, 0.504), Point(2.626, 1.615)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(2.638, -1.557), Point(2.638, -0.655)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.203, [Point(2.638, -0.655), Point(2.638, -0.508)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.203, [
+    Arc(2.309, -0.093, 0.281, 90.000, 180.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.203, [
+    Arc(2.309, 0.504, 0.317, 270.000, 90.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.203, [
+    Arc(2.504, -0.508, 0.134, 0.0, 90.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.254, [
+    Arc(2.718, 2.473, 0.128, 0.0, 360.000)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(-0.440, 0.074), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(1.913, 2.310), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(0.643, 2.310), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(-0.627, 2.310), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(-1.897, 2.310), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("5", 0.635, SW, loc(-1.897, -2.849), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("6", 0.635, SW, loc(-0.627, -2.849), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("7", 0.635, SW, loc(0.643, -2.849), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("8", 0.635, SW, loc(1.913, -2.849), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/8S1_SOIC8_e8F2C229F.STEP",
+    Vec3D(0.00013, 0.00013, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

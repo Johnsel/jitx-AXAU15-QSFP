@@ -1,0 +1,92 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/GE_RJ45 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad-1 :
+  type = TH
+  shape = Capsule(1.8001, 1.8001, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.650)
+
+pcb-pad oval-th-pad-2 :
+  type = TH
+  shape = Capsule(2.4892, 2.4892, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.900)
+
+pcb-pad oval-th-pad-3 :
+  type = TH
+  shape = Capsule(3.29997, 3.29997, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(1.650)
+
+pcb-pad oval-th-pad-4 :
+  type = TH
+  shape = Capsule(1.524, 1.524, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.508)
+
+public pcb-landpattern GE_RJ45 :
+  pad P1 : oval-th-pad-4 at loc(-9.208, -5.716) on Top
+  pad P10 : oval-th-pad-4 at loc(-6.668, 5.714) on Top
+  pad P2 : oval-th-pad-4 at loc(-6.668, -4.446) on Top
+  pad P3 : oval-th-pad-4 at loc(-9.208, -3.176) on Top
+  pad P4 : oval-th-pad-4 at loc(-6.668, -1.906) on Top
+  pad P5 : oval-th-pad-4 at loc(-9.208, -0.636) on Top
+  pad P6 : oval-th-pad-4 at loc(-6.668, 0.634) on Top
+  pad P7 : oval-th-pad-4 at loc(-9.208, 1.904) on Top
+  pad P8 : oval-th-pad-4 at loc(-6.668, 3.174) on Top
+  pad P9 : oval-th-pad-4 at loc(-9.208, 4.444) on Top
+  pad p[11] : oval-th-pad-1 at loc(4.582, -6.625) on Top
+  pad p[12] : oval-th-pad-1 at loc(4.582, -4.085) on Top
+  pad p[13] : oval-th-pad-1 at loc(4.582, 4.085) on Top
+  pad p[14] : oval-th-pad-1 at loc(4.582, 6.625) on Top
+  pad p[15] : oval-th-pad-2 at loc(-3.368, -7.750) on Top
+  pad p[16] : oval-th-pad-2 at loc(-3.368, 7.750) on Top
+  pad p[17] : oval-th-pad-3 at loc(-0.318, -5.740) on Top
+  pad p[18] : oval-th-pad-3 at loc(-0.318, 5.740) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-10.477, -8.128)
+    Point(10.477, -8.128)
+    Point(10.477, 8.128)
+    Point(-10.477, 8.128)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.254, [Point(-10.477, -7.976), Point(-10.477, 7.975)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.254, [Point(-10.477, -7.976), Point(10.477, -7.976)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.254, [Point(-10.477, 7.975), Point(10.477, 7.975)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.254, [Point(10.477, -7.976), Point(10.477, 7.975)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-10.477, -8.995), Point(-10.477, 8.994)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-10.477, -8.995), Point(10.477, -8.995)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-10.477, 8.994), Point(10.477, 8.994)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(10.477, -8.995), Point(10.477, 8.994)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(-0.927, 0.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("11", 0.635, SW, loc(4.074, -6.625), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("12", 0.635, SW, loc(4.074, -4.085), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("13", 0.635, SW, loc(4.074, 4.085), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("14", 0.635, SW, loc(4.074, 6.625), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("15", 0.635, SW, loc(-3.876, -7.750), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("16", 0.635, SW, loc(-3.876, 7.750), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("17", 0.635, SW, loc(-0.826, -5.740), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("18", 0.635, SW, loc(-0.826, 5.740), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P1", 0.635, SW, loc(-9.716, -5.716), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P10", 0.635, SW, loc(-7.429, 5.714), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P2", 0.635, SW, loc(-7.175, -4.446), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P3", 0.635, SW, loc(-9.716, -3.176), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P4", 0.635, SW, loc(-7.175, -1.906), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P5", 0.635, SW, loc(-9.716, -0.636), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P6", 0.635, SW, loc(-7.175, 0.634), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P7", 0.635, SW, loc(-9.716, 1.904), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P8", 0.635, SW, loc(-7.175, 3.174), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("P9", 0.635, SW, loc(-9.716, 4.444), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/GE_RJ45_e8E49F9DA.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

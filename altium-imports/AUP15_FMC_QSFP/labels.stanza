@@ -1,0 +1,17 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/labels :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public defn add-main-labels () -> False :
+  inside pcb-module :
+    ref-label(self.FPAD_1) = Text(">REF", 0.635, SW, loc(0.0, -0.051), "Arial", StrokeFont, false, false)
+    ref-label(self.J1) = Text(">REF", 0.635, SW, loc(-0.152, -0.025), "Arial", StrokeFont, false, false)
+    ref-label(self.J2) = Text(">REF", 0.635, SW, loc(-0.152, -0.025), "Arial", StrokeFont, false, false)
+    ref-label(self.J3) = Text(">REF", 0.635, SW, loc(-0.152, -0.025), "Arial", StrokeFont, false, false)
+    ref-label(self.J4) = Text(">REF", 0.635, SW, loc(-0.152, -0.025), "Arial", StrokeFont, false, false)
+
+

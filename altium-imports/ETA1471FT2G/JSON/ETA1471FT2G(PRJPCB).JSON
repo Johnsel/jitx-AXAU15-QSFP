@@ -1,0 +1,27 @@
+{
+  "ExportInfo": {
+    "ExtensionVersion": "1.0.45.0",
+    "CompatibleExtensionVersion": "0.14.0.7"
+  },
+  "User": "jamms",
+  "Machine": "JOHN-PC",
+  "DateTime": "240421-2324",
+  "Version": "4.0.30319.42000",
+  "FileType": "PRJPCB",
+  "FileName": "ETA1471FT2G.PrjPcb",
+  "UnitsOfMeasure": "MM",
+  "ProjectDocuments": [
+    "C:\\Users\\jamms\\OneDrive\\Documenten\\KiCad\\8.0\\easyeda-imports\\ETA1471FT2G\\Imported ETA1471FT2G\\ETA1471FT2G.SchLib.LOG",
+    "C:\\Users\\jamms\\OneDrive\\Documenten\\KiCad\\8.0\\easyeda-imports\\ETA1471FT2G\\Imported ETA1471FT2G\\ETA1471FT2G.SchLib",
+    "C:\\Users\\jamms\\OneDrive\\Documenten\\KiCad\\8.0\\easyeda-imports\\ETA1471FT2G\\Imported ETA1471FT2G\\ETA1471FT2G.PcbDoc",
+    "C:\\Users\\jamms\\OneDrive\\Documenten\\KiCad\\8.0\\easyeda-imports\\ETA1471FT2G\\Imported ETA1471FT2G\\ETA1471FT2G.PcbDoc.LOG",
+    "C:\\Users\\jamms\\OneDrive\\Documenten\\KiCad\\8.0\\easyeda-imports\\ETA1471FT2G\\Imported ETA1471FT2G\\easyeda2kicad.SchLib",
+    "C:\\Users\\jamms\\OneDrive\\Documenten\\KiCad\\8.0\\easyeda-imports\\ETA1471FT2G\\Imported ETA1471FT2G\\easyeda2kicad.SchLib.LOG"
+  ],
+  "Parameters": [],
+  "NetList": [],
+  "ProjectInfo": {
+    "SheetInstances": []
+  },
+  "Variants": []
+}

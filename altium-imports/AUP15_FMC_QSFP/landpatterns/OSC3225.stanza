@@ -1,0 +1,45 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/OSC3225 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(1.397, 1.194)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(1.397, 1.194)
+
+public pcb-landpattern OSC3225 :
+  pad p[1] : rect-smd-pad at loc(-1.100, -0.850) on Top
+  pad p[2] : rect-smd-pad at loc(1.100, -0.850) on Top
+  pad p[3] : rect-smd-pad at loc(1.100, 0.850) on Top
+  pad p[4] : rect-smd-pad at loc(-1.100, 0.850) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-1.989, -1.637)
+    Point(1.989, -1.637)
+    Point(1.989, 1.637)
+    Point(-1.989, 1.637)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-2.032, -1.651), Point(-2.032, 0.0)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-2.032, -1.651), Point(-0.127, -1.651)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-2.032, 0.0), Point(-1.905, 0.0)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-1.905, 0.0), Point(-0.127, 0.0)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-0.173, -1.250), Point(0.173, -1.250)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-0.173, 1.250), Point(0.173, 1.250)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-0.127, -1.651), Point(-0.127, 0.0)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(-0.610, -2.879), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-1.354, -0.850), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(0.846, -0.850), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(0.846, 0.850), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(-1.354, 0.850), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/OSC3225_e91530C4E.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

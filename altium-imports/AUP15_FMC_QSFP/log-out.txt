@@ -1,0 +1,20 @@
+Import messages are saved in 'c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\AUP15_FMC_QSFP/log.txt'
+[Info] 29:09.8 - Connected to Altium
+[Info] 29:09.9 - Project opened: OPENPRJ
+[Info] 29:10.1 - The Altium-to-JITX export is starting
+[Info] 29:10.1 - INFO: Processing the current project at C:\Users\Public\Documents\Altium\AUP15_FMC_QSFP\AUP15_FMC_QSFP.PrjPcb
+[Info] 29:10.1 - INFO: ADXServer: Extracting AUP15_FMC_QSFP.PrjPcb
+[Info] 29:10.4 - INFO: ADXServer: Extracting AUP15_2023_8_9 _fixed.brd.PcbLib
+[Info] 29:11.5 - INFO: ADXServer: Extracting Schlib1.SchLib
+[Info] 29:11.5 - INFO: ADXServer: Extracting PCB1.PcbDoc
+[Info] 29:11.5 - INFO: ALT2JSON c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\AUP15_FMC_QSFP: INFO: Some non-Dielectric V7_Layers are used in this design.
+[Info] 29:11.7 - INFO: ADXServer: Extracting Sheet1.SchDoc
+[Info] 29:11.8 - The Altium-to-JITX export finished successfully
+[Info] 29:15.0 - 
+[Info] 29:15.0 - JSON directory: c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\AUP15_FMC_QSFP\JSON
+[Info] 29:15.0 - Locating Altium files ...
+[Info] 29:15.0 - Parsing 5 Altium files ...
+[Info] 29:15.0 - Processing input from files ...
+[Info] 29:15.1 - Generating JITX code and copying 38 file(s) ...
+[Info] 29:15.4 - CAD Import finishes successfully. 
+	The project files are saved to 'c:\Users\jamms\OneDrive\Documenten\- JITX\FMC_QSFP\altium-imports\AUP15_FMC_QSFP'.

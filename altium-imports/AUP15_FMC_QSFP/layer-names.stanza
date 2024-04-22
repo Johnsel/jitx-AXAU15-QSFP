@@ -1,0 +1,38 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/layer-names :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public defn layer-names () :
+  val type = "ALTIUM-LAYER-NAMES"
+  val layer-names = [
+    64 => "Bottom 3D Body" 
+    1 => "Top Layer" 
+    65 => "Pcb-Mechanical9" 
+    131 => "Bottom Assembly" 
+    132 => "Pcb-Mechanical18" 
+    133 => "Pcb-Mechanical19" 
+    134 => "Pcb-Mechanical20" 
+    71 => "Mechanical 15" 
+    72 => "Top Assembly" 
+    136 => "Pcb-Mechanical22" 
+    73 => "Pcb-DrillDrawing" 
+    137 => "Pcb-Mechanical23" 
+    74 => "Multi-Layer" 
+    138 => "Pcb-Mechanical24" 
+    77 => "DRC Error Markers" 
+    147 => "Dielectric 1" 
+    32 => "Bottom Layer" 
+    33 => "Top Overlay" 
+    34 => "Bottom Overlay" 
+    35 => "Top Paste" 
+    36 => "Bottom Paste" 
+    37 => "Top Solder" 
+    38 => "Bottom Solder" 
+    57 => "Mechanical 1" 
+    63 => "Top 3D Body"]
+  set-cad-info(type, layer-names)
+

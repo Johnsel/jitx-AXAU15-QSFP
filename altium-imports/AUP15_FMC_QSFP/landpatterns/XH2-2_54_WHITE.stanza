@@ -1,0 +1,47 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/XH2-2_54_WHITE :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(1.4224, 1.4224, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.457)
+
+public pcb-landpattern XH2-2_54_WHITE :
+  pad p[1] : oval-th-pad at loc(-1.276, 0.461, 270.000) on Top
+  pad p[2] : oval-th-pad at loc(1.224, 0.461, 270.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-3.719, 2.840)
+    Point(-3.719, -2.840)
+    Point(3.719, -2.840)
+    Point(3.719, 2.840)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-3.776, -2.839), Point(-3.776, 2.861)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-3.776, -2.839), Point(3.724, -2.839)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-3.776, 2.861), Point(3.724, 2.861)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-3.766, 0.537), Point(-3.410, 0.537)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-3.740, 1.630), Point(-3.410, 1.630)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-3.410, 0.537), Point(-3.410, 1.630)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.251, 2.366), Point(-1.251, 2.823)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.251, 2.366), Point(0.832, 2.366)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(0.832, 2.366), Point(0.832, 2.849)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(3.397, 0.512), Point(3.397, 1.579)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(3.397, 0.512), Point(3.677, 0.512)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(3.397, 1.579), Point(3.702, 1.579)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(3.724, -2.839), Point(3.724, 2.861)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(-0.514, 0.258), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-1.276, 0.715), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(1.224, 0.715), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/XH2-2_54_WHITE_e9142DD21.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

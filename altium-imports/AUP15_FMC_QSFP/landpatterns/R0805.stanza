@@ -1,0 +1,44 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/R0805 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(1.143, 1.270)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(1.143, 1.270)
+
+public pcb-landpattern R0805 :
+  pad p[1] : rect-smd-pad at loc(-0.838, 0.051, 180.000) on Top
+  pad p[2] : rect-smd-pad at loc(0.838, 0.051, 180.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-1.549, -0.787)
+    Point(-1.549, 0.787)
+    Point(1.549, 0.787)
+    Point(1.549, -0.787)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.549, -0.737), Point(-0.381, -0.737)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.549, -0.724), Point(-1.549, 0.800)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.549, 0.851), Point(-0.432, 0.851)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(0.381, -0.737), Point(1.549, -0.737)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(0.381, 0.864), Point(1.549, 0.864)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(1.549, -0.711), Point(1.549, 0.864)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.549, -0.787), Point(-1.549, 0.787)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.549, -0.787), Point(1.549, -0.787)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.549, 0.787), Point(1.549, 0.787)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(1.549, -0.787), Point(1.549, 0.787)])
+  layer(CustomLayer("Bottom Assembly", Top)) = Text(".Designator", 0.635, SW, loc(Point(-0.178, -0.076), 180.000, true), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(Point(-0.584, 0.051), 180.000, true), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(Point(1.092, 0.051), 180.000, true), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/R0805_e8D586071.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

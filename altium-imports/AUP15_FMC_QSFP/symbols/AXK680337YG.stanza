@@ -1,0 +1,424 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/symbols/AXK680337YG :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public pcb-symbol AXK680337YG :
+  pin p[0] at Point(7.620, 0.0) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[1] at Point(7.620, -2.540) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[2] at Point(7.620, -5.080) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[3] at Point(7.620, -7.620) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[4] at Point(7.620, -10.160) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[5] at Point(7.620, -12.700) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[6] at Point(7.620, -15.240) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[7] at Point(7.620, -17.780) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[8] at Point(7.620, -20.320) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[9] at Point(7.620, -22.860) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[10] at Point(7.620, -25.400) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[11] at Point(7.620, -27.940) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[12] at Point(7.620, -30.480) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[13] at Point(7.620, -33.020) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[14] at Point(7.620, -35.560) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[15] at Point(7.620, -38.100) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[16] at Point(7.620, -40.640) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[17] at Point(7.620, -43.180) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[18] at Point(7.620, -45.720) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[19] at Point(7.620, -48.260) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[20] at Point(7.620, -50.800) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[21] at Point(7.620, -53.340) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[22] at Point(7.620, -55.880) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[23] at Point(7.620, -58.420) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[24] at Point(7.620, -60.960) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[25] at Point(7.620, -63.500) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[26] at Point(7.620, -66.040) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[27] at Point(7.620, -68.580) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[28] at Point(7.620, -71.120) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[29] at Point(7.620, -73.660) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[30] at Point(7.620, -76.200) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[31] at Point(7.620, -78.740) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[32] at Point(7.620, -81.280) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[33] at Point(7.620, -83.820) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[34] at Point(7.620, -86.360) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[35] at Point(7.620, -88.900) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[36] at Point(7.620, -91.440) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[37] at Point(7.620, -93.980) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[38] at Point(7.620, -96.520) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[39] at Point(7.620, -99.060) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[40] at Point(7.620, -101.600) with :
+    direction = Left
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[41] at Point(15.240, 0.0) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[42] at Point(15.240, -2.540) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[43] at Point(15.240, -5.080) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[44] at Point(15.240, -7.620) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[45] at Point(15.240, -10.160) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[46] at Point(15.240, -12.700) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[47] at Point(15.240, -15.240) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[48] at Point(15.240, -17.780) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[49] at Point(15.240, -20.320) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[50] at Point(15.240, -22.860) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[51] at Point(15.240, -25.400) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[52] at Point(15.240, -27.940) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[53] at Point(15.240, -30.480) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[54] at Point(15.240, -33.020) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[55] at Point(15.240, -35.560) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[56] at Point(15.240, -38.100) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[57] at Point(15.240, -40.640) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[58] at Point(15.240, -43.180) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[59] at Point(15.240, -45.720) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[60] at Point(15.240, -48.260) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[61] at Point(15.240, -50.800) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[62] at Point(15.240, -53.340) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[63] at Point(15.240, -55.880) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[64] at Point(15.240, -58.420) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[65] at Point(15.240, -60.960) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[66] at Point(15.240, -63.500) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[67] at Point(15.240, -66.040) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[68] at Point(15.240, -68.580) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[69] at Point(15.240, -71.120) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[70] at Point(15.240, -73.660) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[71] at Point(15.240, -76.200) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[72] at Point(15.240, -78.740) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[73] at Point(15.240, -81.280) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[74] at Point(15.240, -83.820) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[75] at Point(15.240, -86.360) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[76] at Point(15.240, -88.900) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[77] at Point(15.240, -91.440) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[78] at Point(15.240, -93.980) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[79] at Point(15.240, -96.520) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[80] at Point(15.240, -99.060) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+  pin p[81] at Point(15.240, -101.600) with :
+    direction = Right
+    length = 7.620
+    number-size = 1.523
+    name-size = 1.523
+
+  layer("foreground") = Text(">VALUE", 0.762, C, loc(-0.050, 2.840), "", TrueTypeFont, false, false)
+  layer("foreground") = Text(">REF", 0.762, C, loc(-0.050, 3.902), "", TrueTypeFont, false, false)
+  layer("foreground") = Rectangle(7.620, 106.680, loc(11.430, -50.800))
+

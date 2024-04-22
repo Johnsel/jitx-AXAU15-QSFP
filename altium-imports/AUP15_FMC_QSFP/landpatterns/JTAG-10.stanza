@@ -1,0 +1,63 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/JTAG-10 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(1.7272, 1.7272, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.445)
+
+public pcb-landpattern JTAG-10 :
+  pad p[1] : oval-th-pad at loc(-5.080, -1.461) on Top
+  pad p[2] : oval-th-pad at loc(-5.080, 1.079) on Top
+  pad p[3] : oval-th-pad at loc(-2.540, -1.461) on Top
+  pad p[4] : oval-th-pad at loc(-2.540, 1.079) on Top
+  pad p[5] : oval-th-pad at loc(0.0, -1.461) on Top
+  pad p[6] : oval-th-pad at loc(0.0, 1.079) on Top
+  pad p[7] : oval-th-pad at loc(2.540, -1.461) on Top
+  pad p[8] : oval-th-pad at loc(2.540, 1.079) on Top
+  pad p[9] : oval-th-pad at loc(5.080, -1.461) on Top
+  pad p[10] : oval-th-pad at loc(5.080, 1.079) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-10.160, 4.000)
+    Point(-10.160, -4.000)
+    Point(10.160, -4.000)
+    Point(10.160, 4.000)])
+  layer(CustomLayer("Top Assembly", Top)) = Polygon([
+    Point(-10.160, 4.000)
+    Point(-10.160, -4.000)
+    Point(10.160, -4.000)
+    Point(10.160, 4.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-10.160, -4.000), Point(-10.160, 4.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-10.160, -4.000), Point(-2.286, -4.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-10.160, 4.000), Point(10.160, 4.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-2.286, -4.000), Point(-2.286, -2.731)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-2.286, -2.731), Point(2.286, -2.731)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(2.286, -4.000), Point(2.286, -2.731)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(2.286, -4.000), Point(10.160, -4.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(10.160, -4.000), Point(10.160, 4.000)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 0.635, SW, loc(-8.458, 0.495), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-5.334, -1.461), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("10", 0.635, SW, loc(4.572, 1.079), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(-5.334, 1.079), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(-2.794, -1.461), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(-2.794, 1.079), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("5", 0.635, SW, loc(-0.254, -1.461), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("6", 0.635, SW, loc(-0.254, 1.079), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("7", 0.635, SW, loc(2.286, -1.461), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("8", 0.635, SW, loc(2.286, 1.079), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("9", 0.635, SW, loc(4.826, -1.461), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/JTAG-10_e8C8B93A8.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

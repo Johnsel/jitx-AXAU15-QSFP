@@ -1,0 +1,329 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/PCIE_4LANE_EDGE :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad-1 :
+  type = SMD
+  shape = Rectangle(0.711, 3.200)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(0.711, 3.200)
+
+pcb-pad rect-smd-pad-2 :
+  type = SMD
+  shape = Rectangle(0.711, 4.191)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(0.711, 4.191)
+
+public pcb-landpattern PCIE_4LANE_EDGE :
+  pad A1 : rect-smd-pad-1 at loc(-16.510, -0.140) on Bottom
+  pad A10 : rect-smd-pad-2 at loc(-7.510, -0.635) on Bottom
+  pad A11 : rect-smd-pad-2 at loc(-6.510, -0.635) on Bottom
+  pad A12 : rect-smd-pad-2 at loc(-3.510, -0.635) on Bottom
+  pad A13 : rect-smd-pad-2 at loc(-2.510, -0.635) on Bottom
+  pad A14 : rect-smd-pad-2 at loc(-1.510, -0.635) on Bottom
+  pad A15 : rect-smd-pad-2 at loc(-0.510, -0.635) on Bottom
+  pad A16 : rect-smd-pad-2 at loc(0.490, -0.635) on Bottom
+  pad A17 : rect-smd-pad-2 at loc(1.490, -0.635) on Bottom
+  pad A18 : rect-smd-pad-2 at loc(2.490, -0.635) on Bottom
+  pad A19 : rect-smd-pad-2 at loc(3.490, -0.635) on Bottom
+  pad A2 : rect-smd-pad-2 at loc(-15.510, -0.635) on Bottom
+  pad A20 : rect-smd-pad-2 at loc(4.490, -0.635) on Bottom
+  pad A21 : rect-smd-pad-2 at loc(5.490, -0.635) on Bottom
+  pad A22 : rect-smd-pad-2 at loc(6.490, -0.635) on Bottom
+  pad A23 : rect-smd-pad-2 at loc(7.490, -0.635) on Bottom
+  pad A24 : rect-smd-pad-2 at loc(8.490, -0.635) on Bottom
+  pad A25 : rect-smd-pad-2 at loc(9.490, -0.635) on Bottom
+  pad A26 : rect-smd-pad-2 at loc(10.490, -0.635) on Bottom
+  pad A27 : rect-smd-pad-2 at loc(11.490, -0.635) on Bottom
+  pad A28 : rect-smd-pad-2 at loc(12.490, -0.635) on Bottom
+  pad A29 : rect-smd-pad-2 at loc(13.490, -0.635) on Bottom
+  pad A3 : rect-smd-pad-2 at loc(-14.510, -0.635) on Bottom
+  pad A30 : rect-smd-pad-2 at loc(14.490, -0.635) on Bottom
+  pad A31 : rect-smd-pad-2 at loc(15.490, -0.635) on Bottom
+  pad A32 : rect-smd-pad-2 at loc(16.490, -0.635) on Bottom
+  pad A4 : rect-smd-pad-2 at loc(-13.510, -0.635) on Bottom
+  pad A5 : rect-smd-pad-2 at loc(-12.510, -0.635) on Bottom
+  pad A6 : rect-smd-pad-2 at loc(-11.510, -0.635) on Bottom
+  pad A7 : rect-smd-pad-2 at loc(-10.510, -0.635) on Bottom
+  pad A8 : rect-smd-pad-2 at loc(-9.510, -0.635) on Bottom
+  pad A9 : rect-smd-pad-2 at loc(-8.510, -0.635) on Bottom
+  pad B1 : rect-smd-pad-2 at loc(-16.510, -0.635) on Top
+  pad B10 : rect-smd-pad-2 at loc(-7.510, -0.635) on Top
+  pad B11 : rect-smd-pad-2 at loc(-6.510, -0.635) on Top
+  pad B12 : rect-smd-pad-2 at loc(-3.510, -0.635) on Top
+  pad B13 : rect-smd-pad-2 at loc(-2.510, -0.635) on Top
+  pad B14 : rect-smd-pad-2 at loc(-1.510, -0.635) on Top
+  pad B15 : rect-smd-pad-2 at loc(-0.510, -0.635) on Top
+  pad B16 : rect-smd-pad-2 at loc(0.490, -0.635) on Top
+  pad B17 : rect-smd-pad-2 at loc(1.490, -0.635) on Top
+  pad B18 : rect-smd-pad-2 at loc(2.490, -0.635) on Top
+  pad B19 : rect-smd-pad-2 at loc(3.490, -0.635) on Top
+  pad B2 : rect-smd-pad-2 at loc(-15.510, -0.635) on Top
+  pad B20 : rect-smd-pad-2 at loc(4.490, -0.635) on Top
+  pad B21 : rect-smd-pad-2 at loc(5.490, -0.635) on Top
+  pad B22 : rect-smd-pad-2 at loc(6.490, -0.635) on Top
+  pad B23 : rect-smd-pad-2 at loc(7.490, -0.635) on Top
+  pad B24 : rect-smd-pad-2 at loc(8.490, -0.635) on Top
+  pad B25 : rect-smd-pad-2 at loc(9.490, -0.635) on Top
+  pad B26 : rect-smd-pad-2 at loc(10.490, -0.635) on Top
+  pad B27 : rect-smd-pad-2 at loc(11.490, -0.635) on Top
+  pad B28 : rect-smd-pad-2 at loc(12.490, -0.635) on Top
+  pad B29 : rect-smd-pad-2 at loc(13.490, -0.635) on Top
+  pad B3 : rect-smd-pad-2 at loc(-14.510, -0.635) on Top
+  pad B30 : rect-smd-pad-2 at loc(14.490, -0.635) on Top
+  pad B31 : rect-smd-pad-1 at loc(15.490, -0.140) on Top
+  pad B32 : rect-smd-pad-2 at loc(16.490, -0.635) on Top
+  pad B4 : rect-smd-pad-2 at loc(-13.510, -0.635) on Top
+  pad B5 : rect-smd-pad-2 at loc(-12.510, -0.635) on Top
+  pad B6 : rect-smd-pad-2 at loc(-11.510, -0.635) on Top
+  pad B7 : rect-smd-pad-2 at loc(-10.510, -0.635) on Top
+  pad B8 : rect-smd-pad-2 at loc(-9.510, -0.635) on Top
+  pad B9 : rect-smd-pad-2 at loc(-8.510, -0.635) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-19.050, 4.445)
+    Point(19.050, 4.445)
+    Point(19.050, -4.445)
+    Point(-19.050, -4.445)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-26.557, -10.109), Point(-20.344, -10.109)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-21.570, 4.478), Point(-19.132, 4.478)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-20.344, -10.109), Point(-16.996, -3.791)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-19.132, 4.478), Point(-16.510, -0.140)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.341, -4.174), Point(-17.120, -4.292)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.341, -4.174), Point(-16.996, -3.791)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.160, -14.610), Point(-17.160, -3.927)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.160, -14.310), Point(-16.660, -14.435)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.160, -14.310), Point(-16.660, -14.185)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.160, -14.310), Point(-14.040, -14.310)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-17.120, -4.292), Point(-16.996, -3.791)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.866, 0.233), Point(-16.648, 0.357)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.866, 0.233), Point(-16.510, -0.140)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.660, -14.435), Point(-16.660, -14.185)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.648, 0.357), Point(-16.510, -0.140)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.510, -11.123), Point(-16.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.510, -10.823), Point(-16.010, -10.948)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.510, -10.823), Point(-16.010, -10.698)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.510, -10.823), Point(-13.199, -10.823)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.510, -8.045), Point(-15.510, -8.045)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.010, -10.948), Point(-16.010, -10.698)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.010, -8.170), Point(-16.010, -7.920)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.010, -8.170), Point(-15.510, -8.045)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-16.010, -7.920), Point(-15.510, -8.045)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-15.510, -8.345), Point(-15.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-14.510, -8.345), Point(-14.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-14.510, -8.045), Point(-14.010, -8.170)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-14.510, -8.045), Point(-14.010, -7.920)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-14.510, -8.045), Point(-11.225, -8.045)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-14.010, -8.170), Point(-14.010, -7.920)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-9.154, -10.823), Point(-6.510, -10.823)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-7.760, 3.752), Point(-5.960, 3.752)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-7.626, 8.822), Point(-5.960, 8.822)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-7.535, 6.092), Point(-6.510, 6.092)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-7.010, -10.948), Point(-7.010, -10.698)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-7.010, -10.948), Point(-6.510, -10.823)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-7.010, -10.698), Point(-6.510, -10.823)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.510, -11.123), Point(-6.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.510, -0.335), Point(-6.510, 6.392)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.510, 6.092), Point(-6.010, 5.967)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.510, 6.092), Point(-6.010, 6.217)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.510, 6.092), Point(-5.010, 6.092)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.485, -14.310), Point(-5.009, -14.310)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.460, 3.627), Point(-6.460, 3.877)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.460, 3.627), Point(-5.960, 3.752)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.460, 3.877), Point(-5.960, 3.752)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.010, 2.792), Point(-5.010, 2.792)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-6.010, 5.967), Point(-6.010, 6.217)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.960, -3.328), Point(-5.960, 4.052)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.960, 3.622), Point(-5.960, 9.122)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.960, 8.822), Point(-5.460, 8.697)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.960, 8.822), Point(-5.460, 8.947)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.960, 8.822), Point(-4.060, 8.822)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.510, 2.667), Point(-5.510, 2.917)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.510, 2.667), Point(-5.010, 2.792)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.510, 2.917), Point(-5.010, 2.792)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.510, 5.967), Point(-5.510, 6.217)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.510, 5.967), Point(-5.010, 6.092)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.510, 6.217), Point(-5.010, 6.092)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.509, -14.435), Point(-5.509, -14.185)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.509, -14.435), Point(-5.009, -14.310)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.509, -14.185), Point(-5.009, -14.310)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.460, 8.697), Point(-5.460, 8.947)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, -5.032), Point(-5.010, 3.968)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 0.579), Point(-5.010, 4.052)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 0.804), Point(-5.010, 6.392)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 2.492), Point(-5.010, 4.000)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 3.607), Point(-5.010, 6.419)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 3.752), Point(-4.510, 3.627)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 3.752), Point(-4.510, 3.877)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 3.752), Point(-4.010, 3.752)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 6.119), Point(-4.510, 5.994)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 6.119), Point(-4.510, 6.244)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.010, 6.119), Point(-3.510, 6.119)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.009, -14.622), Point(-5.009, -14.236)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.009, -14.610), Point(-5.009, -4.229)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.009, -14.322), Point(-4.509, -14.447)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.009, -14.322), Point(-4.509, -14.197)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-5.009, -14.322), Point(4.264, -14.322)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.560, 8.697), Point(-4.560, 8.947)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.560, 8.697), Point(-4.060, 8.822)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.560, 8.947), Point(-4.060, 8.822)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.510, 3.627), Point(-4.510, 3.877)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.510, 5.994), Point(-4.510, 6.244)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.509, -14.447), Point(-4.509, -14.197)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.060, 2.492), Point(-4.060, 3.023)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.060, 2.792), Point(-3.560, 2.667)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.060, 2.792), Point(-3.560, 2.917)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.060, 2.792), Point(-1.244, 2.792)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.060, 3.622), Point(-4.060, 9.122)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.010, 5.994), Point(-4.010, 6.244)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.010, 5.994), Point(-3.510, 6.119)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-4.010, 6.244), Point(-3.510, 6.119)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.560, 2.667), Point(-3.560, 2.917)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.510, -11.171), Point(-3.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.510, -10.871), Point(-3.010, -10.996)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.510, -10.871), Point(-3.010, -10.746)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.510, -10.871), Point(6.966, -10.871)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.510, -0.335), Point(-3.510, 6.419)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.510, 6.119), Point(-0.838, 6.119)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-3.010, -10.996), Point(-3.010, -10.746)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-2.510, -7.139), Point(-1.510, -7.139)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-2.010, -7.264), Point(-2.010, -7.014)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-2.010, -7.264), Point(-1.510, -7.139)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-2.010, -7.014), Point(-1.510, -7.139)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-1.510, -7.439), Point(-1.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-0.510, -7.439), Point(-0.510, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-0.510, -7.139), Point(-0.010, -7.264)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-0.510, -7.139), Point(-0.010, -7.014)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-0.510, -7.139), Point(7.074, -7.139)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(-0.010, -7.264), Point(-0.010, -7.014)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(4.490, -0.635), Point(4.526, -0.121)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(4.490, -0.635), Point(4.763, -0.198)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(4.490, -0.635), Point(8.611, 10.738)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(4.526, -0.121), Point(4.763, -0.198)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(8.611, 10.738), Point(10.341, 10.738)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(9.179, -14.322), Point(17.140, -14.322)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(9.519, -10.871), Point(16.490, -10.871)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.490, -0.140), Point(15.606, 0.362)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.490, -0.140), Point(15.829, 0.249)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.490, -0.140), Point(18.452, 5.662)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.606, 0.362), Point(15.829, 0.249)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.990, -10.996), Point(15.990, -10.746)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.990, -10.996), Point(16.490, -10.871)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(15.990, -10.746), Point(16.490, -10.871)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(16.490, -11.171), Point(16.490, -0.935)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(16.640, -14.447), Point(16.640, -14.197)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(16.640, -14.447), Point(17.140, -14.322)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(16.640, -14.197), Point(17.140, -14.322)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(17.140, -14.622), Point(17.140, -3.928)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Line(0.025, [Point(18.452, 5.662), Point(20.542, 5.662)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-22.240, 8.623), Point(-17.160, 8.623)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-17.160, -3.628), Point(-17.160, 8.623)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-17.160, -3.628), Point(-16.660, -4.128)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-16.660, -4.128), Point(-6.460, -4.128)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-6.460, -4.128), Point(-5.960, -3.628)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-5.960, -3.628), Point(-5.960, 3.323)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-4.060, -3.628), Point(-4.060, 3.323)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-4.060, -3.628), Point(-3.560, -4.128)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(-3.560, -4.128), Point(16.640, -4.128)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(16.640, -4.128), Point(17.140, -3.628)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(17.140, -3.628), Point(17.140, 8.623)])
+  layer(CustomLayer("Pcb-Mechanical24", Top)) = Line(0.025, [Point(17.140, 8.623), Point(22.220, 8.623)])
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Polyline(0.025, [
+    Arc(-32.842, -9.633, 0.318, 0.0, 360.000)])
+  layer(CustomLayer("Pcb-Mechanical23", Top)) = Polyline(0.025, [
+    Arc(-5.010, 3.323, 0.950, 0.0, 180.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(-12.442, 4.531), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("0.95", 1.27, SW, loc(-12.430, 3.655), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("0.95", 1.27, SW, loc(-0.292, 2.157), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("1", 1.27, SW, loc(-10.273, -8.680), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("1", 1.27, SW, loc(8.027, -7.774), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("1.5", 1.27, SW, loc(-11.798, 5.457), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("1.5", 1.27, SW, loc(0.114, 5.484), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("1.9", 1.27, SW, loc(-11.888, 8.187), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("10", 1.27, SW, loc(-12.247, -11.458), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("12.15", 1.27, SW, loc(-13.088, -14.945), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("20", 0.7874, SW, loc(7.556, -11.265), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("22.15", 0.7874, SW, loc(4.854, -14.716), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("45 X0.5", 1.27, SW, loc(-35.500, -10.903), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A1", 0.00025, SW, loc(-16.510, -0.140), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A10", 0.00025, SW, loc(-7.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A11", 0.00025, SW, loc(-6.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A12", 0.00025, SW, loc(-3.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A13", 0.00025, SW, loc(-2.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A14", 0.00025, SW, loc(-1.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A15", 0.00025, SW, loc(-0.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A16", 0.00025, SW, loc(0.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A17", 0.00025, SW, loc(1.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A18", 0.00025, SW, loc(2.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A19", 0.00025, SW, loc(3.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A2", 0.00025, SW, loc(-15.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A20", 0.00025, SW, loc(4.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A21", 0.00025, SW, loc(5.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A22", 0.00025, SW, loc(6.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A23", 0.00025, SW, loc(7.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A24", 0.00025, SW, loc(8.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A25", 0.00025, SW, loc(9.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A26", 0.00025, SW, loc(10.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A27", 0.00025, SW, loc(11.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A28", 0.00025, SW, loc(12.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A29", 0.00025, SW, loc(13.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A3", 0.00025, SW, loc(-14.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A30", 0.00025, SW, loc(14.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A31", 0.00025, SW, loc(15.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A32", 0.00025, SW, loc(16.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A4", 0.00025, SW, loc(-13.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A5", 0.00025, SW, loc(-12.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A6", 0.00025, SW, loc(-11.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A7", 0.00025, SW, loc(-10.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A8", 0.00025, SW, loc(-9.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("A9", 0.00025, SW, loc(-8.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B1", 0.00025, SW, loc(-16.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B10", 0.00025, SW, loc(-7.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B11", 0.00025, SW, loc(-6.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B12", 0.00025, SW, loc(-3.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B13", 0.00025, SW, loc(-2.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B14", 0.00025, SW, loc(-1.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B15", 0.00025, SW, loc(-0.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B16", 0.00025, SW, loc(0.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B17", 0.00025, SW, loc(1.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B18", 0.00025, SW, loc(2.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B19", 0.00025, SW, loc(3.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B2", 0.00025, SW, loc(-15.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B20", 0.00025, SW, loc(4.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B21", 0.00025, SW, loc(5.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B22", 0.00025, SW, loc(6.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B23", 0.00025, SW, loc(7.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B24", 0.00025, SW, loc(8.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B25", 0.00025, SW, loc(9.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B26", 0.00025, SW, loc(10.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B27", 0.00025, SW, loc(11.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B28", 0.00025, SW, loc(12.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B29", 0.00025, SW, loc(13.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B3", 0.00025, SW, loc(-14.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B30", 0.00025, SW, loc(14.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B31", 0.00025, SW, loc(15.490, -0.140), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B32", 0.00025, SW, loc(16.490, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B4", 0.00025, SW, loc(-13.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B5", 0.00025, SW, loc(-12.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B6", 0.00025, SW, loc(-11.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B7", 0.00025, SW, loc(-10.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B8", 0.00025, SW, loc(-9.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("B9", 0.00025, SW, loc(-8.510, -0.635), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("Dimension in mm.", 1.27, SW, loc(-7.849, 12.214), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("Pad:rec28x126-bot", 1.27, SW, loc(-39.921, 4.094), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("Pad:rec28x126-top", 1.27, SW, loc(21.915, 4.964), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("Pad:rec28x165-bot", 1.27, SW, loc(11.569, 9.249), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("Pad:rec28x165-top", 1.27, SW, loc(11.898, 11.045), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical22", Top)) = Text("[4PALCES]", 1.27, SW, loc(-36.166, -13.251), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/PCIE_4LANE_EDGE_e8C1913A4.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

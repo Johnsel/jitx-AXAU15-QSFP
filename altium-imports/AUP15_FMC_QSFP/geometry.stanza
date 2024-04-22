@@ -1,0 +1,31 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/geometry :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/defaults
+  import AUP15_FMC_QSFP/board
+
+
+public defn add-main-geometry () -> False :
+  inside pcb-module :
+    layer(CustomLayer("Mechanical 1", Top)) = EmptyShape()
+    layer(CustomLayer("Top 3D Body", Top)) = EmptyShape()
+    layer(CustomLayer("Bottom 3D Body", Top)) = EmptyShape()
+    layer(CustomLayer("Mechanical 15", Top)) = EmptyShape()
+    layer(CustomLayer("Top Assembly", Top)) = EmptyShape()
+    layer(CustomLayer("Bottom Assembly", Top)) = EmptyShape()
+    layer(CustomLayer("Multi-Layer", Top)) = EmptyShape()
+    layer(CustomLayer("DRC Error Markers", Top)) = EmptyShape()
+
+public defn add-main-net-geometry () -> False :
+  inside pcb-module :
+    false
+
+
+public defn add-main-copper-lines-geometry () -> False :
+  inside pcb-module :
+    false
+
+

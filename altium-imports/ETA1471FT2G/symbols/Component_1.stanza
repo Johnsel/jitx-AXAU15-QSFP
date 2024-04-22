@@ -1,0 +1,12 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G/symbols/Component_1 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public pcb-symbol Component_1 :
+  layer("foreground") = Text(">VALUE", 0.762, C, loc(-0.500, 0.800), "", TrueTypeFont, false, false)
+  layer("foreground") = Text(">REF", 0.762, C, loc(-0.500, 1.862), "", TrueTypeFont, false, false)
+

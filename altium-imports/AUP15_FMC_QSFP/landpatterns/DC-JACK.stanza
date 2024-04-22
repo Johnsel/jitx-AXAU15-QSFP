@@ -1,0 +1,49 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/DC-JACK :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-th-pad-1 :
+  type = TH
+  shape = Rectangle(2.032, 3.556)
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.400)
+
+pcb-pad rect-th-pad-2 :
+  type = TH
+  shape = Rectangle(3.556, 2.032)
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.400)
+
+public pcb-landpattern DC-JACK :
+  pad p[1] : rect-th-pad-1 at loc(-0.160, 0.375, 270.000) on Top
+  pad p[2] : rect-th-pad-2 at loc(4.640, 3.875, 270.000) on Top
+  pad p[3] : rect-th-pad-1 at loc(-0.160, 6.375, 270.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-4.650, 7.125)
+    Point(-4.650, -7.125)
+    Point(4.650, -7.125)
+    Point(4.650, 7.125)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(-4.660, -7.125), Point(-4.660, 7.075)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(-4.660, -7.125), Point(-0.160, -7.125)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(-4.660, 7.075), Point(-2.160, 7.075)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(-0.160, -7.125), Point(4.640, -7.125)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(1.840, 7.075), Point(4.640, 7.075)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(4.640, -7.125), Point(4.640, 1.875)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.250, [Point(4.640, 5.875), Point(4.640, 7.075)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(2.430, 7.865), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.64008, SW, loc(-0.160, 0.631), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.64008, SW, loc(4.640, 4.131), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.64008, SW, loc(-0.160, 6.631), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/DC-JACK_e8F4080FF.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

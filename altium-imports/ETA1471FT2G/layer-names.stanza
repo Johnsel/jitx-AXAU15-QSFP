@@ -1,0 +1,26 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G/layer-names :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public defn layer-names () :
+  val type = "ALTIUM-LAYER-NAMES"
+  val layer-names = [
+    32 => "B.Cu" 
+    1 => "F.Cu" 
+    33 => "F.SilkS" 
+    34 => "B.SilkS" 
+    66 => "F.Fab" 
+    35 => "F.Paste" 
+    131 => "Cmts.User" 
+    36 => "B.Paste" 
+    37 => "F.Mask" 
+    38 => "B.Mask" 
+    74 => "Multi-Layer" 
+    147 => "Dielectric 1" 
+    57 => "User.9"]
+  set-cad-info(type, layer-names)
+

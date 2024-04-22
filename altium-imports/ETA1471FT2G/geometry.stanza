@@ -1,0 +1,27 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G/geometry :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/defaults
+  import ETA1471FT2G/board
+
+
+public defn add-main-geometry () -> False :
+  inside pcb-module :
+    layer(CustomLayer("User.9", Top)) = EmptyShape()
+    layer(CustomLayer("F.Fab", Top)) = EmptyShape()
+    layer(CustomLayer("Cmts.User", Top)) = EmptyShape()
+    layer(CustomLayer("Multi-Layer", Top)) = EmptyShape()
+
+public defn add-main-net-geometry () -> False :
+  inside pcb-module :
+    false
+
+
+public defn add-main-copper-lines-geometry () -> False :
+  inside pcb-module :
+    false
+
+

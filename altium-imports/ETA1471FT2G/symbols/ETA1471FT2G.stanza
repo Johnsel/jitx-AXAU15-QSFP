@@ -1,0 +1,46 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G/symbols/ETA1471FT2G :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public pcb-symbol ETA1471FT2G :
+  pin FB at Point(6.350, -2.540) with :
+    direction = Right
+    length = 2.540
+    number-size = 1.219
+    name-size = 1.219
+  pin EN at Point(6.350, 0.0) with :
+    direction = Right
+    length = 2.540
+    number-size = 1.219
+    name-size = 1.219
+  pin BST at Point(6.350, 2.540) with :
+    direction = Right
+    length = 2.540
+    number-size = 1.219
+    name-size = 1.219
+  pin VIN at Point(-6.350, -2.540) with :
+    direction = Left
+    length = 2.540
+    number-size = 1.219
+    name-size = 1.219
+  pin GND at Point(-6.350, 2.540) with :
+    direction = Left
+    length = 2.540
+    number-size = 1.219
+    name-size = 1.219
+  pin SW at Point(-6.350, 0.0) with :
+    direction = Left
+    length = 2.540
+    number-size = 1.219
+    name-size = 1.219
+
+  layer("foreground") = Text(">VALUE", 0.762, C, loc(-8.940, 5.380), "", TrueTypeFont, false, false)
+  layer("foreground") = Text(">REF", 0.762, C, loc(-8.940, 6.442), "", TrueTypeFont, false, false)
+  layer("foreground") = Rectangle(12.700, 10.160)
+  layer("foreground") = Polyline(0.127, [
+    Arc(-5.080, 3.810, 0.381, 0.0, 360.000)])
+

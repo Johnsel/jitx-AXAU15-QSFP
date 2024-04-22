@@ -1,0 +1,387 @@
+{
+	"diff-data":	{
+		"nets-data":	[],
+		"inst-to-component":	[["C2X1Wqmu86XBFdKQCxX5oz", "BMJserciy2piJnFMWQ46MG"]],
+		"symbol-shapes":	[["BMJserciy2piJnFMWQ46MG", {
+					"boxes":	[{
+							"sw":	{
+								"x":	-3,
+								"y":	-7
+							},
+							"ne":	{
+								"x":	5,
+								"y":	7
+							},
+							"ports":	[{
+									"ref":	"bst",
+									"pt":	{
+										"x":	5,
+										"y":	-1
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"en",
+									"pt":	{
+										"x":	5,
+										"y":	-3
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"fb",
+									"pt":	{
+										"x":	5,
+										"y":	-5
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"gnd",
+									"pt":	{
+										"x":	5,
+										"y":	5
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"sw",
+									"pt":	{
+										"x":	5,
+										"y":	3
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"vin",
+									"pt":	{
+										"x":	5,
+										"y":	1
+									},
+									"dir":	"Right"
+								}]
+						}]
+				}], ["1114VuAvHNgLD5Rkx8Vpm", {
+					"boxes":	[{
+							"sw":	{
+								"x":	-3,
+								"y":	0
+							},
+							"ne":	{
+								"x":	3,
+								"y":	1
+							},
+							"ports":	[{
+									"ref":	"require",
+									"pt":	{
+										"x":	3,
+										"y":	0
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"support",
+									"pt":	{
+										"x":	-3,
+										"y":	0
+									},
+									"dir":	"Left"
+								}]
+						}]
+				}], ["1111111111oJyPVTF", {
+					"boxes":	[{
+							"sw":	{
+								"x":	-3,
+								"y":	-7
+							},
+							"ne":	{
+								"x":	5,
+								"y":	7
+							},
+							"ports":	[{
+									"ref":	"R[0]",
+									"pt":	{
+										"x":	5,
+										"y":	5
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"R[1]",
+									"pt":	{
+										"x":	5,
+										"y":	3
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"R[2]",
+									"pt":	{
+										"x":	5,
+										"y":	1
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"R[3]",
+									"pt":	{
+										"x":	5,
+										"y":	-1
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"R[4]",
+									"pt":	{
+										"x":	5,
+										"y":	-3
+									},
+									"dir":	"Right"
+								}, {
+									"ref":	"R[5]",
+									"pt":	{
+										"x":	5,
+										"y":	-5
+									},
+									"dir":	"Right"
+								}]
+						}]
+				}]],
+		"unit-table":	[["1111111111pdKxwWZ", 0], ["1111111111pCNvG46", 0], ["1111111111osapnN7", 0], ["1111111111ocxEtbn", 0], ["1111111111pWZY9mW", 0], ["1111111111pJzvt24", 0], ["1111111111okQydDg", 0], ["1111111111p6QHkAr", 0], ["1111111111oPspSzH", 0], ["11111111111126VbLk", 0], ["1111111111pRNQbWm", 0], ["111111111119MnTEH", 0], ["1111111111oXFZi1j", 0], ["1111111111owigNeM", 0]],
+		"component-pin-map":	[[["BMJserciy2piJnFMWQ46MG", "vin"], "1111111111oPspSzH"], [["BMJserciy2piJnFMWQ46MG", "fb"], "1111111111osapnN7"], [["1114VuAvHNgLD5Rkx8Vpm", "support-pin"], "11111111111126VbLk"], [["1114VuAvHNgLD5Rkx8Vpm", "require-pin"], "111111111119MnTEH"], [["BMJserciy2piJnFMWQ46MG", "sw"], "1111111111ocxEtbn"], [["BMJserciy2piJnFMWQ46MG", "gnd"], "1111111111oXFZi1j"], [["BMJserciy2piJnFMWQ46MG", "en"], "1111111111owigNeM"], [["BMJserciy2piJnFMWQ46MG", "bst"], "1111111111okQydDg"]],
+		"instance-ids":	[{
+				"id":	"C2X1Wqmu86XBFdKQCxX5oz",
+				"unit-id":	0
+			}],
+		"group-ids":	["Un0.ETA1471"],
+		"pin-ids":	[],
+		"pure-netlist":	{
+			"instances":	[{
+					"id":	0,
+					"group":	0
+				}],
+			"nets":	[]
+		},
+		"require-pin-name-by-stable-id":	[],
+		"input":	{
+			"paper-size":	{
+				"x":	200,
+				"y":	125
+			},
+			"label-font-size":	0.8,
+			"boxes":	[{
+					"id":	5938,
+					"sw":	{
+						"x":	-3,
+						"y":	-7
+					},
+					"ne":	{
+						"x":	5,
+						"y":	7
+					},
+					"ports":	[{
+							"id":	5988,
+							"pt":	{
+								"x":	5,
+								"y":	5
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5989,
+							"pt":	{
+								"x":	5,
+								"y":	3
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5990,
+							"pt":	{
+								"x":	5,
+								"y":	1
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5991,
+							"pt":	{
+								"x":	5,
+								"y":	-1
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5992,
+							"pt":	{
+								"x":	5,
+								"y":	-3
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5993,
+							"pt":	{
+								"x":	5,
+								"y":	-5
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}],
+					"orientation":	{
+						"type":	"prefer-rotation",
+						"rotations":	[0]
+					}
+				}, {
+					"id":	5987,
+					"sw":	{
+						"x":	-3,
+						"y":	-7
+					},
+					"ne":	{
+						"x":	5,
+						"y":	7
+					},
+					"ports":	[{
+							"id":	5981,
+							"pt":	{
+								"x":	5,
+								"y":	5
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5982,
+							"pt":	{
+								"x":	5,
+								"y":	3
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5983,
+							"pt":	{
+								"x":	5,
+								"y":	1
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5984,
+							"pt":	{
+								"x":	5,
+								"y":	-1
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5985,
+							"pt":	{
+								"x":	5,
+								"y":	-3
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5986,
+							"pt":	{
+								"x":	5,
+								"y":	-5
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}],
+					"orientation":	{
+						"type":	"prefer-rotation",
+						"rotations":	[0]
+					}
+				}, {
+					"id":	5941,
+					"sw":	{
+						"x":	-3,
+						"y":	0
+					},
+					"ne":	{
+						"x":	3,
+						"y":	1
+					},
+					"ports":	[{
+							"id":	5995,
+							"pt":	{
+								"x":	-3,
+								"y":	0
+							},
+							"dir":	"Left",
+							"tag":	"AnyTag"
+						}, {
+							"id":	5996,
+							"pt":	{
+								"x":	3,
+								"y":	0
+							},
+							"dir":	"Right",
+							"tag":	"AnyTag"
+						}],
+					"orientation":	{
+						"type":	"any-rotation"
+					}
+				}],
+			"insts":	[{
+					"id":	5942,
+					"box":	5938,
+					"group":	"Un0.ETA1471"
+				}],
+			"nets":	[],
+			"shorts":	[],
+			"schematic-group-order":	[]
+		}
+	},
+	"stable-board-to-box-layout-id-mapping":	{
+		"boxes":	[[{
+					"id":	"BMJserciy2piJnFMWQ46MG",
+					"unit-id":	0
+				}, 5938], [{
+					"id":	"1111111111oJyPVTF",
+					"unit-id":	0
+				}, 5987], [{
+					"id":	"1114VuAvHNgLD5Rkx8Vpm",
+					"unit-id":	0
+				}, 5941]],
+		"inst-boxes":	[[{
+					"id":	"C2X1Wqmu86XBFdKQCxX5oz",
+					"unit-id":	0
+				}, 5942]],
+		"nets":	[],
+		"ports":	[["1111111111pdKxwWZ", 5986], ["1111111111pCNvG46", 5982], ["1111111111osapnN7", 5993], ["1111111111ocxEtbn", 5989], ["1111111111pWZY9mW", 5985], ["1111111111pJzvt24", 5983], ["1111111111okQydDg", 5991], ["1111111111p6QHkAr", 5981], ["1111111111oPspSzH", 5990], ["11111111111126VbLk", 5995], ["1111111111pRNQbWm", 5984], ["111111111119MnTEH", 5996], ["1111111111oXFZi1j", 5988], ["1111111111owigNeM", 5992]]
+	},
+	"output":	{
+		"sheets":	[{
+				"id":	5999,
+				"title":	null,
+				"schematic-groups":	[{
+						"id":	5943,
+						"ref":	"Un0.ETA1471",
+						"children":	[],
+						"output":	{
+							"inst-placements":	[{
+									"inst":	5942,
+									"pose":	{
+										"center":	{
+											"x":	99,
+											"y":	62
+										},
+										"angle":	0,
+										"flip-x?":	false
+									}
+								}],
+							"nets":	[]
+						},
+						"border":	{
+							"x1":	94,
+							"y1":	53,
+							"x2":	106,
+							"y2":	71
+						},
+						"origin":	{
+							"x":	0,
+							"y":	0
+						},
+						"partial-island-nets":	[],
+						"external-ports-by-net-id":	[],
+						"high-level-nets":	[]
+					}]
+			}],
+		"hierarchical-diagram":	null,
+		"partial-group-nets":	[]
+	}
+}

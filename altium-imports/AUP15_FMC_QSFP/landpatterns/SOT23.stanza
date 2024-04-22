@@ -1,0 +1,50 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/SOT23 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad-1 :
+  type = SMD
+  shape = Rectangle(0.910, 0.910)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(0.910, 0.910)
+
+pcb-pad rect-smd-pad-2 :
+  type = SMD
+  shape = Rectangle(0.910, 1.270)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(0.910, 1.270)
+
+public pcb-landpattern SOT23 :
+  pad p[1] : rect-smd-pad-1 at loc(-0.950, -1.015) on Top
+  pad p[2] : rect-smd-pad-1 at loc(0.950, -1.015) on Top
+  pad p[3] : rect-smd-pad-2 at loc(0.020, 1.015) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-1.410, -1.475)
+    Point(-1.410, 1.475)
+    Point(1.410, 1.475)
+    Point(1.410, -1.475)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-1.433, -0.329), Point(-1.433, 1.119)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(-1.433, 1.119), Point(-0.747, 1.119)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(0.752, 1.119), Point(1.387, 1.119)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.152, [Point(1.387, -0.304), Point(1.387, 1.119)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.410, -1.475), Point(-1.410, 1.475)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.410, -1.475), Point(1.410, -1.475)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.410, 1.475), Point(1.410, 1.475)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(1.410, -1.475), Point(1.410, 1.475)])
+  layer(CustomLayer("Bottom Assembly", Top)) = Text(".Designator", 0.635, SW, loc(Point(-0.213, -0.050), 180.000, true), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(Point(-1.204, -1.015), 180.000, true), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(Point(0.696, -1.015), 180.000, true), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(Point(-0.234, 1.015), 180.000, true), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/SOT23_e916933CB.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

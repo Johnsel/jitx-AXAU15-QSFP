@@ -1,0 +1,4 @@
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "*".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "*".
+Warning: The following parts appear on the board but are missing in the schematic. A box symbol will be added for each on the schematic.
+  Un0

@@ -1,0 +1,5 @@
+name = "c:\\Users\\jamms\\OneDrive\\Documenten\\- JITX\\FMC_QSFP"
+version = "0.1.0"
+[dependencies]
+ocdb = { path = "{SLM_ROOT}/ocdb" }
+JITX = { path = "C:/Users/jamms/.jitx/3.2.0/slm/JITX" }

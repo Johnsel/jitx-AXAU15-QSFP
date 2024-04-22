@@ -1,0 +1,107 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/WQFN-24_EP :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad oval-smd-pad-1 :
+  type = SMD
+  shape = Capsule(1.0, 0.24994, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Capsule(1.0, 0.24994, loc(0.0, 0.0))
+
+pcb-pad oval-smd-pad-2 :
+  type = SMD
+  shape = Capsule(0.24994, 1.0, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Capsule(0.24994, 1.0, loc(0.0, 0.0))
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(2.450, 2.450)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(2.450, 2.450)
+
+public pcb-landpattern WQFN-24_EP :
+  pad p[1] : oval-smd-pad-1 at loc(-2.000, 1.169, 180.000) on Top
+  pad p[2] : oval-smd-pad-1 at loc(-2.000, 0.670, 180.000) on Top
+  pad p[3] : oval-smd-pad-1 at loc(-2.000, 0.169, 180.000) on Top
+  pad p[4] : oval-smd-pad-1 at loc(-2.000, -0.330, 180.000) on Top
+  pad p[5] : oval-smd-pad-1 at loc(-2.000, -0.831, 180.000) on Top
+  pad p[6] : oval-smd-pad-1 at loc(-2.000, -1.330, 180.000) on Top
+  pad p[7] : oval-smd-pad-2 at loc(-1.250, -2.081, 180.000) on Top
+  pad p[8] : oval-smd-pad-2 at loc(-0.750, -2.081, 180.000) on Top
+  pad p[9] : oval-smd-pad-2 at loc(-0.250, -2.081, 180.000) on Top
+  pad p[10] : oval-smd-pad-2 at loc(0.250, -2.081, 180.000) on Top
+  pad p[11] : oval-smd-pad-2 at loc(0.750, -2.081, 180.000) on Top
+  pad p[12] : oval-smd-pad-2 at loc(1.250, -2.081, 180.000) on Top
+  pad p[13] : oval-smd-pad-1 at loc(2.000, -1.330, 180.000) on Top
+  pad p[14] : oval-smd-pad-1 at loc(2.000, -0.831, 180.000) on Top
+  pad p[15] : oval-smd-pad-1 at loc(2.000, -0.330, 180.000) on Top
+  pad p[16] : oval-smd-pad-1 at loc(2.000, 0.169, 180.000) on Top
+  pad p[17] : oval-smd-pad-1 at loc(2.000, 0.670, 180.000) on Top
+  pad p[18] : oval-smd-pad-1 at loc(2.000, 1.169, 180.000) on Top
+  pad p[19] : oval-smd-pad-2 at loc(1.250, 1.919, 180.000) on Top
+  pad p[20] : oval-smd-pad-2 at loc(0.750, 1.919, 180.000) on Top
+  pad p[21] : oval-smd-pad-2 at loc(0.250, 1.919, 180.000) on Top
+  pad p[22] : oval-smd-pad-2 at loc(-0.250, 1.919, 180.000) on Top
+  pad p[23] : oval-smd-pad-2 at loc(-0.750, 1.919, 180.000) on Top
+  pad p[24] : oval-smd-pad-2 at loc(-1.250, 1.919, 180.000) on Top
+  pad p[25] : rect-smd-pad at loc(0.0, -0.081, 180.000) on Top
+
+  layer(CustomLayer("Top 3D Body", Top)) = Polygon([
+    Point(-2.500, -2.205)
+    Point(2.500, -2.205)
+    Point(2.500, 2.205)
+    Point(-2.500, 2.205)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.286, -2.265), Point(-2.286, -1.681)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.286, -2.265), Point(-1.575, -2.265)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.286, 1.545), Point(-2.286, 1.799)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-2.286, 1.799), Point(-1.880, 2.205)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(-1.880, 2.205), Point(-1.524, 2.205)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(1.600, -2.265), Point(2.184, -2.265)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(1.626, 2.104), Point(2.184, 2.104)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(2.184, -2.265), Point(2.184, -1.630)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.127, [Point(2.184, 1.545), Point(2.184, 2.104)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.500, -2.205), Point(-2.500, 2.205)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.500, -2.205), Point(2.500, -2.205)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-2.500, 2.205), Point(2.500, 2.205)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(2.500, -2.205), Point(2.500, 2.205)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.203, [
+    Arc(-3.048, 1.164, 0.102, 0.0, 360.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(4.623, -0.351, 180.000), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-1.746, 1.169), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("10", 0.635, SW, loc(0.758, -2.081), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("11", 0.635, SW, loc(1.258, -2.081), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("12", 0.635, SW, loc(1.758, -2.081), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("13", 0.635, SW, loc(2.508, -1.330), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("14", 0.635, SW, loc(2.508, -0.831), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("15", 0.635, SW, loc(2.508, -0.330), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("16", 0.635, SW, loc(2.508, 0.169), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("17", 0.635, SW, loc(2.508, 0.670), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("18", 0.635, SW, loc(2.508, 1.169), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("19", 0.635, SW, loc(1.758, 1.919), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(-1.746, 0.670), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("20", 0.635, SW, loc(1.258, 1.919), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("21", 0.635, SW, loc(0.758, 1.919), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("22", 0.635, SW, loc(0.258, 1.919), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("23", 0.635, SW, loc(-0.242, 1.919), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("24", 0.635, SW, loc(-0.742, 1.919), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("25", 0.635, SW, loc(0.508, -0.081), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(-1.746, 0.169), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(-1.746, -0.330), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("5", 0.635, SW, loc(-1.746, -0.831), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("6", 0.635, SW, loc(-1.746, -1.330), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("7", 0.635, SW, loc(-0.996, -2.081), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("8", 0.635, SW, loc(-0.496, -2.081), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("9", 0.635, SW, loc(0.004, -2.081), "Arial", StrokeFont, false, false)
+
+  model3d = Model3D("../3d-models/WQFN-24_EP_e91034915.STEP",
+    Vec3D(0.0, 0.0, 0.0),
+    Vec3D(1.000, 1.000, 1.000),
+    Vec3D(0.0, 0.0, 0.0),
+    ["ModelSource" => "0" "ModelType" => "0" "BodyLayerId" => "63" "BodyColor3D" => "8421504" "BodyProjection" => "0" "BodyOverallHeight" => "3.81" "BodyStandoffHeight" => "0.0" "BodyOpacity3D" => "1.0" "IsEmbed" => "false" "OverrideColor" => "false" "BodyIdentifier" => ""],
+    )
+

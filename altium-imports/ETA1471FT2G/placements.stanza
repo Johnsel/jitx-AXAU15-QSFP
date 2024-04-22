@@ -1,0 +1,16 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G/placements :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public defn add-ETA1471-placements () -> False :
+  inside pcb-module :
+    place(self.orphan-lp) at loc(0.0, 0.0) on Top
+
+public defn add-main-placements () -> False :
+  inside pcb-module :
+    place(self.Un0) at loc(0.0, 0.0) on Top
+

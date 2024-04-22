@@ -1,0 +1,42 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/landpatterns/L4_4X4_2 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(2.500, 1.500)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(2.500, 1.500)
+
+public pcb-landpattern L4_4X4_2 :
+  pad p[1] : rect-smd-pad at loc(0.0, 1.850) on Top
+  pad p[2] : rect-smd-pad at loc(0.0, -1.850) on Top
+
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-2.100, -2.200), Point(-2.100, 2.200)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-2.100, -2.200), Point(2.100, -2.200)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-2.100, 2.200), Point(2.100, 2.200)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(2.100, -2.200), Point(2.100, 2.200)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-1.990, -1.990), Point(-1.990, 1.990)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-1.990, -1.990), Point(1.990, -1.990)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-1.990, 1.990), Point(1.990, 1.990)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(1.990, -1.990), Point(1.990, 1.990)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.990, -1.990), Point(-1.990, 1.990)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.990, -1.990), Point(1.990, -1.990)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-1.990, 1.990), Point(1.990, 1.990)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(1.990, -1.990), Point(1.990, 1.990)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.150, [
+    Arc(-0.760, 0.135, 0.400, 161.768, 216.464)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.150, [
+    Arc(0.0, 0.137, 0.399, 162.107, 215.786)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.150, [
+    Arc(0.760, 0.135, 0.400, 161.768, 216.464)])
+  layer(CustomLayer("Top Assembly", Top)) = Text(".Designator", 1.27, SW, loc(-3.120, -0.420), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.8128, SW, loc(-0.325, 1.850), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.8128, SW, loc(-0.325, -1.850), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Pcb-Mechanical20", Top)) = Text("2018.08.13", 1.27, SW, loc(-3.560, 2.540), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Top Assembly", Top)) = Text("CMLB041B-4R7MS", 1.27, SW, loc(-2.230, -0.420), "Arial", StrokeFont, false, false)
+

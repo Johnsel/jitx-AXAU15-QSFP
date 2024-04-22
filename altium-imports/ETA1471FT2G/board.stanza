@@ -1,0 +1,62 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G/board :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+pcb-material FR-4 :
+  type = Dielectric
+  material-name = "FR-4"
+  dielectric-coefficient = 4.80000
+
+pcb-material SolderResist :
+  type = Dielectric
+  material-name = "Solder Resist"
+  dielectric-coefficient = 3.50000
+
+pcb-material copper :
+  type = Conductor
+
+pcb-stackup altium-stackPexup :
+  layer(0.01016, SolderResist, "F.Mask")
+  layer(0.03556, copper, "F.Cu")
+  layer(0.32004, FR-4, "Dielectric 1")
+  layer(0.03556, copper, "B.Cu")
+  layer(0.01016, SolderResist, "B.Mask")
+
+public pcb-rules default-design-rules :
+  min-copper-width = 0.130
+  min-copper-copper-space = 0.200
+  min-copper-hole-space = 0.203
+  min-copper-edge-space = 0.381
+  min-annular-ring = 0.152
+  min-drill-diameter = 0.254
+  min-silkscreen-width = 0.076
+  min-pitch-leaded = 0.350
+  min-pitch-bga = 0.350
+  max-board-width = 457.200
+  max-board-height = 609.600
+  solder-mask-registration = 0.150
+  min-silk-solder-mask-space = 0.150
+  min-silkscreen-text-height = 0.762
+  min-th-pad-expand-outer = 0.150
+  min-soldermask-opening = 0.152
+  min-soldermask-bridge = 0.102
+  min-hole-to-hole = 0.254
+  min-pth-pin-solder-clearance = 3.000
+
+public pcb-board altium-board :
+  stackup = altium-stackPexup
+  boundary = PolygonWithArcs([Point(25.4, 25.4),
+                   Point(177.8, 25.4),
+                   Point(177.8, 127.0),
+                   Point(25.4, 127.0),
+                   Point(25.4, 25.4)])
+  signal-boundary = PolygonWithArcs([Point(25.4, 25.4),
+                   Point(177.8, 25.4),
+                   Point(177.8, 127.0),
+                   Point(25.4, 127.0),
+                   Point(25.4, 25.4)])
+

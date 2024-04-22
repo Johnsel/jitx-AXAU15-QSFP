@@ -1,0 +1,16 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/placements :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+
+
+public defn add-main-placements () -> False :
+  inside pcb-module :
+    place(self.FPAD_1) at loc(123.525, 54.193) on Top
+    place(self.J1) at loc(122.564, 74.001, 270.000) on Top
+    place(self.J2) at loc(98.752, 92.856) on Top
+    place(self.J3) at loc(74.854, 74.045, 90.000) on Top
+    place(self.J4) at loc(98.709, 55.146, 180.000) on Top
+

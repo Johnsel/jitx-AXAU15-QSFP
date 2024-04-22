@@ -1,0 +1,12 @@
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "FPAD_?".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J?".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J1".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J1".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J2".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J2".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J3".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J3".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J4".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "J4".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "FPAD_1".
+Warning: Cannot represent in JITX: Parameter "Comment" in the unit with Designator "FPAD_1".

@@ -1,0 +1,37 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/checks
+  import ocdb/utils/generic-components
+  import ocdb/utils/symbols
+  import AUP15_FMC_QSFP/placements
+  import AUP15_FMC_QSFP/reference-designators
+  import AUP15_FMC_QSFP/geometry
+  import AUP15_FMC_QSFP/labels
+
+
+public pcb-module main :
+  public inst FPAD_1 : AUP15_FMC_QSFP/components/UNKNOWN/FPAD_1/component
+  public inst J1 : AUP15_FMC_QSFP/components/UNKNOWN/AXK680337YG/component
+  public inst J2 : AUP15_FMC_QSFP/components/UNKNOWN/AXK680337YG-3/component
+  public inst J3 : AUP15_FMC_QSFP/components/UNKNOWN/AXK680337YG-1/component
+  public inst J4 : AUP15_FMC_QSFP/components/UNKNOWN/AXK680337YG-2/component
+
+
+  net VCCIN_12V (J1.p[0], J1.p[1], J1.p[2], J1.p[3], J1.p[4], J1.p[5], J1.p[6], J1.p[7])
+
+  net GND_J1 (J1.p[8], J1.p[9], J1.p[18], J1.p[19], J1.p[28], J1.p[29], J1.p[38], J1.p[39], J1.p[48], J1.p[49], J1.p[58], J1.p[59], J1.p[68], J1.p[69])
+  net GND_J2 (J2.p[8], J2.p[9], J2.p[18], J2.p[19], J2.p[28], J2.p[29], J2.p[38], J2.p[39], J2.p[48], J2.p[49], J2.p[58], J2.p[59], J2.p[68], J2.p[69], J2.p[78], J2.p[79])
+  net GND_J3 (J3.p[8], J3.p[9], J3.p[18], J3.p[19], J3.p[28], J3.p[29], J3.p[38], J3.p[39], J3.p[48], J3.p[49], J3.p[58], J3.p[59], J3.p[68], J3.p[69], J3.p[78], J3.p[79])
+  net GND_J4 (J4.p[4], J4.p[5], J4.p[10], J4.p[11], J4.p[16], J4.p[17], J4.p[22], J4.p[23], J4.p[28], J4.p[29], J4.p[34], J4.p[35], J4.p[40], J4.p[41], J4.p[46], J4.p[47], J4.p[52], J4.p[53], J4.p[58], J4.p[59], J4.p[64], J4.p[65], J4.p[70], J4.p[71], J4.p[76], J4.p[77])
+  
+  
+  add-main-placements()
+  add-main-reference-designators()
+  add-main-geometry()
+  add-main-labels()
+  check-design(self)
+

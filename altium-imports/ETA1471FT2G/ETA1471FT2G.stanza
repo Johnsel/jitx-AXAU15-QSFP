@@ -1,0 +1,29 @@
+#use-added-syntax(jitx)
+defpackage ETA1471FT2G :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/checks
+  import ocdb/utils/generic-components
+  import ocdb/utils/symbols
+  import ETA1471FT2G/placements
+  import ETA1471FT2G/geometry
+
+
+
+public pcb-module ETA1471 :
+  public inst orphan-lp : ETA1471FT2G/components/UNKNOWN/ETA1471/ETA1471
+
+  ;val max-light-current = property(pd.responsivity) * lux-at-full-range
+  ;val target-gain-resistance = closest-std-val(supply-voltage / max-light-current, 1.0)
+
+  ; Calculate feedback capacitor for stability at bandwidth
+  ;val cf = closest-std-val(1.0 / (2.0 * PI * target-gain-resistance * target-bandwidth) * 0.9, 10.0)
+
+
+
+  schematic-group(self) = ETA1471
+
+  add-ETA1471-placements()
+

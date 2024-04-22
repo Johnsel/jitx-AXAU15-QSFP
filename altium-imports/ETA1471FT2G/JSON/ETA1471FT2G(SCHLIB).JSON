@@ -1,0 +1,46 @@
+{
+  "ExportInfo": {
+    "ExtensionVersion": "1.0.45.0",
+    "CompatibleExtensionVersion": "0.14.0.7"
+  },
+  "User": "jamms",
+  "Machine": "JOHN-PC",
+  "DateTime": "240421-2324",
+  "Version": "4.0.30319.42000",
+  "FileType": "SCHLIB",
+  "FileName": "ETA1471FT2G.SchLib",
+  "UnitsOfMeasure": "MM",
+  "SCHLIBComponents": [
+    {
+      "Name": "Component_1",
+      "DesignItemID": null,
+      "Designator": "*",
+      "Description": "Part *",
+      "Comment": "*",
+      "Kind": 0,
+      "IsMultiPart": false,
+      "MaxParts": 1,
+      "Parameters": [
+        {
+          "Name": "Comment",
+          "Text": "*",
+          "IsHidden": false,
+          "AutoPosition": true
+        }
+      ],
+      "Models": [],
+      "Parts": [
+        {
+          "PartID": 1,
+          "Texts": [],
+          "Lines": [],
+          "PolyLines": [],
+          "Arcs": [],
+          "Pins": [],
+          "Polygons": [],
+          "Rectangles": []
+        }
+      ]
+    }
+  ]
+}

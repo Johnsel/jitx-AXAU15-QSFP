@@ -1,0 +1,301 @@
+#use-added-syntax(jitx)
+defpackage AUP15_FMC_QSFP/components/UNKNOWN/AXK680337YG-3 :
+  import core
+  import collections
+  import jitx
+  import jitx/commands
+  import ocdb/utils/box-symbol
+
+
+pcb-pad oval-th-pad :
+  type = TH
+  shape = Capsule(1.10007, 1.10007, loc(0.0, 0.0))
+  ocdb/utils/landpatterns/apply-soldermask(0.0)
+  layer(Cutout()) = Circle(0.400)
+
+pcb-pad rect-smd-pad :
+  type = SMD
+  shape = Rectangle(0.250, 1.550)
+  ocdb/utils/landpatterns/apply-soldermask(0.1016)
+  layer(Paste(Top)) = Rectangle(0.250, 1.550)
+
+public pcb-landpattern AXK680337YG :
+  pad p[1] : rect-smd-pad at loc(-9.750, -2.025) on Top
+  pad p[2] : rect-smd-pad at loc(-9.750, 2.025) on Top
+  pad p[3] : rect-smd-pad at loc(-9.250, -2.025) on Top
+  pad p[4] : rect-smd-pad at loc(-9.250, 2.025) on Top
+  pad p[5] : rect-smd-pad at loc(-8.750, -2.025) on Top
+  pad p[6] : rect-smd-pad at loc(-8.750, 2.025) on Top
+  pad p[7] : rect-smd-pad at loc(-8.250, -2.025) on Top
+  pad p[8] : rect-smd-pad at loc(-8.250, 2.025) on Top
+  pad p[9] : rect-smd-pad at loc(-7.750, -2.025) on Top
+  pad p[10] : rect-smd-pad at loc(-7.750, 2.025) on Top
+  pad p[11] : rect-smd-pad at loc(-7.250, -2.025) on Top
+  pad p[12] : rect-smd-pad at loc(-7.250, 2.025) on Top
+  pad p[13] : rect-smd-pad at loc(-6.750, -2.025) on Top
+  pad p[14] : rect-smd-pad at loc(-6.750, 2.025) on Top
+  pad p[15] : rect-smd-pad at loc(-6.250, -2.025) on Top
+  pad p[16] : rect-smd-pad at loc(-6.250, 2.025) on Top
+  pad p[17] : rect-smd-pad at loc(-5.750, -2.025) on Top
+  pad p[18] : rect-smd-pad at loc(-5.750, 2.025) on Top
+  pad p[19] : rect-smd-pad at loc(-5.250, -2.025) on Top
+  pad p[20] : rect-smd-pad at loc(-5.250, 2.025) on Top
+  pad p[21] : rect-smd-pad at loc(-4.750, -2.025) on Top
+  pad p[22] : rect-smd-pad at loc(-4.750, 2.025) on Top
+  pad p[23] : rect-smd-pad at loc(-4.250, -2.025) on Top
+  pad p[24] : rect-smd-pad at loc(-4.250, 2.025) on Top
+  pad p[25] : rect-smd-pad at loc(-3.750, -2.025) on Top
+  pad p[26] : rect-smd-pad at loc(-3.750, 2.025) on Top
+  pad p[27] : rect-smd-pad at loc(-3.250, -2.025) on Top
+  pad p[28] : rect-smd-pad at loc(-3.250, 2.025) on Top
+  pad p[29] : rect-smd-pad at loc(-2.750, -2.025) on Top
+  pad p[30] : rect-smd-pad at loc(-2.750, 2.025) on Top
+  pad p[31] : rect-smd-pad at loc(-2.250, -2.025) on Top
+  pad p[32] : rect-smd-pad at loc(-2.250, 2.025) on Top
+  pad p[33] : rect-smd-pad at loc(-1.750, -2.025) on Top
+  pad p[34] : rect-smd-pad at loc(-1.750, 2.025) on Top
+  pad p[35] : rect-smd-pad at loc(-1.250, -2.025) on Top
+  pad p[36] : rect-smd-pad at loc(-1.250, 2.025) on Top
+  pad p[37] : rect-smd-pad at loc(-0.750, -2.025) on Top
+  pad p[38] : rect-smd-pad at loc(-0.750, 2.025) on Top
+  pad p[39] : rect-smd-pad at loc(-0.250, -2.025) on Top
+  pad p[40] : rect-smd-pad at loc(-0.250, 2.025) on Top
+  pad p[41] : rect-smd-pad at loc(0.250, -2.025) on Top
+  pad p[42] : rect-smd-pad at loc(0.250, 2.025) on Top
+  pad p[43] : rect-smd-pad at loc(0.750, -2.025) on Top
+  pad p[44] : rect-smd-pad at loc(0.750, 2.025) on Top
+  pad p[45] : rect-smd-pad at loc(1.250, -2.025) on Top
+  pad p[46] : rect-smd-pad at loc(1.250, 2.025) on Top
+  pad p[47] : rect-smd-pad at loc(1.750, -2.025) on Top
+  pad p[48] : rect-smd-pad at loc(1.750, 2.025) on Top
+  pad p[49] : rect-smd-pad at loc(2.250, -2.025) on Top
+  pad p[50] : rect-smd-pad at loc(2.250, 2.025) on Top
+  pad p[51] : rect-smd-pad at loc(2.750, -2.025) on Top
+  pad p[52] : rect-smd-pad at loc(2.750, 2.025) on Top
+  pad p[53] : rect-smd-pad at loc(3.250, -2.025) on Top
+  pad p[54] : rect-smd-pad at loc(3.250, 2.025) on Top
+  pad p[55] : rect-smd-pad at loc(3.750, -2.025) on Top
+  pad p[56] : rect-smd-pad at loc(3.750, 2.025) on Top
+  pad p[57] : rect-smd-pad at loc(4.250, -2.025) on Top
+  pad p[58] : rect-smd-pad at loc(4.250, 2.025) on Top
+  pad p[59] : rect-smd-pad at loc(4.750, -2.025) on Top
+  pad p[60] : rect-smd-pad at loc(4.750, 2.025) on Top
+  pad p[61] : rect-smd-pad at loc(5.250, -2.025) on Top
+  pad p[62] : rect-smd-pad at loc(5.250, 2.025) on Top
+  pad p[63] : rect-smd-pad at loc(5.750, -2.025) on Top
+  pad p[64] : rect-smd-pad at loc(5.750, 2.025) on Top
+  pad p[65] : rect-smd-pad at loc(6.250, -2.025) on Top
+  pad p[66] : rect-smd-pad at loc(6.250, 2.025) on Top
+  pad p[67] : rect-smd-pad at loc(6.750, -2.025) on Top
+  pad p[68] : rect-smd-pad at loc(6.750, 2.025) on Top
+  pad p[69] : rect-smd-pad at loc(7.250, -2.025) on Top
+  pad p[70] : rect-smd-pad at loc(7.250, 2.025) on Top
+  pad p[71] : rect-smd-pad at loc(7.750, -2.025) on Top
+  pad p[72] : rect-smd-pad at loc(7.750, 2.025) on Top
+  pad p[73] : rect-smd-pad at loc(8.250, -2.025) on Top
+  pad p[74] : rect-smd-pad at loc(8.250, 2.025) on Top
+  pad p[75] : rect-smd-pad at loc(8.750, -2.025) on Top
+  pad p[76] : rect-smd-pad at loc(8.750, 2.025) on Top
+  pad p[77] : rect-smd-pad at loc(9.250, -2.025) on Top
+  pad p[78] : rect-smd-pad at loc(9.250, 2.025) on Top
+  pad p[79] : rect-smd-pad at loc(9.750, -2.025) on Top
+  pad p[80] : rect-smd-pad at loc(9.750, 2.025) on Top
+  pad p[81] : oval-th-pad at loc(-11.050, 1.200) on Top
+  pad p[82] : oval-th-pad at loc(11.050, 1.200) on Top
+
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-11.250, -1.400), Point(-11.250, 2.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-11.250, -1.400), Point(-10.700, -1.400)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-11.250, 2.000), Point(-10.033, 2.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-10.700, -2.000), Point(-10.700, -1.400)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(-10.700, -2.000), Point(-10.033, -2.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(10.033, -2.000), Point(10.700, -2.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(10.033, 2.000), Point(11.250, 2.000)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(10.700, -2.000), Point(10.700, -1.400)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(10.700, -1.400), Point(11.250, -1.400)])
+  layer(Silkscreen("B-SilkS", Bottom)) = Line(0.150, [Point(11.250, -1.400), Point(11.250, 2.000)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-11.725, -2.150), Point(-11.725, 2.150)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-11.725, -2.150), Point(11.725, -2.150)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(-11.725, 2.150), Point(11.725, 2.150)])
+  layer(CustomLayer("Bottom 3D Body", Top)) = Line(0.025, [Point(11.725, -2.150), Point(11.725, 2.150)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-11.725, -2.150), Point(-11.725, 2.150)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-11.725, -2.150), Point(11.725, -2.150)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(-11.725, 2.150), Point(11.725, 2.150)])
+  layer(CustomLayer("Pcb-DrillDrawing", Top)) = Line(0.025, [Point(11.725, -2.150), Point(11.725, 2.150)])
+  layer(Silkscreen("F-SilkS", Top)) = Polyline(0.400, [
+    Arc(-9.775, -3.505, 0.200, 0.0, 360.000)])
+  layer(Silkscreen("F-SilkS", Top)) = Text(".Designator", 0.7112, SW, loc(-1.702, 4.166), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("1", 0.635, SW, loc(-10.004, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("10", 0.635, SW, loc(-8.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("11", 0.635, SW, loc(-7.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("12", 0.635, SW, loc(-7.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("13", 0.635, SW, loc(-7.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("14", 0.635, SW, loc(-7.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("15", 0.635, SW, loc(-6.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("16", 0.635, SW, loc(-6.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("17", 0.635, SW, loc(-6.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("18", 0.635, SW, loc(-6.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("19", 0.635, SW, loc(-5.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("2", 0.635, SW, loc(-10.004, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("20", 0.635, SW, loc(-5.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("21", 0.635, SW, loc(-5.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("22", 0.635, SW, loc(-5.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("23", 0.635, SW, loc(-4.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("24", 0.635, SW, loc(-4.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("25", 0.635, SW, loc(-4.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("26", 0.635, SW, loc(-4.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("27", 0.635, SW, loc(-3.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("28", 0.635, SW, loc(-3.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("29", 0.635, SW, loc(-3.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("3", 0.635, SW, loc(-9.504, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("30", 0.635, SW, loc(-3.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("31", 0.635, SW, loc(-2.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("32", 0.635, SW, loc(-2.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("33", 0.635, SW, loc(-2.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("34", 0.635, SW, loc(-2.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("35", 0.635, SW, loc(-1.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("36", 0.635, SW, loc(-1.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("37", 0.635, SW, loc(-1.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("38", 0.635, SW, loc(-1.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("39", 0.635, SW, loc(-0.758, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("4", 0.635, SW, loc(-9.504, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("40", 0.635, SW, loc(-0.758, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("41", 0.635, SW, loc(-0.258, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("42", 0.635, SW, loc(-0.258, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("43", 0.635, SW, loc(0.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("44", 0.635, SW, loc(0.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("45", 0.635, SW, loc(0.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("46", 0.635, SW, loc(0.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("47", 0.635, SW, loc(1.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("48", 0.635, SW, loc(1.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("49", 0.635, SW, loc(1.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("5", 0.635, SW, loc(-9.004, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("50", 0.635, SW, loc(1.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("51", 0.635, SW, loc(2.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("52", 0.635, SW, loc(2.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("53", 0.635, SW, loc(2.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("54", 0.635, SW, loc(2.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("55", 0.635, SW, loc(3.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("56", 0.635, SW, loc(3.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("57", 0.635, SW, loc(3.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("58", 0.635, SW, loc(3.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("59", 0.635, SW, loc(4.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("6", 0.635, SW, loc(-9.004, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("60", 0.635, SW, loc(4.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("61", 0.635, SW, loc(4.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("62", 0.635, SW, loc(4.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("63", 0.635, SW, loc(5.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("64", 0.635, SW, loc(5.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("65", 0.635, SW, loc(5.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("66", 0.635, SW, loc(5.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("67", 0.635, SW, loc(6.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("68", 0.635, SW, loc(6.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("69", 0.635, SW, loc(6.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("7", 0.635, SW, loc(-8.504, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("70", 0.635, SW, loc(6.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("71", 0.635, SW, loc(7.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("72", 0.635, SW, loc(7.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("73", 0.635, SW, loc(7.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("74", 0.635, SW, loc(7.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("75", 0.635, SW, loc(8.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("76", 0.635, SW, loc(8.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("77", 0.635, SW, loc(8.742, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("78", 0.635, SW, loc(8.742, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("79", 0.635, SW, loc(9.242, -2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("8", 0.635, SW, loc(-8.504, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("80", 0.635, SW, loc(9.242, 2.025), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("81", 0.635, SW, loc(-13.336, 1.200), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("82", 0.635, SW, loc(11.684, 2.540), "Arial", StrokeFont, false, false)
+  layer(CustomLayer("Mechanical 15", Top)) = Text("9", 0.635, SW, loc(-8.004, -2.025), "Arial", StrokeFont, false, false)
+
+public pcb-component component :
+  reference-prefix = "J?"
+  pin-properties :
+    [pin:Ref | pads:Ref ... | side:Dir]
+    [p[0] | p[1] | Left]
+    [p[1] | p[2] | Left]
+    [p[2] | p[3] | Left]
+    [p[3] | p[4] | Left]
+    [p[4] | p[5] | Left]
+    [p[5] | p[6] | Left]
+    [p[6] | p[7] | Left]
+    [p[7] | p[8] | Left]
+    [p[8] | p[9] | Left]
+    [p[9] | p[10] | Left]
+    [p[10] | p[11] | Left]
+    [p[11] | p[12] | Left]
+    [p[12] | p[13] | Left]
+    [p[13] | p[14] | Left]
+    [p[14] | p[15] | Left]
+    [p[15] | p[16] | Left]
+    [p[16] | p[17] | Left]
+    [p[17] | p[18] | Left]
+    [p[18] | p[19] | Left]
+    [p[19] | p[20] | Left]
+    [p[20] | p[21] | Left]
+    [p[21] | p[22] | Left]
+    [p[22] | p[23] | Left]
+    [p[23] | p[24] | Left]
+    [p[24] | p[25] | Left]
+    [p[25] | p[26] | Left]
+    [p[26] | p[27] | Left]
+    [p[27] | p[28] | Left]
+    [p[28] | p[29] | Left]
+    [p[29] | p[30] | Left]
+    [p[30] | p[31] | Left]
+    [p[31] | p[32] | Left]
+    [p[32] | p[33] | Left]
+    [p[33] | p[34] | Left]
+    [p[34] | p[35] | Left]
+    [p[35] | p[36] | Left]
+    [p[36] | p[37] | Left]
+    [p[37] | p[38] | Left]
+    [p[38] | p[39] | Left]
+    [p[39] | p[40] | Left]
+    [p[40] | p[41] | Left]
+    [p[41] | p[42] | Right]
+    [p[42] | p[43] | Right]
+    [p[43] | p[44] | Right]
+    [p[44] | p[45] | Right]
+    [p[45] | p[46] | Right]
+    [p[46] | p[47] | Right]
+    [p[47] | p[48] | Right]
+    [p[48] | p[49] | Right]
+    [p[49] | p[50] | Right]
+    [p[50] | p[51] | Right]
+    [p[51] | p[52] | Right]
+    [p[52] | p[53] | Right]
+    [p[53] | p[54] | Right]
+    [p[54] | p[55] | Right]
+    [p[55] | p[56] | Right]
+    [p[56] | p[57] | Right]
+    [p[57] | p[58] | Right]
+    [p[58] | p[59] | Right]
+    [p[59] | p[60] | Right]
+    [p[60] | p[61] | Right]
+    [p[61] | p[62] | Right]
+    [p[62] | p[63] | Right]
+    [p[63] | p[64] | Right]
+    [p[64] | p[65] | Right]
+    [p[65] | p[66] | Right]
+    [p[66] | p[67] | Right]
+    [p[67] | p[68] | Right]
+    [p[68] | p[69] | Right]
+    [p[69] | p[70] | Right]
+    [p[70] | p[71] | Right]
+    [p[71] | p[72] | Right]
+    [p[72] | p[73] | Right]
+    [p[73] | p[74] | Right]
+    [p[74] | p[75] | Right]
+    [p[75] | p[76] | Right]
+    [p[76] | p[77] | Right]
+    [p[77] | p[78] | Right]
+    [p[78] | p[79] | Right]
+    [p[79] | p[80] | Right]
+    [p[80] | p[81] | Right]
+    [p[81] | p[82] | Right]
+
+  assign-landpattern(AXK680337YG)
+  assign-symbol(AUP15_FMC_QSFP/symbols/AXK680337YG/AXK680337YG)
+
+  property(self.Value) = "AXK680337YG"
+
