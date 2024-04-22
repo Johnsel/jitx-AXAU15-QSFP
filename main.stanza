@@ -26,19 +26,18 @@ defn add-boost-cap (pin1:JITXObject pin2:JITXObject params:Tuple<KeyValue>) :
 
 
 pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-voltage:Toleranced = 3.30 +/- (10 %) ):
-  pin vin
-  pin vout
+  port vin : power
+  port vout : power
   pin sw
-  pin gnd
 
   inst smps : ETA1471FT2G/components/UNKNOWN/ETA1471/ETA1471
 
   inst ind : smd-inductor(4.7e-6, 0.05) ; this needs to be whatever the manufacturer suggests for this
+  net GND (vin.gnd vout.gnd smps.gnd)
 
-  net (vin smps.power.vin smps.en)
+  net (vin.vdd smps.vin smps.en)
   net (sw smps.sw ind.p[1])
-  net (vout ind.p[2])
-  net (gnd smps.gnd)
+  net (vout.vdd ind.p[2])
 
   ;bypass-cap-strap(smps.bst, smps.sw, 22.0e-9)
   add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 "tolerance" => 0.1]) ; these values should be whatever the manufacturer suggests for this
@@ -53,38 +52,37 @@ pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-
                                                 divider-output   = 0.8 +/- (15 %) 
                                                 current          = 5.0e-4 )
 
-
-
   net (output-voltage-divider.in ind.p[2])
   net (output-voltage-divider.out smps.fb)
   net (output-voltage-divider.lo smps.gnd)
 
 
-
 ; Module to run as a design
 pcb-module my-design :
   ; define some pins/ports
-  ;pin gnd
-  ;pin vin
-  
+  port vin : power
+  port vout : power
+
   inst smps : ETA1471FT2G-psu()
-  net gnd (smps.gnd)
-  net vin (smps.vin)
-  net vout (smps.vout)
-  
+  net (vin smps.vin) ; bundle connection
+  net (vout smps.vout) ; bundle connection
+  net GND (vin.gnd vout.gnd)
+  net VIN (vin.vdd)
+  net VOUT (vout.vdd)
   ; add a ground plane
-  geom(gnd) :
+  geom(GND) :
     copper-pour(LayerIndex(1), isolate = 0.1, rank = 1, orphans = true) = Rectangle(width(board-shape) - 1.0, height(board-shape) - 1.0)
 
   ; add a net class for power nets
   val power-net-class = NetClass(`Power, [`min-trace => 0.381])
-  property(gnd.net-class) = power-net-class
-  property(vout.net-class) = power-net-class
-  property(vin.net-class) = power-net-class
+  property(GND.net-class) = power-net-class
+  property(VOUT.net-class) = power-net-class
+  property(VIN.net-class) = power-net-class
 
   ; add some symbols
-  symbol(gnd) = ground-sym
-  symbol(vin) = supply-sym
+  symbol(GND) = ground-sym
+  symbol(VIN) = supply-sym
+  symbol(VOUT) = supply-sym
 
   ; Write the board version on silkscreen
   inst version-label  : ocdb/artwork/board-text/version-silkscreen("Version 0.0")

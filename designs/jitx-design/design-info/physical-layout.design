@@ -1,5 +1,5 @@
-{  
-  "operations": [  
+{
+  "operations": [
     {"operation":"place","place":{"placements":[{"id":"4bLjcEnwASmMFaqR2ePTx9","pose":{"center":{"x":-14.041999816894531,"y":-8.0419998168945312},"angle":0},"side":"top"}]}},
     {"operation":"place","place":{"placements":[{"id":"Eoy8KiZFvLivrDxQaE26t2","pose":{"center":{"x":-13.277000427246094,"y":-3.6250004768371582},"angle":0},"side":"top"}]}},
     {"operation":"unplace","unplace":["Eoy8KiZFvLivrDxQaE26t2"]},
