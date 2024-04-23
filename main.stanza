@@ -28,18 +28,19 @@ defn add-boost-cap (pin1:JITXObject pin2:JITXObject params:Tuple<KeyValue>) :
 pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-voltage:Toleranced = 3.30 +/- (10 %) ):
   port vin : power
   port vout : power
-  pin sw
 
   inst smps : ETA1471FT2G/components/UNKNOWN/ETA1471/ETA1471
 
   inst ind : smd-inductor(4.7e-6, 0.05) ; this needs to be whatever the manufacturer suggests for this
-  net GND (vin.gnd vout.gnd smps.gnd)
+  net (vin.gnd vout.gnd smps.gnd)
 
   net (vin.vdd smps.vin smps.en)
-  net (sw smps.sw ind.p[1])
+  net (smps.sw  ind.p[1])
   net (vout.vdd ind.p[2])
 
-  add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 "tolerance" => 0.1]) ; these values should be whatever the manufacturer suggests for this
+  ; add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%)])
+  ; add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%) "tolerance" => +/- (10%)]) ; these values should be whatever the manufacturer suggests for this
+  add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%) "tolerance" => (10%)]) ; these values should be whatever the manufacturer suggests for this
   bypass-cap-strap(smps.vin, smps.gnd, 22.0e-6)
   bypass-cap-strap(ind.p[1], smps.gnd, 22.0e-6)
   ;if output-voltage < 3.3:
@@ -51,7 +52,6 @@ pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-
   net (output-voltage-divider.in ind.p[2])
   net (output-voltage-divider.out smps.fb)
   net (output-voltage-divider.lo smps.gnd)
-
 
 ; Module to run as a design
 pcb-module my-design :

@@ -43,54 +43,6 @@
 					"code":	1,
 					"name":	"Auto Selected"
 				},
-				"description":	"RES SMD 4.99K OHM 1% 1/16W 0402",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"ref":	{
-									"name":	"smps"
-								},
-								"field":	{
-									"name":	"output-voltage-divider"
-								}
-							},
-							"field":	{
-								"name":	"r-hi"
-							}
-						},
-						"ref":	"R2",
-						"fileinfo":	{
-							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/modules/passive-circuits.stanza",
-							"line":	32,
-							"column":	4
-						}
-					}],
-				"datasheet":	"http://www.calchipelectronics.com/pdf/rm_series.pdf",
-				"manufacturer":	"CAL-CHIP ELECTRONICS, INC.",
-				"mpn":	"RM04F4991CT",
-				"vendor":	"DigiKey",
-				"sku":	"RM04F4991CT",
-				"price":	0.00132,
-				"preferred":	false,
-				"query_properties":	{
-					"min-rated-temperature.max":	25,
-					"max-rated-temperature.min":	0,
-					"mounting":	"smd",
-					"tolerance":	0.01,
-					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
-					"_sellers":	["DigiKey", "Mouser"],
-					"_stock":	100,
-					"_exist":	["tcr"],
-					"resistance":	4990,
-					"min-stock":	500,
-					"_sort":	["area"],
-					"category":	"resistor"
-				}
-			}, {
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
 				"description":	"25V 22nF X5R ±10% 0402  Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS",
 				"insts":	[{
 						"inst":	{
@@ -109,7 +61,7 @@
 						}
 					}],
 				"datasheet":	"https://datasheet.lcsc.com/lcsc/2309051410_Taiyo-Yuden-TMK105BJ223KV-F_C2176263.pdf",
-				"manufacturer":	"Taiyo Yuden",
+				"manufacturer":	"Taiyo Yuden  Inc",
 				"mpn":	"TMK105BJ223KV-F",
 				"vendor":	"DigiKey",
 				"sku":	"TMK105BJ223KV-F",
@@ -148,16 +100,16 @@
 						"ref":	"L1",
 						"fileinfo":	{
 							"filename":	"/Users/bgupta/src/JITX/dummy-dir/jitx-design/jitx-fmc-qsfp/main.stanza",
-							"line":	35,
+							"line":	34,
 							"column":	2
 						}
 					}],
 				"datasheet":	"https://www.chilisin.com/upload/media/product/rf/file/BWLS_Series.pdf",
-				"manufacturer":	"Chilisin Electronics",
+				"manufacturer":	"Chilisin",
 				"mpn":	"BWLS001611094R7J00",
 				"vendor":	"DigiKey",
 				"sku":	"BWLS001611094R7J00",
-				"price":	0.08966,
+				"price":	0.24,
 				"preferred":	false,
 				"query_properties":	{
 					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
@@ -174,8 +126,38 @@
 				}
 			}, {
 				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"18V, 3A, High Efficiency Synchronous Step-Down Converter in FCTSOT23-6",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"smps"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"/Users/bgupta/src/JITX/dummy-dir/jitx-design/jitx-fmc-qsfp/main.stanza",
+							"line":	32,
+							"column":	2
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	"ETA Solutions",
+				"mpn":	"ETA1471FT2G",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
 				},
 				"description":	"RES SMD 1.6K OHM 1% 1/16W 0402",
 				"insts":	[{
@@ -202,49 +184,6 @@
 				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
 				"manufacturer":	"Meritek",
 				"mpn":	"CR201601F",
-				"vendor":	"DigiKey",
-				"sku":	"CR201601F",
-				"price":	0.00137,
-				"preferred":	false,
-				"query_properties":	{
-					"min-rated-temperature.max":	25,
-					"max-rated-temperature.min":	0,
-					"mounting":	"smd",
-					"tolerance":	0.01,
-					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
-					"_sellers":	["DigiKey", "Mouser"],
-					"_stock":	100,
-					"_exist":	["tcr"],
-					"resistance":	1600,
-					"min-stock":	500,
-					"_sort":	["area"],
-					"category":	"resistor"
-				}
-			}, {
-				"status":	{
-					"code":	5,
-					"name":	"Potential Alternate Vendors"
-				},
-				"description":	"18V, 3A, High Efficiency Synchronous Step-Down Converter in FCTSOT23-6",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"name":	"smps"
-							},
-							"field":	{
-								"name":	"smps"
-							}
-						},
-						"ref":	"U1",
-						"fileinfo":	{
-							"filename":	"/Users/bgupta/src/JITX/dummy-dir/jitx-design/jitx-fmc-qsfp/main.stanza",
-							"line":	33,
-							"column":	2
-						}
-					}],
-				"datasheet":	null,
-				"manufacturer":	"ETA Solutions",
-				"mpn":	"ETA1471FT2G",
 				"vendor":	null,
 				"sku":	null,
 				"price":	null,
@@ -265,7 +204,7 @@
 								"name":	"cap"
 							}
 						},
-						"ref":	"C3",
+						"ref":	"C2",
 						"fileinfo":	{
 							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/utils/generic-components.stanza",
 							"line":	743,
@@ -280,7 +219,7 @@
 								"name":	"cap"
 							}
 						},
-						"ref":	"C2",
+						"ref":	"C3",
 						"fileinfo":	{
 							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/utils/generic-components.stanza",
 							"line":	743,
@@ -290,6 +229,41 @@
 				"datasheet":	"https://page.venkel.com/hubfs/Resources/Datasheets/C-Series.pdf",
 				"manufacturer":	"Venkel",
 				"mpn":	"C0603X5R100-226MNE",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"RES SMD 4.99K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/modules/passive-circuits.stanza",
+							"line":	32,
+							"column":	4
+						}
+					}],
+				"datasheet":	"http://www.calchipelectronics.com/pdf/rm_series.pdf",
+				"manufacturer":	"CAL-CHIP ELECTRONICS, INC.",
+				"mpn":	"RM04F4991CT",
 				"vendor":	null,
 				"sku":	null,
 				"price":	null,
@@ -312,59 +286,11 @@
 			"value":	7
 		}, {
 			"name":	"Cost",
-			"value":	"$0.10"
+			"value":	"$0.24"
 		}],
 	"is_update":	false,
 	"old_bom":	{
 		"rows":	[{
-				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
-				},
-				"description":	"RES SMD 4.99K OHM 1% 1/16W 0402",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"ref":	{
-									"name":	"smps"
-								},
-								"field":	{
-									"name":	"output-voltage-divider"
-								}
-							},
-							"field":	{
-								"name":	"r-hi"
-							}
-						},
-						"ref":	"R2",
-						"fileinfo":	{
-							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/modules/passive-circuits.stanza",
-							"line":	32,
-							"column":	4
-						}
-					}],
-				"datasheet":	"http://www.calchipelectronics.com/pdf/rm_series.pdf",
-				"manufacturer":	"CAL-CHIP ELECTRONICS, INC.",
-				"mpn":	"RM04F4991CT",
-				"vendor":	"DigiKey",
-				"sku":	"RM04F4991CT",
-				"price":	0.00132,
-				"preferred":	false,
-				"query_properties":	{
-					"min-rated-temperature.max":	25,
-					"max-rated-temperature.min":	0,
-					"mounting":	"smd",
-					"tolerance":	0.01,
-					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
-					"_sellers":	["DigiKey", "Mouser"],
-					"_stock":	100,
-					"_exist":	["tcr"],
-					"resistance":	4990,
-					"min-stock":	500,
-					"_sort":	["area"],
-					"category":	"resistor"
-				}
-			}, {
 				"status":	{
 					"code":	1,
 					"name":	"Auto Selected"
@@ -387,7 +313,7 @@
 						}
 					}],
 				"datasheet":	"https://datasheet.lcsc.com/lcsc/2309051410_Taiyo-Yuden-TMK105BJ223KV-F_C2176263.pdf",
-				"manufacturer":	"Taiyo Yuden",
+				"manufacturer":	"Taiyo Yuden  Inc",
 				"mpn":	"TMK105BJ223KV-F",
 				"vendor":	"DigiKey",
 				"sku":	"TMK105BJ223KV-F",
@@ -426,16 +352,16 @@
 						"ref":	"L1",
 						"fileinfo":	{
 							"filename":	"/Users/bgupta/src/JITX/dummy-dir/jitx-design/jitx-fmc-qsfp/main.stanza",
-							"line":	35,
+							"line":	34,
 							"column":	2
 						}
 					}],
 				"datasheet":	"https://www.chilisin.com/upload/media/product/rf/file/BWLS_Series.pdf",
-				"manufacturer":	"Chilisin Electronics",
+				"manufacturer":	"Chilisin",
 				"mpn":	"BWLS001611094R7J00",
 				"vendor":	"DigiKey",
 				"sku":	"BWLS001611094R7J00",
-				"price":	0.08966,
+				"price":	0.24,
 				"preferred":	false,
 				"query_properties":	{
 					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
@@ -452,8 +378,38 @@
 				}
 			}, {
 				"status":	{
-					"code":	1,
-					"name":	"Auto Selected"
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"18V, 3A, High Efficiency Synchronous Step-Down Converter in FCTSOT23-6",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"name":	"smps"
+							},
+							"field":	{
+								"name":	"smps"
+							}
+						},
+						"ref":	"U1",
+						"fileinfo":	{
+							"filename":	"/Users/bgupta/src/JITX/dummy-dir/jitx-design/jitx-fmc-qsfp/main.stanza",
+							"line":	32,
+							"column":	2
+						}
+					}],
+				"datasheet":	null,
+				"manufacturer":	"ETA Solutions",
+				"mpn":	"ETA1471FT2G",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
 				},
 				"description":	"RES SMD 1.6K OHM 1% 1/16W 0402",
 				"insts":	[{
@@ -480,49 +436,6 @@
 				"datasheet":	"https://www.meritekusa.com/wp-content/uploads/2018/06/Standard-Chip-Resistor-CR-Series.pdf",
 				"manufacturer":	"Meritek",
 				"mpn":	"CR201601F",
-				"vendor":	"DigiKey",
-				"sku":	"CR201601F",
-				"price":	0.00137,
-				"preferred":	false,
-				"query_properties":	{
-					"min-rated-temperature.max":	25,
-					"max-rated-temperature.min":	0,
-					"mounting":	"smd",
-					"tolerance":	0.01,
-					"case":	["0402", "1005m", "0505", "1414m", "0508", "1220m", "Wide 0805", "0603", "1608m", "0612", "1632m", "Wide 1206", "0805", "2012m", "1111", "2828m", "1206", "3216m", "1210", "3225m", "1218", "3246m", "Wide 1812", "1225", "3263m", "Wide 2512", "1530", "3876m", "Wide 3015", "1808", "4520m", "1812", "4532m", "1825", "4564m", "1835", "4589", "Wide 3518", "5020m", "2010", "5025m", "2043", "Wide 4320", "2220", "5750m", "2225", "5763m", "2312", "6032m", "2512", "6331m", "2725", "7142m", "2728", "7142m", "Wide 2827", "2816", "2817", "7142m", "2953", "Wide 5929", "3920", "1052m"],
-					"_sellers":	["DigiKey", "Mouser"],
-					"_stock":	100,
-					"_exist":	["tcr"],
-					"resistance":	1600,
-					"min-stock":	500,
-					"_sort":	["area"],
-					"category":	"resistor"
-				}
-			}, {
-				"status":	{
-					"code":	5,
-					"name":	"Potential Alternate Vendors"
-				},
-				"description":	"18V, 3A, High Efficiency Synchronous Step-Down Converter in FCTSOT23-6",
-				"insts":	[{
-						"inst":	{
-							"ref":	{
-								"name":	"smps"
-							},
-							"field":	{
-								"name":	"smps"
-							}
-						},
-						"ref":	"U1",
-						"fileinfo":	{
-							"filename":	"/Users/bgupta/src/JITX/dummy-dir/jitx-design/jitx-fmc-qsfp/main.stanza",
-							"line":	33,
-							"column":	2
-						}
-					}],
-				"datasheet":	null,
-				"manufacturer":	"ETA Solutions",
-				"mpn":	"ETA1471FT2G",
 				"vendor":	null,
 				"sku":	null,
 				"price":	null,
@@ -543,7 +456,7 @@
 								"name":	"cap"
 							}
 						},
-						"ref":	"C3",
+						"ref":	"C2",
 						"fileinfo":	{
 							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/utils/generic-components.stanza",
 							"line":	743,
@@ -558,7 +471,7 @@
 								"name":	"cap"
 							}
 						},
-						"ref":	"C2",
+						"ref":	"C3",
 						"fileinfo":	{
 							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/utils/generic-components.stanza",
 							"line":	743,
@@ -568,6 +481,41 @@
 				"datasheet":	"https://page.venkel.com/hubfs/Resources/Datasheets/C-Series.pdf",
 				"manufacturer":	"Venkel",
 				"mpn":	"C0603X5R100-226MNE",
+				"vendor":	null,
+				"sku":	null,
+				"price":	null,
+				"preferred":	false,
+				"query_properties":	null
+			}, {
+				"status":	{
+					"code":	5,
+					"name":	"Potential Alternate Vendors"
+				},
+				"description":	"RES SMD 4.99K OHM 1% 1/16W 0402",
+				"insts":	[{
+						"inst":	{
+							"ref":	{
+								"ref":	{
+									"name":	"smps"
+								},
+								"field":	{
+									"name":	"output-voltage-divider"
+								}
+							},
+							"field":	{
+								"name":	"r-hi"
+							}
+						},
+						"ref":	"R2",
+						"fileinfo":	{
+							"filename":	"/Users/bgupta/src/JITX/jitx-client/build/slm/ocdb/modules/passive-circuits.stanza",
+							"line":	32,
+							"column":	4
+						}
+					}],
+				"datasheet":	"http://www.calchipelectronics.com/pdf/rm_series.pdf",
+				"manufacturer":	"CAL-CHIP ELECTRONICS, INC.",
+				"mpn":	"RM04F4991CT",
 				"vendor":	null,
 				"sku":	null,
 				"price":	null,

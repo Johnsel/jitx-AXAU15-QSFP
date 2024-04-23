@@ -37,13 +37,13 @@ public pcb-component ETA1471 :
   manufacturer = "ETA Solutions"
   description = "18V, 3A, High Efficiency Synchronous Step-Down Converter in FCTSOT23-6"
   pin-properties :
-    [pin:Ref | pads:Ref ...]
-    [gnd | p[1]]
-    [sw | p[2]]
-    [vin | p[3]]
-    [fb | p[4]]
-    [en | p[5]]
-    [bst | p[6]]
+    [pin:Ref | side:Dir | pads:Ref ...]
+    [gnd | Down  | p[1]]
+    [sw  | Right | p[2]]
+    [vin | Left  | p[3]]
+    [fb  | Up    | p[4]]
+    [en  | Left  | p[5]]
+    [bst | Right | p[6]]
 
   assign-landpattern(SOT-23-6_L29-W16-P095-LS29-BL-1)
   make-box-symbol()
