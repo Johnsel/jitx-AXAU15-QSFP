@@ -40,7 +40,8 @@ pcb-module ETA1471FT2G-psu (input-voltage:Toleranced = 12.0 +/- (10 %) , output-
 
   ; add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%)])
   ; add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%) "tolerance" => +/- (10%)]) ; these values should be whatever the manufacturer suggests for this
-  add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%) "tolerance" => (10%)]) ; these values should be whatever the manufacturer suggests for this
+  ; add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 +/- (10%) "tolerance" => (10%)]) ; these values should be whatever the manufacturer suggests for this
+  add-boost-cap(smps.sw smps.bst ["capacitance" => 22.0e-9 "tolerance" => 0.10 ]) ; these values should be whatever the manufacturer suggests for this
   bypass-cap-strap(smps.vin, smps.gnd, 22.0e-6)
   bypass-cap-strap(ind.p[1], smps.gnd, 22.0e-6)
   ;if output-voltage < 3.3:
